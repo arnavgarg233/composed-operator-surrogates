@@ -1,0 +1,23 @@
+{
+  "schema": "composed-operator-surrogates-runtime-v1",
+  "purpose": "The interpreter and solver stack every published number was produced under. results/tables/runtime_receipt/EXPONAX_RUNTIME_RECEIPT.json carries the per-module digests these resolve to, and scripts/code/verify_exponax_runtime.py is what wrote it.",
+  "python": "3.12",
+  "solver": {
+    "exponax": "0.2.0",
+    "jax": "0.8.1",
+    "jaxlib": "0.8.1",
+    "equinox": "0.13.8",
+    "jaxtyping": "0.3.11",
+    "ml_dtypes": "0.6.0",
+    "opt_einsum": "3.4.0",
+    "scipy": "1.17.1",
+    "numpy": "2.5.2",
+    "typing_extensions": "4.16.0",
+    "wadler_lindig": "0.1.7"
+  },
+  "determinism": {
+    "network": "not used by any published script",
+    "figure_rebuild": "byte-identical, verified in the package test",
+    "note": "What does and does not reproduce across environments is recorded in results/tables/determinism/, over eighteen runs. scripts/determinism/determinism_harness.py is the harness those reports name."
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "schema": "pde-dissociation-second-architecture-v1",
+  "generated": "2026-09-05",
+  "architecture": "FNO-1d at published defaults, one per primitive",
+  "estimand": "k=10, 10 applications per leg",
+  "eval_units": 256,
+  "predicted_by_available_signal": 11.67,
+  "observed_dissociation": 13.053747607771559,
+  "observed_range": [
+    10.117711878165245,
+    26.004236800727405
+  ],
+  "agreement_fraction": 0.11857305979190737,
+  "banked_reconstructed_dissociation": 13.855,
+  "banked_agreement_fraction": 0.1872322193658955,
+  "D1_at_or_above_ratio": {
+    "held": true
+  },
+  "D2_within_factor_three": {
+    "held": true,
+    "band": [
+      3.89,
+      35.01
+    ]
+  },
+  "D3_convergence": {
+    "held": true,
+    "worst_e_on": 0.0002524263380654711
+  },
+  "per_seed": {
+    "0": {
+      "endpoint_ratio": 1.8521705495967964,
+      "trajectory_ratio": 0.10823497806563591,
+      "dissociation": 17.11249526445695,
+      "eps_endpoint": 0.036183036948914324,
+      "eps_trajectory": 0.016505859571105154,
+      "eps_ratio": 2.1921328479163646,
+      "sharpened_prediction": 25.582190335183974
+    },
+    "1": {
+      "endpoint_ratio": 0.7953647130975198,
+      "trajectory_ratio": 0.07615033869720021,
+      "dissociation": 10.444664156520194,
+      "eps_endpoint": 0.05615130497251086,
+      "eps_trajectory": 0.029113802879341785,
+      "eps_ratio": 1.928683284874269,
+      "sharpened_prediction": 22.50773393448272
+    },
+    "2": {
+      "endpoint_ratio": 0.5964504111685994,
+      "trajectory_ratio": 0.05895111645309673,
+      "dissociation": 10.117711878165245,
+      "eps_endpoint": 0.03525854357746351,
+      "eps_trajectory": 0.017314227962911127,
+      "eps_ratio": 2.0363913223847443,
+      "sharpened_prediction": 23.764686732229965
+    },
+    "3": {
+      "endpoint_ratio": 1.6218450164405198,
+      "trajectory_ratio": 0.12424363218689422,
+      "dissociation": 13.053747607771559,
+      "eps_endpoint": 0.025604444658105324,
+      "eps_trajectory": 0.013680023934636638,
+      "eps_ratio": 1.8716666564652042,
+      "sharpened_prediction": 21.842349880948934
+    },
+    "4": {
+      "endpoint_ratio": 4.1774053575436065,
+      "trajectory_ratio": 0.1606432593871301,
+      "dissociation": 26.004236800727405,
+      "eps_endpoint": 0.20325819898842523,
+      "eps_trajectory": 0.07562462913796764,
+      "eps_ratio": 2.6877249026584473,
+      "sharpened_prediction": 31.36574961402408
+    }
+  },
+  "post_hoc_sharpened": {
+    "form": "dissociation = available-signal ratio x the learner's own endpoint-to-trajectory error ratio; the planned form assumed that second factor is 1",
+    "labelled": "POST HOC, added after the planned result was in hand",
+    "median_eps_ratio": 2.0363913223847443,
+    "median_sharpened_prediction": 23.764686732229965,
+    "per_seed_sharpened_agreement": {
+      "0": 0.33107779121940123,
+      "1": 0.5359522114965752,
+      "2": 0.5742543551208071,
+      "3": 0.40236523639074484,
+      "4": 0.17093526790443625
+    }
+  },
+  "per_seed_e_on": {
+    "diffusion_0": 0.0002524263380654711,
+    "diffusion_1": 0.00019915588373539109,
+    "diffusion_2": 0.00018921884450701012,
+    "diffusion_3": 0.00018774178873050919,
+    "diffusion_4": 0.00015733291147038836,
+    "reaction_0": 0.00010764356837175047,
+    "reaction_1": 8.49603511576185e-05,
+    "reaction_2": 9.416568433576024e-05,
+    "reaction_3": 6.759515657946855e-05,
+    "reaction_4": 0.0001023531854174463
+  },
+  "elapsed_seconds": 2191.7146562499984
+}

@@ -1,0 +1,79 @@
+{
+  "schema": "pde-second-pair-geometric-repair-v1",
+  "generated": "2026-09-05",
+  "pair": "diffusion_allen_cahn",
+  "tests": "the geometric half of the remedy only: whether broadening the training support repairs the overlap. No learner is fitted, and nothing here says the composed asymmetry closes on this pair.",
+  "switch_state_means": [
+    0.815730843800657,
+    0.8441034495455529
+  ],
+  "conditions": {
+    "narrow": {
+      "offset_range": [
+        0.4865,
+        0.5171
+      ],
+      "support": [
+        0.48650880374274397,
+        0.5170747504413228
+      ],
+      "fraction_inside": 0.0,
+      "units_off_support": 48,
+      "max_distance_to_support": 0.32702869910423016,
+      "max_nearest_training_mean": 0.32702869910423016,
+      "saturated_value_fraction": 7.251701732673267e-07
+    },
+    "A_first_pair_rule": {
+      "offset_range": [
+        0.48,
+        0.85
+      ],
+      "support": [
+        0.4801064504841609,
+        0.8362386463934733
+      ],
+      "fraction_inside": 0.6666666666666666,
+      "units_off_support": 16,
+      "max_distance_to_support": 0.007864803152079602,
+      "max_nearest_training_mean": 0.007864803152079602,
+      "saturated_value_fraction": 0.0005035702544863861
+    },
+    "B_declared_in_advance": {
+      "offset_range": [
+        0.48,
+        0.9
+      ],
+      "support": [
+        0.4801208356847232,
+        0.8710139837639678
+      ],
+      "fraction_inside": 1.0,
+      "units_off_support": 0,
+      "max_distance_to_support": 0.0,
+      "max_nearest_training_mean": 0.0007748451371136778,
+      "saturated_value_fraction": 0.0007460188157487624
+    }
+  },
+  "G1_condition_A_leaves_overlap_open": {
+    "held": true
+  },
+  "G2_condition_B_closes_overlap": {
+    "held": true
+  },
+  "conditions_that_closed": [
+    "B_declared_in_advance"
+  ],
+  "saturation_limit": 0.1,
+  "closed_at_a_cost": {
+    "B_declared_in_advance": false
+  },
+  "first_pair_for_comparison": {
+    "broadened_offsets": [
+      0.48,
+      0.75
+    ],
+    "fraction_inside": 1.0,
+    "max_nearest_training_mean": 0.0089089046
+  },
+  "elapsed_seconds": 2.7828533339998103
+}

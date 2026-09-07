@@ -1,0 +1,99 @@
+{
+  "schema": "pde-band-check-v1",
+  "generated": "2026-09-05",
+  "terminal": "BAND_CHECK_CLEARS",
+  "configuration": {
+    "diffusivity": 0.01,
+    "reaction_diffusivity": 0.0,
+    "reactivity": 1.0,
+    "domain_extent": 1.0,
+    "num_points": 256,
+    "dt": 0.01,
+    "half_dt": 0.005,
+    "window_duration": 1.0,
+    "units": 256,
+    "master_seed": 20260905,
+    "ic_amplitude": 0.175,
+    "ic_offset_range": [
+      0.4865,
+      0.5171
+    ],
+    "ic_family": "clip(offset_i + amplitude * TruncatedFourier(cutoff, std_one=True), 0, 1)"
+  },
+  "banked_comparison": {
+    "confidence": "reconstructed",
+    "floor_passes": "256/256",
+    "median_contrast_to_cross_ic": 0.412779,
+    "bootstrap_ci95": [
+      0.367881,
+      0.455603
+    ],
+    "median_contrast_to_floor": 3546.3,
+    "note": "The banked artifact was destroyed and cannot be inspected."
+  },
+  "results": [
+    {
+      "cutoff": 3,
+      "units": 256,
+      "floor_passes": 256,
+      "floor_passes_required": 142,
+      "floor_gate_clears": true,
+      "median_contrast": 0.029507903124939304,
+      "median_floor": 7.97767877000249e-06,
+      "median_contrast_to_floor": 3709.0551546506613,
+      "median_contrast_to_cross_ic": 0.31952721239687193,
+      "bootstrap_ci95": [
+        0.28966044154730597,
+        0.348411156033022
+      ],
+      "band": [
+        0.3,
+        0.7
+      ],
+      "band_clears": true
+    },
+    {
+      "cutoff": 5,
+      "units": 256,
+      "floor_passes": 256,
+      "floor_passes_required": 142,
+      "floor_gate_clears": true,
+      "median_contrast": 0.031231252093953152,
+      "median_floor": 8.062809690792053e-06,
+      "median_contrast_to_floor": 3842.066415153485,
+      "median_contrast_to_cross_ic": 0.4261565675911184,
+      "bootstrap_ci95": [
+        0.38762546318092517,
+        0.4686232568961348
+      ],
+      "band": [
+        0.3,
+        0.7
+      ],
+      "band_clears": true
+    },
+    {
+      "cutoff": 7,
+      "units": 256,
+      "floor_passes": 256,
+      "floor_passes_required": 142,
+      "floor_gate_clears": true,
+      "median_contrast": 0.03161784379470881,
+      "median_floor": 8.091889834794425e-06,
+      "median_contrast_to_floor": 3897.974134524873,
+      "median_contrast_to_cross_ic": 0.49837965206506896,
+      "bootstrap_ci95": [
+        0.4683799864885479,
+        0.5589849889192331
+      ],
+      "band": [
+        0.3,
+        0.7
+      ],
+      "band_clears": true
+    }
+  ],
+  "elapsed_seconds": 3.8094889590001912,
+  "cost_usd": 0.0,
+  "caveat": "The original initial-condition generator is unrecoverable. This is a calibrated substitute fitted to two non-gate statistics. Clearing does not prove the original configuration was reproduced; missing would not prove it was wrong."
+}

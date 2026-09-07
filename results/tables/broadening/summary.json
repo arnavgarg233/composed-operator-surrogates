@@ -1,0 +1,41 @@
+{
+  "status": "MEASURED truth-only exploratory results, no learner y",
+  "coverage_100_percent_threshold": {
+    "fisher_kpp": 0.723659826572129,
+    "allen_cahn": 0.8607562137866633
+  },
+  "broadening_curve_rows": 26,
+  "dose_summary_rows": 202,
+  "observable_rows": 30,
+  "validations": {
+    "anchor_narrow": {
+      "support": [
+        0.486508803742744,
+        0.5170747504413228
+      ],
+      "fraction_inside": 0.0,
+      "all_frame_saturation": 7.251701732673267e-07
+    },
+    "anchor_A_first_pair_rule": {
+      "support": [
+        0.48010645048416095,
+        0.8362386463934732
+      ],
+      "fraction_inside": 0.6666666666666666,
+      "all_frame_saturation": 0.0005035702544863861
+    },
+    "anchor_B_declared_in_advance": {
+      "support": [
+        0.48012083568472325,
+        0.8710139837639678
+      ],
+      "fraction_inside": 1.0,
+      "all_frame_saturation": 0.0007460188157487624
+    },
+    "clipping_formula_max_abs_error": 2.220446049250313e-16,
+    "fisher_kpp_diffusion_fourier_max_error": 5.551115123125783e-16,
+    "allen_cahn_diffusion_fourier_max_error": 4.440892098500626e-16,
+    "fisher_integrity256_r_reproduced": true,
+    "allen_test48_r_reproduced": true
+  }
+}

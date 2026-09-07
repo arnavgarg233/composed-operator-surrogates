@@ -1,0 +1,21 @@
+{
+  "schema": "composed-operator-surrogates-data-v1",
+  "purpose": "What data ships with this repository and what does not. The claims divide into those a reader can check today and those resting on a fit whose artifacts were destroyed, and this file states that division.",
+  "shipped": {
+    "data/learner_artifacts/": {
+      "contents": "Five seeds of the standard-architecture experiment: composed_seed{0..4}.npz predictions and weights_seed{0..4}.pt parameters",
+      "supports": "Figure 7 and the intervention it reports"
+    },
+    "results/": {
+      "contents": "The seven figures as PDF, their build receipt at results/tables/FIGURE_RECEIPT.json, and every result file behind a checkable claim",
+      "digests": "results/CHECKSUMS.txt carries a SHA-256 for every published file and for nothing that is not published"
+    },
+    "scripts/": {
+      "contents": "The code those results were produced by, kept at the exact bytes the receipts inside the results record"
+    }
+  },
+  "not_shipped": {
+    "original_training_corpus": "Not recoverable. The corpus was regenerated; scripts/code/generate.py is the generator, it writes into data/corpus/, and results/tables/regeneration/CORPUS_RECEIPT.json is its receipt.",
+    "original_fitting_harness": "260 of 2,290 lines survive, which bounds what the refitted learner can be said to reproduce."
+  }
+}

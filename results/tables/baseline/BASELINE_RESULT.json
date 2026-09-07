@@ -1,0 +1,150 @@
+{
+  "schema": "pde-baseline-result-v1",
+  "generated": "2026-09-05",
+  "estimand": "k=10 diffusion solution operator, tau=0.10",
+  "gates": {
+    "schema": "pde-baseline-gates-v1",
+    "written_before_any_off_support_number_was_read": true,
+    "G1_shift_exists": {
+      "training_support": [
+        0.4865763783454895,
+        0.5169978737831116
+      ],
+      "switch_support": [
+        0.6905717849731445,
+        0.7228957414627075
+      ],
+      "overlap": 0.0,
+      "gap": 0.17357391119003296,
+      "pass": true
+    },
+    "G2_metric_resolves": {
+      "persistence_off": 0.08019073763412352,
+      "persistence_on": 0.12143668737086181,
+      "median_e_on": 0.00018748138348456255,
+      "dynamic_range": 427.72640218289473,
+      "required_dynamic_range": 100.0,
+      "e_on_limit": 0.012143668737086182,
+      "pass": true
+    },
+    "G3_powered_partial": {
+      "note": "the log10(R) interquartile range needs e_off and is completed after it; this is the across-seed spread of log10(e_on), which is the part of the power question that can be asked now",
+      "log10_e_on_iqr": 0.03189290580155202,
+      "per_seed_e_on": [
+        0.00025215935939270896,
+        0.00019819641066786575,
+        0.00018416321134376626,
+        0.00018748138348456255,
+        0.00015561677365022358
+      ]
+    },
+    "G4_censored_below": {
+      "minimum_e_on": 0.00015561677365022358,
+      "floor": 1.19e-05,
+      "pass": true
+    },
+    "P6_convergence": {
+      "limit": 0.001573,
+      "pass": true,
+      "worst_e_on": 0.00033027239886985446
+    }
+  },
+  "G3_completed": {
+    "log10_R_iqr": 0.11077890143886515,
+    "limit": 0.5,
+    "pass": true
+  },
+  "G4_censored_above": {
+    "max_e_off": 0.024789485388663123,
+    "persistence_off": 0.08019073763412352,
+    "pass": true
+  },
+  "per_seed": {
+    "narrow_0": {
+      "e_on": 0.00025215935939270896,
+      "e_off": 0.017986316137632196,
+      "R": 71.32916335506943
+    },
+    "narrow_1": {
+      "e_on": 0.00019819641066786575,
+      "e_off": 0.024789485388663123,
+      "R": 125.07534977616184
+    },
+    "narrow_2": {
+      "e_on": 0.00018416321134376626,
+      "e_off": 0.017848252610447687,
+      "R": 96.91540715551186
+    },
+    "narrow_3": {
+      "e_on": 0.00018748138348456255,
+      "e_off": 0.02066681966278632,
+      "R": 110.23398312231919
+    },
+    "narrow_4": {
+      "e_on": 0.00015561677365022358,
+      "e_off": 0.021366941356191795,
+      "R": 137.30487308661085
+    },
+    "broad_0": {
+      "e_on": 0.00033027239886985446,
+      "e_off": 0.005829152534002346,
+      "R": 17.649529763761315
+    },
+    "broad_1": {
+      "e_on": 0.000269998114941693,
+      "e_off": 0.004877583860766783,
+      "R": 18.065251536367626
+    },
+    "broad_2": {
+      "e_on": 0.0002903381843952276,
+      "e_off": 0.004063401362587429,
+      "R": 13.995408048209248
+    },
+    "broad_3": {
+      "e_on": 0.0003223736721254298,
+      "e_off": 0.0054297015755254705,
+      "R": 16.842881553344938
+    },
+    "broad_4": {
+      "e_on": 0.0002107043732343153,
+      "e_off": 0.0037588758887524268,
+      "R": 17.839572245481314
+    }
+  },
+  "narrow": {
+    "median_e_on": 0.00018748138348456255,
+    "median_e_off": 0.02066681966278632,
+    "median_R": 110.23398312231919,
+    "R_range": [
+      71.32916335506943,
+      137.30487308661085
+    ]
+  },
+  "broad": {
+    "median_e_on": 0.0002903381843952276,
+    "median_e_off": 0.004877583860766783,
+    "median_R": 17.649529763761315,
+    "R_range": [
+      13.995408048209248,
+      18.065251536367626
+    ]
+  },
+  "P2_degradation_reproduces": {
+    "median_R": 110.23398312231919,
+    "threshold": 5.0,
+    "held": true
+  },
+  "P3_broadening_repairs": {
+    "narrow_R": 110.23398312231919,
+    "broad_R": 17.649529763761315,
+    "limit": 0.25,
+    "held": true
+  },
+  "P4_mechanism_is_the_constant_mode": {
+    "median_e_off": 0.02066681966278632,
+    "median_e_off_corrected": 0.017804761044294563,
+    "limit": 0.25,
+    "held": false
+  },
+  "elapsed_seconds": 3079.447237291999
+}

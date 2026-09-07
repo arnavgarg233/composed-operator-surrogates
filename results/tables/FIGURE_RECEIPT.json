@@ -1,0 +1,124 @@
+{
+  "schema": "pde-figure-receipt-v1",
+  "source": "recovery/regeneration/corpus, regenerated configuration",
+  "changes_no_reported_value": true,
+  "palette": {
+    "blue": "#1B6CA8",
+    "orange": "#D97706",
+    "green": "#177245",
+    "validated": "six checks pass on a light surface"
+  },
+  "minimum_type_points": 6.0,
+  "layout_guard": "bounding boxes re-measured after canvas draw",
+  "statistics": {
+    "figure1_state_support": {
+      "counts": {
+        "narrow": 4848,
+        "switch": 48,
+        "broad": 64640
+      },
+      "narrow_range": [
+        0.48666131496429443,
+        0.5168368816375732
+      ],
+      "switch_range": [
+        0.6917360424995422,
+        0.7234525084495544
+      ],
+      "broad_range": [
+        0.4800776541233063,
+        0.7489162683486938
+      ],
+      "supports_overlap": false
+    },
+    "figure2_signal_by_observable": {
+      "endpoint_signal": 0.013850918537469878,
+      "peak_signal": 0.2632732051937233,
+      "median_interior_signal": 0.1923551545507299,
+      "endpoint_below_learner_error": true,
+      "frames": 201,
+      "cohort": "48 evaluator-test units",
+      "consistency_note": "The 256-unit integrity cohort gives 0.012980 for the same quantity. This figure uses the 48-unit test cohort and gives 0.013851, a 6.7 percent difference consistent with the smaller sample. The two are not the same measurement and neither is quoted for the other."
+    },
+    "figure3_supports_both_pairs": {
+      "diffusion / Fisher-KPP": {
+        "training": [
+          0.48666131496429443,
+          0.5168368816375732
+        ],
+        "switch": [
+          0.6917360424995422,
+          0.7234525084495544
+        ],
+        "gap": 0.174899160861969
+      },
+      "diffusion / Allen-Cahn": {
+        "training": [
+          0.48650880374274397,
+          0.5170747504413228
+        ],
+        "switch": [
+          0.815730843800657,
+          0.8441034495455529
+        ],
+        "gap": 0.2986560933593342
+      }
+    },
+    "figure4_broadening_repair": {
+      "display_only": "the sweep is context. The two conditions the plan fixed, 0.85 and 0.90, are the result and are marked A and B.",
+      "achieved_at_requested_0.85": 0.8362386463934736,
+      "achieved_at_requested_0.90": 0.8710139837639681,
+      "fraction_at_requested_0.85": 0.6666666666666666,
+      "fraction_at_requested_0.90": 1.0,
+      "switch_max": 0.8441034495455529,
+      "achieved_never_exceeds_requested": true
+    },
+    "figure5_shared_share_by_time": {
+      "pair_one_endpoint": 0.8260645849897995,
+      "pair_two_endpoint": 0.8182202687389104,
+      "pair_one_interior_median": 0.6512313828842673,
+      "pair_two_interior_median": 0.9901983676821122,
+      "frame_zero_excluded": "contrast is identically zero there",
+      "consistency_note": "The first pair's endpoint shared fraction here is 0.82606 on the 48-unit test cohort. Section 4.3 reports 0.83761 for the same quantity on the 256-unit integrity cohort, and the banked value is 0.82774. These are three cohorts, not three measurements of one cohort, and none is quoted for another. The second pair's 0.81822 is the value the plan governs."
+    },
+    "figure6_signal_second_pair": {
+      "endpoint_signal": 0.0058924824984947465,
+      "peak_signal": 0.07107795790825937,
+      "frames": 201
+    },
+    "figure7_fno_intervention": {
+      "models": 10,
+      "narrow_median_R": 110.23398312231919,
+      "broad_median_R": 17.649529763761315,
+      "narrow_R_range": [
+        71.32916335506943,
+        137.30487308661085
+      ],
+      "broad_R_range": [
+        13.995408048209248,
+        18.065251536367626
+      ],
+      "models_reaching_parity": 0
+    }
+  },
+  "sha256": {
+    "figure1_state_support.pdf": "2e566adaf1091f1ea34bf24d499f9f0e001ba513c0c45c67b8dcfbf568ddfc04",
+    "figure2_signal_by_observable.pdf": "fe68bbbe56ea137dcf2c4864db46bf0d6ed39d983c2f6721e0344301d7eff390",
+    "figure3_supports_both_pairs.pdf": "4c9c4ffd5eee84871c747b11add64f9008a7fb1e9721a92bcb1eec26e094b62d",
+    "figure4_broadening_repair.pdf": "84cb201be81ee86e08921eb5b1f82f154ad22d3b94422f85d144b1678c5ea200",
+    "figure5_shared_share_by_time.pdf": "febd6fde1b25b512731a858039cc66fc3df4adbaf3303b7a6c146197c9057816",
+    "figure6_signal_second_pair.pdf": "61887ecd5373d043f9f19e9454429d984e3d6e6cf7428cc389fbbf7bc327357b",
+    "figure7_fno_intervention.pdf": "f76231b650d46737c5784ebeb94d781fa96185489f5719f776afc2f754788918"
+  },
+  "network_used": false,
+  "byte_identical_rebuild": true,
+  "rebuild_digests": {
+    "figure1_state_support.pdf": "2e566adaf1091f1ea34bf24d499f9f0e001ba513c0c45c67b8dcfbf568ddfc04",
+    "figure2_signal_by_observable.pdf": "fe68bbbe56ea137dcf2c4864db46bf0d6ed39d983c2f6721e0344301d7eff390",
+    "figure3_supports_both_pairs.pdf": "4c9c4ffd5eee84871c747b11add64f9008a7fb1e9721a92bcb1eec26e094b62d",
+    "figure4_broadening_repair.pdf": "84cb201be81ee86e08921eb5b1f82f154ad22d3b94422f85d144b1678c5ea200",
+    "figure5_shared_share_by_time.pdf": "febd6fde1b25b512731a858039cc66fc3df4adbaf3303b7a6c146197c9057816",
+    "figure6_signal_second_pair.pdf": "61887ecd5373d043f9f19e9454429d984e3d6e6cf7428cc389fbbf7bc327357b",
+    "figure7_fno_intervention.pdf": "f76231b650d46737c5784ebeb94d781fa96185489f5719f776afc2f754788918"
+  }
+}

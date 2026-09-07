@@ -1,0 +1,87 @@
+{
+  "schema": "pde-second-pair-measurement-v1",
+  "generated": "2026-09-05",
+  "pair": "diffusion_allen_cahn",
+  "status": "NEW EXPERIMENT on a second operator pair. Does not amend or replace any result from the first pair.",
+  "not_tested": "whether broadening the support repairs a learner's composed prediction on this pair, and whether the signal ratio predicts an observed dissociation. Both need the destroyed learner.",
+  "predictions_held": {
+    "P1": true,
+    "P2": true,
+    "P3": true,
+    "P4": true,
+    "P5": false
+  },
+  "P1_training_support": {
+    "measured": [
+      0.48650880374274397,
+      0.5170747504413228
+    ],
+    "predicted": [
+      0.4865,
+      0.5171
+    ],
+    "tolerance": 0.005,
+    "held": true
+  },
+  "P2_switch_support": {
+    "measured": [
+      0.815730843800657,
+      0.8441034495455529
+    ],
+    "predicted": [
+      0.8,
+      0.89
+    ],
+    "held": true
+  },
+  "P3_overlap": {
+    "fraction_inside": 0.0,
+    "units_off_support": 48,
+    "of_units": 48,
+    "max_distance_to_support": 0.32702869910423016,
+    "predicted_max_fraction": 0.0,
+    "held": true
+  },
+  "P4_signal_ratio": {
+    "endpoint_resolution": 0.0058924824984947465,
+    "trajectory_resolution": 0.03469566170267108,
+    "ratio": 5.888122995958697,
+    "predicted_min": 1.0,
+    "held": true,
+    "first_pair_ratio_for_comparison": 11.67
+  },
+  "P5_shared_fraction": {
+    "endpoint": 0.8182202687389099,
+    "trajectory": 0.9875968422780955,
+    "held": false,
+    "first_pair_for_comparison": {
+      "endpoint": 0.83761,
+      "trajectory": 0.6448
+    }
+  },
+  "order_dependence": {
+    "measured": 0.028354266383692428,
+    "commuting_null_for_scale": 4.996e-16
+  },
+  "solver": {
+    "domain_extent": 1.0,
+    "num_points": 256,
+    "dt": 0.01,
+    "steps_per_leg": 100,
+    "etdrk_order": 2,
+    "diffusivity": 0.01,
+    "allen_cahn_diffusivity": 0.005,
+    "first_order_coefficient": 1.0,
+    "third_order_coefficient": -1.0
+  },
+  "cohorts": {
+    "primitive_train_units": 640,
+    "test_units": 48,
+    "master_seed": 20260905,
+    "offset_range": [
+      0.4865,
+      0.5171
+    ]
+  },
+  "elapsed_seconds": 2.186739625001792
+}

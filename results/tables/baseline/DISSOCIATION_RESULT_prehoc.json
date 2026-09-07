@@ -1,0 +1,70 @@
+{
+  "schema": "pde-dissociation-second-architecture-v1",
+  "generated": "2026-09-05",
+  "architecture": "FNO-1d at published defaults, one per primitive",
+  "estimand": "k=10, 10 applications per leg",
+  "eval_units": 256,
+  "predicted_by_available_signal": 11.67,
+  "observed_dissociation": 13.14848477305512,
+  "observed_range": [
+    10.277220970547386,
+    27.222445926914876
+  ],
+  "agreement_fraction": 0.12669106881363498,
+  "banked_reconstructed_dissociation": 13.855,
+  "banked_agreement_fraction": 0.1872322193658955,
+  "D1_at_or_above_ratio": {
+    "held": true
+  },
+  "D2_within_factor_three": {
+    "held": true,
+    "band": [
+      3.89,
+      35.01
+    ]
+  },
+  "D3_convergence": {
+    "held": true,
+    "worst_e_on": 0.00027143255252451914
+  },
+  "per_seed": {
+    "0": {
+      "endpoint_ratio": 1.9815768890859602,
+      "trajectory_ratio": 0.11302858001366552,
+      "dissociation": 17.53164455261122
+    },
+    "1": {
+      "endpoint_ratio": 0.7861197549586653,
+      "trajectory_ratio": 0.07500578363876033,
+      "dissociation": 10.48078850485373
+    },
+    "2": {
+      "endpoint_ratio": 0.6114226181284537,
+      "trajectory_ratio": 0.05949299133303426,
+      "dissociation": 10.277220970547386
+    },
+    "3": {
+      "endpoint_ratio": 1.673882709969795,
+      "trajectory_ratio": 0.12730612985916395,
+      "dissociation": 13.14848477305512
+    },
+    "4": {
+      "endpoint_ratio": 5.203214260799135,
+      "trajectory_ratio": 0.19113691233948632,
+      "dissociation": 27.222445926914876
+    }
+  },
+  "per_seed_e_on": {
+    "diffusion_0": 0.00027143255252451914,
+    "diffusion_1": 0.00020776973388342244,
+    "diffusion_2": 0.00018950038024548934,
+    "diffusion_3": 0.00018896972448827562,
+    "diffusion_4": 0.0001561414941020407,
+    "reaction_0": 0.00010805272206593692,
+    "reaction_1": 8.859735687825169e-05,
+    "reaction_2": 9.244678711021007e-05,
+    "reaction_3": 7.880934399199686e-05,
+    "reaction_4": 9.69465078094033e-05
+  },
+  "elapsed_seconds": 3316.5924692089975
+}

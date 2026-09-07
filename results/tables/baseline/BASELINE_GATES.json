@@ -1,0 +1,47 @@
+{
+  "schema": "pde-baseline-gates-v1",
+  "written_before_any_off_support_number_was_read": true,
+  "G1_shift_exists": {
+    "training_support": [
+      0.4865763783454895,
+      0.5169978737831116
+    ],
+    "switch_support": [
+      0.6905717849731445,
+      0.7228957414627075
+    ],
+    "overlap": 0.0,
+    "gap": 0.17357391119003296,
+    "pass": true
+  },
+  "G2_metric_resolves": {
+    "persistence_off": 0.08019073763412352,
+    "persistence_on": 0.12143668737086181,
+    "median_e_on": 0.00018748138348456255,
+    "dynamic_range": 427.72640218289473,
+    "required_dynamic_range": 100.0,
+    "e_on_limit": 0.012143668737086182,
+    "pass": true
+  },
+  "G3_powered_partial": {
+    "note": "the log10(R) interquartile range needs e_off and is completed after it; this is the across-seed spread of log10(e_on), which is the part of the power question that can be asked now",
+    "log10_e_on_iqr": 0.03189290580155202,
+    "per_seed_e_on": [
+      0.00025215935939270896,
+      0.00019819641066786575,
+      0.00018416321134376626,
+      0.00018748138348456255,
+      0.00015561677365022358
+    ]
+  },
+  "G4_censored_below": {
+    "minimum_e_on": 0.00015561677365022358,
+    "floor": 1.19e-05,
+    "pass": true
+  },
+  "P6_convergence": {
+    "limit": 0.001573,
+    "pass": true,
+    "worst_e_on": 0.00033027239886985446
+  }
+}

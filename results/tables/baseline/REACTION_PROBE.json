@@ -1,0 +1,28 @@
+{
+  "schema": "pde-reaction-probe-v1",
+  "estimand": "k=10",
+  "probe_steps": 2500,
+  "operators": {
+    "diffusion": {
+      "persistence_one_step": 0.12162174409684108,
+      "fno_one_step": 0.0005986338723780555,
+      "one_step_beats_persistence_by": 203.1654901412482,
+      "rollout_applications": 20,
+      "rollout_finite": true,
+      "rollout_error": 0.0016062540469457328,
+      "rollout_persistence": 0.3222324185251714,
+      "rollout_beats_persistence_by": 200.6111169885557
+    },
+    "reaction": {
+      "persistence_one_step": 0.040225585644103015,
+      "fno_one_step": 0.0003454886588749946,
+      "one_step_beats_persistence_by": 116.43098727202364,
+      "rollout_applications": 20,
+      "rollout_finite": true,
+      "rollout_error": 0.007166914983113193,
+      "rollout_persistence": 0.42609717276265446,
+      "rollout_beats_persistence_by": 59.453359467306626
+    }
+  },
+  "elapsed_seconds": 238.65124029100116
+}

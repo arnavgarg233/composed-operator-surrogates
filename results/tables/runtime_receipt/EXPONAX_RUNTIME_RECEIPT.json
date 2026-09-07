@@ -1,0 +1,116 @@
+{
+  "schema": "pde-exponax-runtime-receipt-v1",
+  "generated": "2026-09-05",
+  "purpose": "Check the uv-cached Exponax 0.2.0 against the per-module SHA-256 values pinned by the destroyed pilot.py, recovered from S1 step 349.",
+  "expected_tag_commit": "6bd49a7a241358badd16a894d91f71d725fd8e61",
+  "pinned_versions": {
+    "exponax": "0.2.0",
+    "jax": "0.8.1",
+    "jaxlib": "0.8.1",
+    "equinox": "0.13.8",
+    "jaxtyping": "0.3.11",
+    "ml_dtypes": "0.6.0",
+    "opt_einsum": "3.4.0",
+    "scipy": "1.17.1",
+    "numpy": "2.5.2",
+    "typing_extensions": "4.16.0",
+    "wadler_lindig": "0.1.7"
+  },
+  "resolved_archive_paths": {
+    "numpy": "$HOME/.cache/uv/archive-v0/WbGyPtVgycn3aeYs",
+    "jax": "$HOME/.cache/uv/archive-v0/OX8ierfgID8o2pGx",
+    "jaxtyping": "$HOME/.cache/uv/archive-v0/htpMfRXyH4t6DYKE",
+    "scipy": "$HOME/.cache/uv/archive-v0/Dax1Dher1tlIwDk8",
+    "wadler_lindig": "$HOME/.cache/uv/archive-v0/xGjzExgFI2LbAFTB",
+    "equinox": "$HOME/.cache/uv/archive-v0/2RYkF44cRejYC9CM",
+    "ml_dtypes": "$HOME/.cache/uv/archive-v0/1L5lyEusjPAp-X8d",
+    "jaxlib": "$HOME/.cache/uv/archive-v0/m782hZgcKrfya75O",
+    "opt_einsum": "$HOME/.cache/uv/archive-v0/-3orcCJxE15sKBVu",
+    "exponax": "$HOME/.cache/uv/archive-v0/Sjrx00NCllCntUSd",
+    "typing_extensions": "$HOME/.cache/uv/archive-v0/soDvuDKfRStgQBTf"
+  },
+  "missing_packages": [],
+  "modules_checked": 11,
+  "modules_matching": 11,
+  "all_load_bearing_sources_match": true,
+  "note": "The recovered hash dict is the subset the transcript rendered before truncating; the original pinned more modules. A full match on this subset is strong but not complete evidence of byte identity.",
+  "checks": [
+    {
+      "module": "exponax",
+      "file": "__init__.py",
+      "expected_sha256": "5129897ab44a03bf0d148004970e745f5aa0d2c87297c5976ed4914cb4b22ddb",
+      "observed_sha256": "5129897ab44a03bf0d148004970e745f5aa0d2c87297c5976ed4914cb4b22ddb",
+      "matches": true
+    },
+    {
+      "module": "exponax._base_stepper",
+      "file": "_base_stepper.py",
+      "expected_sha256": "83daa060d942470d8be7b7b18c1695efe7521f5869feb42211597f0fd1ffa240",
+      "observed_sha256": "83daa060d942470d8be7b7b18c1695efe7521f5869feb42211597f0fd1ffa240",
+      "matches": true
+    },
+    {
+      "module": "exponax._spectral",
+      "file": "_spectral.py",
+      "expected_sha256": "92c5b3d21e0e859dcf66fc4b45fc3ce4697e8743ab446f446c114fe490e1b217",
+      "observed_sha256": "92c5b3d21e0e859dcf66fc4b45fc3ce4697e8743ab446f446c114fe490e1b217",
+      "matches": true
+    },
+    {
+      "module": "exponax.stepper",
+      "file": "__init__.py",
+      "expected_sha256": "da888e5716fb16f36477ebfb15fd78a0810861e6f26041e38136d687e50f5c59",
+      "observed_sha256": "da888e5716fb16f36477ebfb15fd78a0810861e6f26041e38136d687e50f5c59",
+      "matches": true
+    },
+    {
+      "module": "exponax.stepper._diffusion",
+      "file": "_diffusion.py",
+      "expected_sha256": "13eb546bcdd7d97f492ded2ec9cb7b091edb4d01772559487b23d5cff6b740eb",
+      "observed_sha256": "13eb546bcdd7d97f492ded2ec9cb7b091edb4d01772559487b23d5cff6b740eb",
+      "matches": true
+    },
+    {
+      "module": "exponax.stepper.reaction",
+      "file": "__init__.py",
+      "expected_sha256": "869d0e99c4175910484ea2ee4a94c05c19def8f903721671238a376a73008b05",
+      "observed_sha256": "869d0e99c4175910484ea2ee4a94c05c19def8f903721671238a376a73008b05",
+      "matches": true
+    },
+    {
+      "module": "exponax.stepper.reaction._fisher_kpp",
+      "file": "_fisher_kpp.py",
+      "expected_sha256": "d51da0ca542a66138b4eb2f360885a372c608743334579e72f586fb155ad8729",
+      "observed_sha256": "d51da0ca542a66138b4eb2f360885a372c608743334579e72f586fb155ad8729",
+      "matches": true
+    },
+    {
+      "module": "exponax.nonlin_fun._base",
+      "file": "_base.py",
+      "expected_sha256": "fa7c46aa926da4848697aedc75e622e7226d41556bddf6502c8c9b929a7edb95",
+      "observed_sha256": "fa7c46aa926da4848697aedc75e622e7226d41556bddf6502c8c9b929a7edb95",
+      "matches": true
+    },
+    {
+      "module": "exponax.nonlin_fun._polynomial",
+      "file": "_polynomial.py",
+      "expected_sha256": "7b58f9279c51c3bff4d892673b0f11939ed457ad3ed754eb77e5c91cc96c8067",
+      "observed_sha256": "7b58f9279c51c3bff4d892673b0f11939ed457ad3ed754eb77e5c91cc96c8067",
+      "matches": true
+    },
+    {
+      "module": "exponax.nonlin_fun._zero",
+      "file": "_zero.py",
+      "expected_sha256": "805b5dd17dbdbcbbf2148b4bf5668d3d4aa3334a7b5a39bd137066ee3746346d",
+      "observed_sha256": "805b5dd17dbdbcbbf2148b4bf5668d3d4aa3334a7b5a39bd137066ee3746346d",
+      "matches": true
+    },
+    {
+      "module": "exponax.etdrk._base_etdrk",
+      "file": "_base_etdrk.py",
+      "expected_sha256": "239a711c97c991babf46689619b66114cdebb42dc0cd12da8b128024a72a2fad",
+      "observed_sha256": "239a711c97c991babf46689619b66114cdebb42dc0cd12da8b128024a72a2fad",
+      "matches": true
+    }
+  ]
+}

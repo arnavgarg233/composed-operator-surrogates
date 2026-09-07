@@ -1,0 +1,52 @@
+{
+  "schema": "pde-replication-agreement-v1",
+  "why": "The receipt audit found these claims were asserted in prose rather than computed. A value present beside another value is not a comparison.",
+  "expected_values_are_reconstructed": "Every expected value here is quoted from a destroyed artifact and cannot be reopened. Agreement is evidence about the regenerated configuration, not a re-verification of the original.",
+  "comparisons": [
+    {
+      "quantity": "median order contrast over cross-initial-condition scale",
+      "observed": 0.4261565675911184,
+      "observed_ci95": [
+        0.38762546318092517,
+        0.4686232568961348
+      ],
+      "expected": 0.412779,
+      "expected_ci95": [
+        0.367881,
+        0.455603
+      ],
+      "expected_confidence": "reconstructed",
+      "absolute_difference": 0.013377567591118411,
+      "intervals_overlap": true,
+      "overlap_as_fraction_of_narrower_interval": 0.8392517092266192,
+      "observed_within_expected_interval": true
+    },
+    {
+      "quantity": "numerical-floor passes",
+      "observed": 256,
+      "expected": 256,
+      "expected_confidence": "reconstructed",
+      "equal": true
+    },
+    {
+      "quantity": "commuting-pair maximum relative order difference",
+      "observed": 4.859742014131267e-16,
+      "expected": 4.996e-16,
+      "expected_confidence": "reconstructed",
+      "gate": 1e-12,
+      "observed_clears_gate": true,
+      "ratio_observed_over_expected": 0.9727265840935283,
+      "same_order_of_magnitude": true
+    },
+    {
+      "quantity": "endpoint contrast shared-mean energy fraction",
+      "observed": 0.8376067007083621,
+      "expected": 0.82774,
+      "expected_confidence": "reconstructed",
+      "absolute_difference": 0.009866700708362042,
+      "relative_difference": 0.011920048213644431,
+      "agrees_within_2_percent_relative": true
+    }
+  ],
+  "all_agree": true
+}

@@ -1,0 +1,119 @@
+{
+  "schema": "pde-regenerated-corpus-v1",
+  "generated": "2026-09-05",
+  "status": "NEW EXPERIMENT. Does not amend the banked corpus or its results.",
+  "solver": {
+    "exponax": "0.2.0 (11/11 module digests verified)",
+    "diffusivity": 0.01,
+    "reaction_diffusivity": 0.0,
+    "reactivity": 1.0,
+    "domain_extent": 1.0,
+    "num_points": 256,
+    "dt": 0.01,
+    "steps_per_leg": 100,
+    "etdrk_order": 2,
+    "dealiasing_fraction": 0.6666666666666666,
+    "num_circle_points": 16,
+    "circle_radius": 1.0,
+    "provenance": "recovered verbatim from S1 step 498 and neighbours"
+  },
+  "initial_conditions": {
+    "family": "clip(offset_i + amplitude * TruncatedFourier(cutoff, std_one), 0, 1)",
+    "cutoff": 5,
+    "amplitude": 0.175,
+    "train_offset_range": [
+      0.48,
+      0.75
+    ],
+    "eval_offset_range": [
+      0.4865,
+      0.5171
+    ],
+    "provenance": "NOT RECOVERED. Fitted substitute, see the band-check plan, section 3."
+  },
+  "cohorts": {
+    "primitive_train_units": 640,
+    "primitive_validation_units": 64,
+    "evaluator_train_units": 160,
+    "evaluator_test_units": 48,
+    "seed_offsets": {
+      "train": 1,
+      "validation": 2,
+      "eval_train": 3,
+      "eval_test": 4
+    },
+    "master_seed": 20260905
+  },
+  "shapes": {
+    "a0": [
+      640,
+      101,
+      256
+    ],
+    "a1": [
+      640,
+      101,
+      256
+    ],
+    "a2": [
+      64,
+      101,
+      256
+    ],
+    "a5": [
+      64,
+      101,
+      256
+    ],
+    "e_train_ab": [
+      160,
+      201,
+      256
+    ],
+    "e_train_ba": [
+      160,
+      201,
+      256
+    ],
+    "e_test_ab": [
+      48,
+      201,
+      256
+    ],
+    "e_test_ba": [
+      48,
+      201,
+      256
+    ],
+    "e_test_p0": [
+      48,
+      101,
+      256
+    ],
+    "e_test_p1": [
+      48,
+      101,
+      256
+    ]
+  },
+  "learner_visible_keys": [
+    "a0",
+    "a1",
+    "a2",
+    "a5"
+  ],
+  "composed_in_learner_bundle": false,
+  "semantic_leakage_hits": 0,
+  "files": {
+    "LEARNER_BUNDLE.npz": {
+      "sha256": "0579605565efa25ae678c907257b5f0de1926f815df79463b988b8e756912e55",
+      "bytes": 145621958
+    },
+    "EVALUATOR_BUNDLE.npz": {
+      "sha256": "cac64eb47de0ab3e8c3df2dc061443e874d3cc0ad4ea7f1f6b718a2aa51cf4eb",
+      "bytes": 95553014
+    }
+  },
+  "elapsed_seconds": 3.5072496660004617,
+  "cost_usd": 0.0
+}

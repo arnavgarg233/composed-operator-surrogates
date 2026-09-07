@@ -1,0 +1,50 @@
+[build-system]
+requires = ["hatchling==1.27.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "composed-operator-surrogates"
+version = "0.1.0"
+description = "Reviewer replay for support shift and observable resolution in composed operator surrogates"
+readme = "README.md"
+requires-python = "==3.12.*"
+license = { file = "LICENSE" }
+dependencies = [
+  "numpy==2.5.2",
+]
+
+[dependency-groups]
+dev = [
+  "pytest==8.4.1",
+  "ruff==0.12.10",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/composed_operator_surrogates"]
+
+[tool.pytest.ini_options]
+addopts = "-q -p no:cacheprovider"
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 90
+# The script directories below hold the frozen code that produced the published results.
+# Digests of those exact bytes are recorded inside the results themselves — the determinism
+# reports carry harness_sha256 of scripts/determinism/determinism_harness.py, and the
+# runtime and corpus receipts pin the generators the same way. Reformatting them would make
+# those receipts describe files that no longer exist, so lint and format apply to this
+# repository's own code and never to the code the results were produced by.
+extend-exclude = [
+  "scripts/band_check",
+  "scripts/baseline",
+  "scripts/code",
+  "scripts/compute_replication_agreement.py",
+  "scripts/determinism",
+  "scripts/route_e",
+  "scripts/second_pair",
+  "data/learner_artifacts",
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]

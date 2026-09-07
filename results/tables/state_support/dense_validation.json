@@ -1,0 +1,176 @@
+{
+  "status": "MEASURED exploratory matched-frame validation, same 64 held-out units as coarse control",
+  "supersedes_for_matched_frame_comparison_only": "The first validation control used 10 frame knots, overweighting t=0 relative to the 91-frame training PCA. Both are retained; use this dense control for frame-matched quantiles.",
+  "summary": [
+    {
+      "condition": "narrow",
+      "units": 64,
+      "frames": 91,
+      "states": 5824,
+      "nn_l2_min": 0.10049777457241828,
+      "nn_l2_p05": 0.1658218088077303,
+      "nn_l2_p25": 0.2703722577293398,
+      "nn_l2_median": 0.392563980995139,
+      "nn_l2_p75": 0.6678689969797558,
+      "nn_l2_p95": 1.3332984462785062,
+      "nn_l2_p99": 1.6388339564214067,
+      "nn_l2_max": 1.9981982393229378,
+      "local_spacing_ratio_min": 0.3960146323836796,
+      "local_spacing_ratio_p05": 0.5790621466554128,
+      "local_spacing_ratio_p25": 0.8983884728226864,
+      "local_spacing_ratio_median": 1.1238194483246668,
+      "local_spacing_ratio_p75": 1.3740654764391982,
+      "local_spacing_ratio_p95": 1.9218901497516376,
+      "local_spacing_ratio_p99": 2.65813690073017,
+      "local_spacing_ratio_max": 3.329773553130701,
+      "pca11_Q_p99": 7.153716829608509e-05,
+      "pca11_MD_p99": 8.66315199515537,
+      "pca11_Q_train99_inside": 5774,
+      "pca11_MD_train99_inside": 5769,
+      "fourier_amp_joint_0_15_inside": 5814,
+      "fourier_rect_joint_0_15_inside": 5731,
+      "switch_comparisons": {
+        "fisher_kpp": {
+          "nn_inside_validation_p99": 0,
+          "Q_inside_validation_p99": 0,
+          "MD_inside_validation_p99": 0,
+          "local_ratio_inside_validation_p99": 10
+        },
+        "allen_cahn": {
+          "nn_inside_validation_p99": 0,
+          "Q_inside_validation_p99": 0,
+          "MD_inside_validation_p99": 0,
+          "local_ratio_inside_validation_p99": 0
+        }
+      }
+    },
+    {
+      "condition": "broad_075",
+      "units": 64,
+      "frames": 91,
+      "states": 5824,
+      "nn_l2_min": 0.19200766911880185,
+      "nn_l2_p05": 0.2696428936360717,
+      "nn_l2_p25": 0.39198319286817673,
+      "nn_l2_median": 0.5382247544324824,
+      "nn_l2_p75": 0.8335907358592574,
+      "nn_l2_p95": 1.4958055330678452,
+      "nn_l2_p99": 1.8699585156318752,
+      "nn_l2_max": 2.2739508009819067,
+      "local_spacing_ratio_min": 0.4032934509569476,
+      "local_spacing_ratio_p05": 0.6385878341568073,
+      "local_spacing_ratio_p25": 0.9443699372094843,
+      "local_spacing_ratio_median": 1.2150489096804153,
+      "local_spacing_ratio_p75": 1.471938475031596,
+      "local_spacing_ratio_p95": 2.012155122808663,
+      "local_spacing_ratio_p99": 2.472578018972332,
+      "local_spacing_ratio_max": 2.968030604202218,
+      "pca11_Q_p99": 0.052497411881336775,
+      "pca11_MD_p99": 8.724974833187082,
+      "pca11_Q_train99_inside": 5774,
+      "pca11_MD_train99_inside": 5767,
+      "fourier_amp_joint_0_15_inside": 5814,
+      "fourier_rect_joint_0_15_inside": 5821,
+      "switch_comparisons": {
+        "fisher_kpp": {
+          "nn_inside_validation_p99": 37,
+          "Q_inside_validation_p99": 0,
+          "MD_inside_validation_p99": 39,
+          "local_ratio_inside_validation_p99": 46
+        },
+        "allen_cahn": {
+          "nn_inside_validation_p99": 48,
+          "Q_inside_validation_p99": 48,
+          "MD_inside_validation_p99": 48,
+          "local_ratio_inside_validation_p99": 1
+        }
+      }
+    },
+    {
+      "condition": "A",
+      "units": 64,
+      "frames": 91,
+      "states": 5824,
+      "nn_l2_min": 0.18275534547754937,
+      "nn_l2_p05": 0.27438854497986176,
+      "nn_l2_p25": 0.3944146503680012,
+      "nn_l2_median": 0.5519748779250221,
+      "nn_l2_p75": 0.8488258778961123,
+      "nn_l2_p95": 1.5015081558275778,
+      "nn_l2_p99": 1.883019953913529,
+      "nn_l2_max": 2.314064272266445,
+      "local_spacing_ratio_min": 0.39698214791912684,
+      "local_spacing_ratio_p05": 0.6133367738739804,
+      "local_spacing_ratio_p25": 0.9295397202010296,
+      "local_spacing_ratio_median": 1.236795901334467,
+      "local_spacing_ratio_p75": 1.505288747722307,
+      "local_spacing_ratio_p95": 2.1142222736504945,
+      "local_spacing_ratio_p99": 2.92160860915089,
+      "local_spacing_ratio_max": 3.515174612239758,
+      "pca11_Q_p99": 0.13173099077656383,
+      "pca11_MD_p99": 8.751439548604264,
+      "pca11_Q_train99_inside": 5774,
+      "pca11_MD_train99_inside": 5766,
+      "fourier_amp_joint_0_15_inside": 5813,
+      "fourier_rect_joint_0_15_inside": 5820,
+      "switch_comparisons": {
+        "fisher_kpp": {
+          "nn_inside_validation_p99": 41,
+          "Q_inside_validation_p99": 2,
+          "MD_inside_validation_p99": 39,
+          "local_ratio_inside_validation_p99": 48
+        },
+        "allen_cahn": {
+          "nn_inside_validation_p99": 48,
+          "Q_inside_validation_p99": 48,
+          "MD_inside_validation_p99": 48,
+          "local_ratio_inside_validation_p99": 46
+        }
+      }
+    },
+    {
+      "condition": "B",
+      "units": 64,
+      "frames": 91,
+      "states": 5824,
+      "nn_l2_min": 0.1573594043107602,
+      "nn_l2_p05": 0.2651281463401223,
+      "nn_l2_p25": 0.3900583308365421,
+      "nn_l2_median": 0.5513673366082332,
+      "nn_l2_p75": 0.847622189830567,
+      "nn_l2_p95": 1.512944048028089,
+      "nn_l2_p99": 1.8922422899507632,
+      "nn_l2_max": 2.298650537479002,
+      "local_spacing_ratio_min": 0.39430958493951274,
+      "local_spacing_ratio_p05": 0.5807346946065197,
+      "local_spacing_ratio_p25": 0.9440230041897153,
+      "local_spacing_ratio_median": 1.2172224605593156,
+      "local_spacing_ratio_p75": 1.5231472692670105,
+      "local_spacing_ratio_p95": 2.1825899424966666,
+      "local_spacing_ratio_p99": 2.90705033850182,
+      "local_spacing_ratio_max": 4.160314851542132,
+      "pca11_Q_p99": 0.17500706122039938,
+      "pca11_MD_p99": 8.801390446500982,
+      "pca11_Q_train99_inside": 5775,
+      "pca11_MD_train99_inside": 5769,
+      "fourier_amp_joint_0_15_inside": 5813,
+      "fourier_rect_joint_0_15_inside": 5819,
+      "switch_comparisons": {
+        "fisher_kpp": {
+          "nn_inside_validation_p99": 42,
+          "Q_inside_validation_p99": 4,
+          "MD_inside_validation_p99": 38,
+          "local_ratio_inside_validation_p99": 47
+        },
+        "allen_cahn": {
+          "nn_inside_validation_p99": 48,
+          "Q_inside_validation_p99": 48,
+          "MD_inside_validation_p99": 48,
+          "local_ratio_inside_validation_p99": 48
+        }
+      }
+    }
+  ],
+  "wall_seconds_excluding_imports": 5.903536416997667,
+  "script_sha256": "5543a8b8d2e1ea5d52fdbf6bb6ae2392a26458882fc90ef49ef2702837b10de2"
+}

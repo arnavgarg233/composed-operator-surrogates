@@ -1,0 +1,225 @@
+{
+  "schema": "pde-ic-calibration-v3",
+  "generated": "2026-09-05",
+  "family": "u0 = clip(offset_i + amplitude * TruncatedFourier(cutoff, std_one), 0, 1), offset_i ~ U(lo, hi)",
+  "offset_range": [
+    0.4865,
+    0.5171
+  ],
+  "fitted_against": [
+    "diffusion training-state spatial means [0.4865, 0.5171] (NON-GATE)",
+    "reaction-first switch-state spatial means [0.6973, 0.7258] (NON-GATE)"
+  ],
+  "not_fitted_against": "the composition-scale band, the AB/BA contrast, the numerical floor, the cross-IC reference",
+  "v2_finding": "a fixed-centre family cannot satisfy both recorded intervals; the mean must vary across units",
+  "sweep": [
+    {
+      "cutoff": 3,
+      "amplitude": 0.1,
+      "diffusion_mean_range": [
+        0.48650087193053315,
+        0.5170780649079656
+      ],
+      "reaction_mean_range": [
+        0.7126653122795856,
+        0.7376512176815035
+      ],
+      "interval_disagreement": 0.027239336983656715
+    },
+    {
+      "cutoff": 3,
+      "amplitude": 0.125,
+      "diffusion_mean_range": [
+        0.48650087193053315,
+        0.5170780649079656
+      ],
+      "reaction_mean_range": [
+        0.7079530156685393,
+        0.7340375474821246
+      ],
+      "interval_disagreement": 0.018913370173231414
+    },
+    {
+      "cutoff": 3,
+      "amplitude": 0.15,
+      "diffusion_mean_range": [
+        0.4865008719305331,
+        0.5170780649079656
+      ],
+      "reaction_mean_range": [
+        0.7015867266252165,
+        0.7297481544068587
+      ],
+      "interval_disagreement": 0.008257688054642665
+    },
+    {
+      "cutoff": 3,
+      "amplitude": 0.175,
+      "diffusion_mean_range": [
+        0.48650087193053326,
+        0.5170780649079656
+      ],
+      "reaction_mean_range": [
+        0.6928222698901028,
+        0.7247155944917028
+      ],
+      "interval_disagreement": 0.005584942640762203
+    },
+    {
+      "cutoff": 3,
+      "amplitude": 0.2,
+      "diffusion_mean_range": [
+        0.4865008719305333,
+        0.5170780649079656
+      ],
+      "reaction_mean_range": [
+        0.6817896429870252,
+        0.7189310746000692
+      ],
+      "interval_disagreement": 0.022402089435473393
+    },
+    {
+      "cutoff": 5,
+      "amplitude": 0.1,
+      "diffusion_mean_range": [
+        0.48650087193053315,
+        0.5170780649079656
+      ],
+      "reaction_mean_range": [
+        0.7125376680320898,
+        0.7375835222765103
+      ],
+      "interval_disagreement": 0.027043997331167635
+    },
+    {
+      "cutoff": 5,
+      "amplitude": 0.125,
+      "diffusion_mean_range": [
+        0.48650087193053326,
+        0.5170780649079656
+      ],
+      "reaction_mean_range": [
+        0.7079942928240529,
+        0.7338577999445473
+      ],
+      "interval_disagreement": 0.01877489979116781
+    },
+    {
+      "cutoff": 5,
+      "amplitude": 0.15,
+      "diffusion_mean_range": [
+        0.48650087193053315,
+        0.5170780649079656
+      ],
+      "reaction_mean_range": [
+        0.7020544687802708,
+        0.7292963655635298
+      ],
+      "interval_disagreement": 0.008273641366368156
+    },
+    {
+      "cutoff": 5,
+      "amplitude": 0.175,
+      "diffusion_mean_range": [
+        0.48650087193053315,
+        0.5170780649079656
+      ],
+      "reaction_mean_range": [
+        0.6920184117299226,
+        0.7238744460967457
+      ],
+      "interval_disagreement": 0.00722994919589931
+    },
+    {
+      "cutoff": 5,
+      "amplitude": 0.2,
+      "diffusion_mean_range": [
+        0.4863626032029301,
+        0.5170780649079656
+      ],
+      "reaction_mean_range": [
+        0.6854680162180957,
+        0.7175669412721688
+      ],
+      "interval_disagreement": 0.020224374398839784
+    },
+    {
+      "cutoff": 7,
+      "amplitude": 0.1,
+      "diffusion_mean_range": [
+        0.48650087193053326,
+        0.5170780649079656
+      ],
+      "reaction_mean_range": [
+        0.7125848041552738,
+        0.737682796357481
+      ],
+      "interval_disagreement": 0.02719040753532248
+    },
+    {
+      "cutoff": 7,
+      "amplitude": 0.125,
+      "diffusion_mean_range": [
+        0.48650087193053315,
+        0.5170780649079656
+      ],
+      "reaction_mean_range": [
+        0.7077617403927726,
+        0.7340409350942212
+      ],
+      "interval_disagreement": 0.018725482509561353
+    },
+    {
+      "cutoff": 7,
+      "amplitude": 0.15,
+      "diffusion_mean_range": [
+        0.48650087193053326,
+        0.5170780649079656
+      ],
+      "reaction_mean_range": [
+        0.7015830782975783,
+        0.7295960919910377
+      ],
+      "interval_disagreement": 0.008101977311183617
+    },
+    {
+      "cutoff": 7,
+      "amplitude": 0.175,
+      "diffusion_mean_range": [
+        0.48650087193053326,
+        0.5170780649079656
+      ],
+      "reaction_mean_range": [
+        0.6938624186490772,
+        0.7243262642489029
+      ],
+      "interval_disagreement": 0.004934124124587658
+    },
+    {
+      "cutoff": 7,
+      "amplitude": 0.2,
+      "diffusion_mean_range": [
+        0.48650087193053326,
+        0.5170780649079656
+      ],
+      "reaction_mean_range": [
+        0.6843469951871806,
+        0.7176278744412644
+      ],
+      "interval_disagreement": 0.02114793739412274
+    }
+  ],
+  "best": {
+    "cutoff": 7,
+    "amplitude": 0.175,
+    "diffusion_mean_range": [
+      0.48650087193053326,
+      0.5170780649079656
+    ],
+    "reaction_mean_range": [
+      0.6938624186490772,
+      0.7243262642489029
+    ],
+    "interval_disagreement": 0.004934124124587658
+  }
+}

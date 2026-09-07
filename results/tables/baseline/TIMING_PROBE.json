@@ -1,0 +1,94 @@
+{
+  "purpose": "wall-clock measurement only; no model was trained, no experiment run",
+  "platform": {
+    "python": "3.12.13",
+    "machine": "arm64",
+    "processor": "arm",
+    "jax": "0.8.1",
+    "devices": [
+      "TFRT_CPU_0"
+    ]
+  },
+  "importable": {
+    "equinox": "0.13.8",
+    "optax": "ABSENT (ModuleNotFoundError)",
+    "torch": "ABSENT (ModuleNotFoundError)",
+    "flax": "ABSENT (ModuleNotFoundError)",
+    "jaxtyping": "0.3.11",
+    "scipy": "1.18.1"
+  },
+  "config": {
+    "num_points": 256,
+    "frames_per_trajectory": 101,
+    "num_train_units": 640,
+    "fno_modes": 16,
+    "fno_width": 64,
+    "fno_layers": 4,
+    "batch_size": 64
+  },
+  "corpus_seconds": {
+    "diffusion_640x101": 0.136,
+    "fisher_kpp_640x101": 0.178
+  },
+  "corpus_shape": [
+    640,
+    101,
+    1,
+    256
+  ],
+  "support": {
+    "note": "spatial means; a property of the corpus, not of any fitted model",
+    "diffusion_training_frames_min": 0.4865008719305331,
+    "diffusion_training_frames_max": 0.517083090250518,
+    "reaction_switch_min": 0.6923550761022312,
+    "reaction_switch_max": 0.7240438581833916,
+    "recorded_switch_range": [
+      0.6973,
+      0.7258
+    ],
+    "overlap": false,
+    "gap": 0.17527198585171322
+  },
+  "signal": {
+    "note": "relative L2 between input and one-step output; the change a one-step operator has to represent. Sets the scale a baseline error must beat.",
+    "median_change_on_training_states": 0.016768087624200144,
+    "median_change_on_switch_states": 0.011807328721205483,
+    "float32_eps_relative": 1.1920928955078125e-07,
+    "float64_eps_relative": 2.220446049250313e-16
+  },
+  "num_training_pairs": 64000,
+  "train_step_timing": {
+    "f32_width64": {
+      "params": 549569,
+      "compile_seconds": 0.346,
+      "seconds_per_step": 0.03861,
+      "steps_per_second": 25.9,
+      "final_probe_loss": 0.05929052084684372
+    },
+    "f32_width32": {
+      "params": 139745,
+      "compile_seconds": 0.291,
+      "seconds_per_step": 0.01772,
+      "steps_per_second": 56.44,
+      "final_probe_loss": 0.049780670553445816
+    },
+    "f64_width64": {
+      "params": 549569,
+      "compile_seconds": 0.356,
+      "seconds_per_step": 0.06223,
+      "steps_per_second": 16.07,
+      "final_probe_loss": 0.05928983013592279
+    }
+  },
+  "extrapolation": {
+    "seconds_per_step_f32_width64": 0.03861,
+    "steps_per_epoch": 1000,
+    "epochs": 100,
+    "steps_per_run": 100000,
+    "seconds_per_run": 3861.0,
+    "runs": 6,
+    "training_seconds_total": 23166.0,
+    "training_hours_total": 6.43,
+    "corpus_seconds_total": 0.6
+  }
+}

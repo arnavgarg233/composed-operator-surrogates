@@ -1,0 +1,101 @@
+{
+  "schema": "pde-second-pair-stability-screen-v1",
+  "what_this_measures": "numerical stability only: finiteness, blow-up against a 10x growth limit, and advective CFL. No support overlap and no order contrast are computed here, so the screen cannot see which candidate favours the hypothesis.",
+  "selection_rule": [
+    "eliminate nonfinite in either ordering",
+    "eliminate composed max |u| above 10.0x the initial max |u|",
+    "eliminate advective CFL above 1.0",
+    "eliminate solver order dependence below 1e-06",
+    "among survivors take the smallest growth ratio rounded to six decimals, ties broken by name"
+  ],
+  "rule_4_note": "order dependence is a property of the physics and a precondition for the experiment to mean anything. It is not the question under test, which is whether training and switch-state supports overlap. This script does not compute that.",
+  "solver": {
+    "domain_extent": 1.0,
+    "num_points": 256,
+    "dt": 0.01,
+    "steps_per_leg": 100,
+    "etdrk_order": 2,
+    "advection_velocity": 0.25,
+    "advective_cfl": 0.64
+  },
+  "screen_cohort": {
+    "units": 32,
+    "seed": 20260905,
+    "offset_range": [
+      0.4865,
+      0.5171
+    ],
+    "initial_max_abs": 0.9535158437735609
+  },
+  "candidates": {
+    "advection_allen_cahn": {
+      "ran": true,
+      "finite": true,
+      "composed_max": 0.9536502875832928,
+      "growth_ratio": 1.0001409979819527,
+      "advective_cfl": 0.64,
+      "order_dependence": 3.774758283725532e-15,
+      "eliminated_by": [
+        "order-independent"
+      ]
+    },
+    "advection_cahn_hilliard": {
+      "ran": true,
+      "finite": true,
+      "composed_max": 0.9536502875832928,
+      "growth_ratio": 1.0001409979819527,
+      "advective_cfl": 0.64,
+      "order_dependence": 5.440092820663267e-15,
+      "eliminated_by": [
+        "order-independent"
+      ]
+    },
+    "advection_fisher_kpp": {
+      "ran": true,
+      "finite": true,
+      "composed_max": 0.9824328520463206,
+      "growth_ratio": 1.0303267202759,
+      "advective_cfl": 0.64,
+      "order_dependence": 8.881784197001252e-15,
+      "eliminated_by": [
+        "order-independent"
+      ]
+    },
+    "diffusion_allen_cahn": {
+      "ran": true,
+      "finite": true,
+      "composed_max": 0.9535158437735609,
+      "growth_ratio": 1.0,
+      "advective_cfl": 0.0,
+      "order_dependence": 0.03533084364128436,
+      "eliminated_by": []
+    },
+    "diffusion_cahn_hilliard": {
+      "ran": true,
+      "finite": true,
+      "composed_max": 0.9535158437735609,
+      "growth_ratio": 1.0,
+      "advective_cfl": 0.0,
+      "order_dependence": 0.04032820203570947,
+      "eliminated_by": []
+    },
+    "diffusion_swift_hohenberg": {
+      "ran": true,
+      "finite": true,
+      "composed_max": 0.9535158437735609,
+      "growth_ratio": 1.0,
+      "advective_cfl": 0.0,
+      "order_dependence": 9.906111321106303e-05,
+      "eliminated_by": []
+    }
+  },
+  "survivors": [
+    "diffusion_allen_cahn",
+    "diffusion_cahn_hilliard",
+    "diffusion_swift_hohenberg"
+  ],
+  "selected": "diffusion_allen_cahn",
+  "excluded_without_rescreening": {
+    "burgers": "recorded apparatus stop: nonfinite, median advective CFL 2.06"
+  }
+}

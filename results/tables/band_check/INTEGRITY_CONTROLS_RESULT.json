@@ -1,0 +1,83 @@
+{
+  "schema": "pde-integrity-controls-regenerated-v1",
+  "generated": "2026-09-05",
+  "status": "NEW EXPERIMENT. Does not amend or replace the banked integrity controls.",
+  "configuration": {
+    "cutoff": 5,
+    "ic_amplitude": 0.175,
+    "ic_offset_range": [
+      0.4865,
+      0.5171
+    ],
+    "units": 256,
+    "master_seed": 20260905,
+    "steps_per_leg": 100,
+    "diffusivity": 0.01,
+    "commuting_partner_diffusivity": 0.02
+  },
+  "control_1_commuting": {
+    "max_relative_order_difference": 4.859742014131267e-16,
+    "gate": 1e-12,
+    "passes": true,
+    "banked_value": 4.996e-16,
+    "banked_confidence": "reconstructed"
+  },
+  "control_2_endpoint": {
+    "shared_fraction": 0.8376067007083621,
+    "centered_fraction": 0.1623932992916379,
+    "total_mean_square": 0.0005545865527785578,
+    "shared_mean_square": 0.00046452541273007167,
+    "centered_mean_square": 9.006114004848606e-05,
+    "centered_rms": 0.009490054796916931,
+    "field_rms": 0.023549661415369814,
+    "pairwise_cosine_raw": {
+      "median": 0.8871545090325919,
+      "mean": 0.8656073528798581,
+      "min": 0.4604549650064633,
+      "max": 0.9963829494799653
+    },
+    "pairwise_cosine_centered": {
+      "median": -0.013624338396166159,
+      "mean": -0.0058841757264505475,
+      "min": -0.945150461768934,
+      "max": 0.9775266580735964
+    },
+    "banked_shared_fraction": 0.82774,
+    "banked_centered_fraction": 0.17226,
+    "banked_raw_cosine_median": 0.9286,
+    "banked_centered_cosine_median": 0.143,
+    "banked_confidence": "reconstructed"
+  },
+  "control_2_full_trajectory": {
+    "shared_fraction": 0.6447975006288408,
+    "centered_fraction": 0.3552024993711593,
+    "total_mean_square": 0.02105824223212293,
+    "shared_mean_square": 0.013578301958909566,
+    "centered_mean_square": 0.007479940273213364,
+    "centered_rms": 0.08648664794760728,
+    "field_rms": 0.14511458311321757,
+    "note": "No equivalent measurement exists in any surviving record. The banked 82.774/17.226 split was measured on the endpoint field only."
+  },
+  "scale": {
+    "endpoint": {
+      "centered_contrast_rms": 0.009490054796916931,
+      "state_rms": 0.7311312740787366,
+      "resolution_ratio": 0.012979960143101378
+    },
+    "full_trajectory": {
+      "centered_contrast_rms": 0.08648664794760728,
+      "state_rms": 0.570943483695228,
+      "resolution_ratio": 0.15148022600740324
+    },
+    "trajectory_over_endpoint": 11.670315188749814,
+    "banked_learner_endpoint_errors": {
+      "AB": 0.023798,
+      "BA": 0.017173,
+      "confidence": "reconstructed",
+      "denominator_convention": "unrecovered"
+    },
+    "interpretation": "If the banked learner endpoint errors use the same relative-L2 convention used for the contrast, floor and cross-IC quantities, then the centered endpoint contrast is SMALLER than the learner's own endpoint error, and criterion 6 was underpowered by construction. The denominator convention is unrecovered, so this is a conditional finding, not a settled one."
+  },
+  "elapsed_seconds": 1.9098027919999367,
+  "cost_usd": 0.0
+}

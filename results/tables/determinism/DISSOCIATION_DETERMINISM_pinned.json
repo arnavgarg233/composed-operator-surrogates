@@ -1,0 +1,96 @@
+{
+  "schema": "pde-determinism-harness-v1",
+  "generated": "2026-09-05",
+  "harness_sha256": "95b4b91ae6814414420986578e84a536260a55330785d05a4d8800a317c53444",
+  "verdict": "BIT_IDENTICAL_EXCEPT_IGNORED",
+  "exit_code": 0,
+  "refusal": null,
+  "command": {
+    "template": "mkdir -p \"{OUT}/baseline\" \"{OUT}/band_check\" && cp $WORKDIR/recovery/band_check/_runtime_path.py \"{OUT}/band_check/\" && cp $WORKDIR/recovery/baseline/run_dissociation.py $WORKDIR/recovery/baseline/timing_probe.py \"{OUT}/baseline/\" && \"$HOME/.local/bin/python3.12\" \"{OUT}/baseline/run_dissociation.py\"",
+    "shell": true,
+    "cwd": "$WORKDIR/recovery/tools"
+  },
+  "repeats_requested": 2,
+  "outputs_requested": [
+    "baseline/DISSOCIATION_RESULT.json"
+  ],
+  "ignored_key_patterns": [
+    "$.elapsed_seconds"
+  ],
+  "environment": {
+    "mode": "pinned",
+    "overrides": {
+      "XLA_FLAGS": "--xla_cpu_multi_thread_eigen=false intra_op_parallelism_threads=1 --xla_cpu_enable_fast_math=false",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "JAX_PLATFORMS": "cpu"
+    },
+    "xla_flags_appended": "--xla_cpu_enable_fast_math=false",
+    "inherited_numerics": {
+      "XLA_FLAGS": null,
+      "JAX_PLATFORMS": null,
+      "JAX_ENABLE_X64": null,
+      "JAX_DEFAULT_MATMUL_PRECISION": null,
+      "JAX_DISABLE_JIT": null,
+      "OMP_NUM_THREADS": null,
+      "MKL_NUM_THREADS": null,
+      "OPENBLAS_NUM_THREADS": null,
+      "VECLIB_MAXIMUM_THREADS": null,
+      "NUMEXPR_NUM_THREADS": null,
+      "PYTHONHASHSEED": null
+    },
+    "child_env_sha256": "2d99a3c0c6e7d8a73e5b00e7bfc205cbd2811590dda0628cffcc2dd8b62d9619",
+    "note": "JAX_ENABLE_X64 is never set by the harness; the script under test chooses its own precision. Without --pin-threads nothing is overridden, so the harness can show the nondeterminism as well as the fix."
+  },
+  "scratch_root": "/var/folders/sw/1kmjt8dx28j0hh9xyl29s2v40000gn/T/determinism_harness_0pmw6pz2",
+  "repeats": [
+    {
+      "index": 0,
+      "scratch": "/var/folders/sw/1kmjt8dx28j0hh9xyl29s2v40000gn/T/determinism_harness_0pmw6pz2/repeat_00",
+      "resolved_command": "mkdir -p \"/var/folders/sw/1kmjt8dx28j0hh9xyl29s2v40000gn/T/determinism_harness_0pmw6pz2/repeat_00/baseline\" \"/var/folders/sw/1kmjt8dx28j0hh9xyl29s2v40000gn/T/determinism_harness_0pmw6pz2/repeat_00/band_check\" && cp $WORKDIR/recovery/band_check/_runtime_path.py \"/var/folders/sw/1kmjt8dx28j0hh9xyl29s2v40000gn/T/determinism_harness_0pmw6pz2/repeat_00/band_check/\" && cp $WORKDIR/recovery/baseline/run_dissociation.py $WORKDIR/recovery/baseline/timing_probe.py \"/var/folders/sw/1kmjt8dx28j0hh9xyl29s2v40000gn/T/determinism_harness_0pmw6pz2/repeat_00/baseline/\" && \"$HOME/.local/bin/python3.12\" \"/var/folders/sw/1kmjt8dx28j0hh9xyl29s2v40000gn/T/determinism_harness_0pmw6pz2/repeat_00/baseline/run_dissociation.py\"",
+      "wall_seconds": 3480.8691844580026,
+      "returncode": 0,
+      "stdout_tail": "pre-registration verified c0cfa73ff1bdc032...\n\n  diffusion seed 0  e_on 2.592182e-04   279.4 s\n  diffusion seed 1  e_on 1.984198e-04   274.5 s\n  diffusion seed 2  e_on 1.869019e-04   278.0 s\n  diffusion seed 3  e_on 1.904476e-04   317.4 s\n  diffusion seed 4  e_on 1.583584e-04   344.2 s\n  reaction  seed 0  e_on 1.047363e-04   384.6 s\n  reaction  seed 1  e_on 8.369597e-05   389.7 s\n  reaction  seed 2  e_on 9.335771e-05   393.3 s\n  reaction  seed 3  e_on 6.944437e-05   371.7 s\n  reaction  seed 4  e_on 9.542691e-05   415.3 s\n\nD3 convergence  PASS  worst e_on 2.592182e-04 against 0.001573\n  seed 0  trajectory 0.105624  endpoint 1.726456  dissociation 16.345\n  seed 1  trajectory 0.075260  endpoint 0.804636  dissociation 10.691\n  seed 2  trajectory 0.057524  endpoint 0.581429  dissociation 10.108\n  seed 3  trajectory 0.124325  endpoint 1.628416  dissociation 13.098\n  seed 4  trajectory 0.117577  endpoint 2.763585  dissociation 23.505\n\npredicted by available signal  11.67\nobserved dissociation          13.098  range 10.108 to 23.505\nagreement                      12.2%   (destroyed run: 18.7%)\n  D1 at or above the ratio     HELD\n  D2 within a factor of three  HELD\n\nelapsed 58.0 min, CPU, $0\n",
+      "stderr_tail": ""
+    },
+    {
+      "index": 1,
+      "scratch": "/var/folders/sw/1kmjt8dx28j0hh9xyl29s2v40000gn/T/determinism_harness_0pmw6pz2/repeat_01",
+      "resolved_command": "mkdir -p \"/var/folders/sw/1kmjt8dx28j0hh9xyl29s2v40000gn/T/determinism_harness_0pmw6pz2/repeat_01/baseline\" \"/var/folders/sw/1kmjt8dx28j0hh9xyl29s2v40000gn/T/determinism_harness_0pmw6pz2/repeat_01/band_check\" && cp $WORKDIR/recovery/band_check/_runtime_path.py \"/var/folders/sw/1kmjt8dx28j0hh9xyl29s2v40000gn/T/determinism_harness_0pmw6pz2/repeat_01/band_check/\" && cp $WORKDIR/recovery/baseline/run_dissociation.py $WORKDIR/recovery/baseline/timing_probe.py \"/var/folders/sw/1kmjt8dx28j0hh9xyl29s2v40000gn/T/determinism_harness_0pmw6pz2/repeat_01/baseline/\" && \"$HOME/.local/bin/python3.12\" \"/var/folders/sw/1kmjt8dx28j0hh9xyl29s2v40000gn/T/determinism_harness_0pmw6pz2/repeat_01/baseline/run_dissociation.py\"",
+      "wall_seconds": 3272.192034833992,
+      "returncode": 0,
+      "stdout_tail": "pre-registration verified c0cfa73ff1bdc032...\n\n  diffusion seed 0  e_on 2.592182e-04   367.9 s\n  diffusion seed 1  e_on 1.984198e-04   347.8 s\n  diffusion seed 2  e_on 1.869019e-04   351.6 s\n  diffusion seed 3  e_on 1.904476e-04   340.6 s\n  diffusion seed 4  e_on 1.583584e-04   328.8 s\n  reaction  seed 0  e_on 1.047363e-04   324.8 s\n  reaction  seed 1  e_on 8.369597e-05   331.0 s\n  reaction  seed 2  e_on 9.335771e-05   311.7 s\n  reaction  seed 3  e_on 6.944437e-05   283.2 s\n  reaction  seed 4  e_on 9.542691e-05   263.1 s\n\nD3 convergence  PASS  worst e_on 2.592182e-04 against 0.001573\n  seed 0  trajectory 0.105624  endpoint 1.726456  dissociation 16.345\n  seed 1  trajectory 0.075260  endpoint 0.804636  dissociation 10.691\n  seed 2  trajectory 0.057524  endpoint 0.581429  dissociation 10.108\n  seed 3  trajectory 0.124325  endpoint 1.628416  dissociation 13.098\n  seed 4  trajectory 0.117577  endpoint 2.763585  dissociation 23.505\n\npredicted by available signal  11.67\nobserved dissociation          13.098  range 10.108 to 23.505\nagreement                      12.2%   (destroyed run: 18.7%)\n  D1 at or above the ratio     HELD\n  D2 within a factor of three  HELD\n\nelapsed 54.5 min, CPU, $0\n",
+      "stderr_tail": ""
+    }
+  ],
+  "compared_file_count": 1,
+  "files": {
+    "baseline/DISSOCIATION_RESULT.json": {
+      "sha256": [
+        "825f1715e5fb01dca8b8c6bfaca32f48b22c3fca40b7cbfb021893dcdba026bf",
+        "7e39efabde8fad6ac9c4786280f043abd9eb8deaffe43520cbfc6cd6a77646c2"
+      ],
+      "bytes_identical": false,
+      "content_identical": true,
+      "divergent_leaves": 0,
+      "max_relative_difference": null,
+      "first_divergence": null,
+      "ignored_divergences": [
+        {
+          "kind": "json_value",
+          "key_path": "$.elapsed_seconds",
+          "reference_value": 3479.7902979999926,
+          "other_value": 3270.6192394170066,
+          "relative_difference": 0.06011024822478726,
+          "file": "baseline/DISSOCIATION_RESULT.json",
+          "repeat": 1
+        }
+      ],
+      "identical": false,
+      "identical_except_ignored": true
+    }
+  },
+  "first_divergence": null,
+  "ignored_divergence_count": 1
+}

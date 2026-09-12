@@ -17,7 +17,7 @@ USER_PATH='/''Users/'
 VOLUME_PATH='/''Volumes/'
 NAME_ONE='aksh''garg'
 NAME_TWO='arnav''garg'
-if grep -RInE --exclude=MANIFEST.sha256 --exclude-dir=__pycache__ --exclude-dir=.git \
+if grep -RInE --exclude=MANIFEST.sha256 --exclude-dir=__pycache__ --exclude-dir=.git --exclude-dir=.venv --exclude-dir=.pytest_cache --exclude-dir=.ruff_cache \
   "${USER_PATH}|${VOLUME_PATH}|${NAME_ONE}|${NAME_TWO}|${API_PATTERN}|sk-[A-Za-z0-9]" .; then
   printf 'FAIL: private path, identity, or credential-like text found.\n' >&2
   exit 1

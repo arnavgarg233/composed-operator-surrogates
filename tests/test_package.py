@@ -37,7 +37,7 @@ class PackageTest(unittest.TestCase):
                 path.is_file()
                 and path.name != "MANIFEST.sha256"
                 and "__pycache__" not in path.parts
-                and ".git" not in path.parts
+                and not any(part.startswith(".") for part in path.parts)
             ):
                 data = path.read_bytes()
                 for needle in forbidden:

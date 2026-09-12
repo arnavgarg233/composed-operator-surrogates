@@ -1,0 +1,42 @@
+{
+  "no_network": true,
+  "overlap_guard": {
+    "F10": "PASS",
+    "F11": "PASS",
+    "F6": "PASS",
+    "F7": "PASS",
+    "F8": "PASS",
+    "F9": "PASS"
+  },
+  "script_sha256": "5361721b13057aa6f541fbb956e20c4f5dc6d2c291667a487829e3a4cd3b0f53",
+  "sha256": {
+    "figures/F10_error_headroom.pdf": "b96d2dba477b84cc7dbb2b7536ce7084d660ff8c2ea9c65a0ab8a96ddd7ca10f",
+    "figures/F11_algebra_2d.pdf": "cc16a89d6088a8856b444cbb5f4e1b3f037d8a9f7e78c28826b82455a8562453",
+    "figures/F6_support_geometry.pdf": "945ed19cd94ea88a4e2b93264f4b8582c6eb88cf54fe59e0fe4129b00570722b",
+    "figures/F7_support_distance.pdf": "593653c5b8b29d82a001a979fe50693e7b5d89449c78dd3fb41ebe243ac08257",
+    "figures/F8_resolution_horizon.pdf": "0f795f2105dd429beb72eedbde4113092922c609fc7c9dbd37a47c8383412e33",
+    "figures/F9_second_architecture.pdf": "3d7763068d2083e84716edc6cae82ee933ba0cfc8e80125d45b7013f333cc5dc"
+  },
+  "sources": [
+    "pde_restart/family1_rerun/results/S1_fkpp_r0.5/RESULT.json",
+    "pde_restart/family1_rerun/results/S1_grayscott_1sp/RESULT.json",
+    "pde_restart/family1_second_pairs/results/GEOMETRY.json",
+    "pde_restart/family1_second_pairs/results/P3_negative_control/RESULT.json",
+    "pde_restart/family1b_pair_screen/RESULT.json",
+    "pde_restart/family1c_state_support/RESULT.json",
+    "pde_restart/family1d_predictor/RESULT.json",
+    "pde_restart/family1e_state_broadening_new_pairs/results/RESULT.json",
+    "pde_restart/family2_resolution_horizon/results/N256_L1/RESULT.json",
+    "pde_restart/family2_resolution_horizon/results/RESULT.json",
+    "pde_restart/family6_serrano_baseline/results/RESULT_SMOKE.json",
+    "pde_restart/family8_complex_algebra/results/ALGEBRA.json",
+    "pde_restart/family8_complex_algebra/results/RESULT.json",
+    "pde_volume/family4/results/P1_diffusion_fisher_kpp/RESULT.json",
+    "pde_volume/family4b/results/RESULT.json"
+  ],
+  "versions": {
+    "matplotlib": "3.9.1",
+    "numpy": "2.2.6",
+    "python": "3.10.14"
+  }
+}

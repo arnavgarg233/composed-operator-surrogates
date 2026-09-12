@@ -1,0 +1,18 @@
+{
+  "schema": "family2-runtime-v1",
+  "generated": "2026-09-12",
+  "per_row": [
+    "N=128 (legs 1, 2, 3): fitted and evaluated on the local Apple-silicon Mac, JAX CPU backend (JAX_PLATFORMS=cpu, arm64).",
+    "N=256 (legs 1, 2, 3): fitted and evaluated on the local Apple-silicon Mac, JAX CPU backend (JAX_PLATFORMS=cpu, arm64).",
+    "N=512 (legs 1, 2, 3): fitted and evaluated on RunPod pod c1h12kov47rcm4, NVIDIA A40, JAX CUDA backend (JAX_PLATFORMS=cuda, x86_64)."
+  ],
+  "note": "The N=512 row is a declared runtime departure: the local CPU driver needed roughly ten minutes per fit at that grid, so the twenty N=512 fits and their evaluations were moved to a rented A40 under the CUDA backend. Package pins (jax/jaxlib 0.8.1, exponax 0.2.0, equinox 0.13.8), model, optimiser, schedule, seeds, corpus generator, metric and gate thresholds are identical to the CPU rows; only the XLA backend and the host differ. Both arms of every cell share one runtime, so no narrow-versus-broad contrast spans backends. Four N=512 narrow seeds fitted earlier on CPU were refitted on the pod rather than mixed into the row; the originals are preserved under results/preserved_cpu_partial/.",
+  "pod": {
+    "id": "c1h12kov47rcm4",
+    "gpu": "NVIDIA A40",
+    "region": "EU-SE-1",
+    "rented_utc": "2026-09-12T07:20:09Z",
+    "exited_utc": "2026-09-12T08:12:30Z",
+    "usd_per_hour": 0.49
+  }
+}

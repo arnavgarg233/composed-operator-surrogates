@@ -1,0 +1,21 @@
+{
+  "schema": "family1c-broadS-seed-v1",
+  "pair": "P1",
+  "condition": "broadS",
+  "seed": 4,
+  "sampler": "PREDECLARED.md 4.1, blocks ((0, 160, 0), (160, 320, 25), (320, 480, 50), (480, 640, 100))",
+  "e_on": 0.0001919194104661238,
+  "train_seconds": 1855.9315412080032,
+  "elapsed_seconds": 1874.8679082909948,
+  "steps": 8000,
+  "batch": 64,
+  "platform": {
+    "python": "3.12.13",
+    "machine": "arm64",
+    "jax": "0.8.1"
+  },
+  "e_on_reloaded": 0.0001919194104661238,
+  "reload_exact": true,
+  "e_off": 0.0005483395612025793,
+  "R": 2.8571344600882265
+}

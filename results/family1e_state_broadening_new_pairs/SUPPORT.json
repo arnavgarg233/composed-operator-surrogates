@@ -1,0 +1,102 @@
+{
+  "schema": "family1e-support-v1",
+  "status": "truth states only; no learner enters this file; nothing here is gated (PREDECLARED.md section 4)",
+  "generated": "2026-09-11T21:14:21Z",
+  "statistic_S": "family 1c: PCA-99 basis, Mahalanobis, 99th-pct training radius",
+  "statistic_S3": "family 1d: out-of-basis residual Q, 99th-pct training q99",
+  "cells": {
+    "S1_fkpp_r0.5_narrow": {
+      "n_train_states": 64640,
+      "n_switch_states": 256,
+      "pca_k_99": 10,
+      "variance_explained_at_k": 0.9903483884575697,
+      "train_MD_p99_radius": 9.029841963204769,
+      "Dbar_switch_MD_mean": 8.654688738148941,
+      "switch_MD_median": 8.771406104415174,
+      "coverage_S_inside_pca99": 0.5625,
+      "train_residual_p99": 0.2495279408889745,
+      "D3_switch_residual_mean": 1.7274714259249773,
+      "C3_coverage_inside_train_residual_p99": 0.0,
+      "D3f_switch_fraction_outside_basis_median": 0.5395499840798603,
+      "switch_residual_median": 1.7251986441779525
+    },
+    "S1_grayscott_1sp_narrow": {
+      "n_train_states": 64640,
+      "n_switch_states": 256,
+      "pca_k_99": 10,
+      "variance_explained_at_k": 0.9903483884575697,
+      "train_MD_p99_radius": 9.029841963204769,
+      "Dbar_switch_MD_mean": 9.90947109814165,
+      "switch_MD_median": 10.010987378923918,
+      "coverage_S_inside_pca99": 0.28515625,
+      "train_residual_p99": 0.2495279408889745,
+      "D3_switch_residual_mean": 1.4999933418146019,
+      "C3_coverage_inside_train_residual_p99": 0.0,
+      "D3f_switch_fraction_outside_basis_median": 0.4390850357368685,
+      "switch_residual_median": 1.4959571602233561
+    },
+    "S1_fkpp_r0.5_broadS": {
+      "n_train_states": 64640,
+      "n_switch_states": 256,
+      "pca_k_99": 11,
+      "variance_explained_at_k": 0.999885040172909,
+      "train_MD_p99_radius": 9.101861976565061,
+      "Dbar_switch_MD_mean": 8.912992646714805,
+      "switch_MD_median": 9.067417020162166,
+      "coverage_S_inside_pca99": 0.515625,
+      "train_residual_p99": 0.0854845503037662,
+      "D3_switch_residual_mean": 0.16032583228429909,
+      "C3_coverage_inside_train_residual_p99": 0.08203125,
+      "D3f_switch_fraction_outside_basis_median": 0.0572270310558988,
+      "switch_residual_median": 0.16563917757926555
+    },
+    "S1_grayscott_1sp_broadS": {
+      "n_train_states": 64640,
+      "n_switch_states": 256,
+      "pca_k_99": 11,
+      "variance_explained_at_k": 0.9998102670807102,
+      "train_MD_p99_radius": 9.120845965666335,
+      "Dbar_switch_MD_mean": 9.564350544957598,
+      "switch_MD_median": 9.644116164324338,
+      "coverage_S_inside_pca99": 0.36328125,
+      "train_residual_p99": 0.11216787252384484,
+      "D3_switch_residual_mean": 0.2208446410707753,
+      "C3_coverage_inside_train_residual_p99": 0.05859375,
+      "D3f_switch_fraction_outside_basis_median": 0.07021178103385031,
+      "switch_residual_median": 0.22856381468975406
+    }
+  },
+  "geometry": {
+    "narrow_training_support": [
+      0.4865763783454895,
+      0.5169978737831116
+    ],
+    "S1_fkpp_r0.5": {
+      "switch_support": [
+        0.5941062569618225,
+        0.6244125366210938
+      ],
+      "narrow_overlap": 0.0,
+      "narrow_gap": 0.07710838317871094,
+      "G1_zero_overlap": true,
+      "broadS_training_support": [
+        0.4869231581687927,
+        0.6248676776885986
+      ]
+    },
+    "S1_grayscott_1sp": {
+      "switch_support": [
+        0.390663206577301,
+        0.42818015813827515
+      ],
+      "narrow_overlap": 0.0,
+      "narrow_gap": -0.12633466720581055,
+      "G1_zero_overlap": true,
+      "broadS_training_support": [
+        0.3933162987232208,
+        0.5169710516929626
+      ]
+    }
+  },
+  "elapsed_seconds": 14.793400208000094
+}

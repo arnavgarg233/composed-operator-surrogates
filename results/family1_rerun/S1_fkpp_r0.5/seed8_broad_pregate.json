@@ -1,0 +1,21 @@
+{
+  "schema": "family1-pregate-v1",
+  "pair": "S1_fkpp_r0.5",
+  "condition": "broad",
+  "seed": 8,
+  "offsets": [
+    0.48,
+    0.7
+  ],
+  "e_on": 0.00022332363949529183,
+  "train_seconds": 351.5702278749959,
+  "elapsed_seconds": 355.8408355829888,
+  "steps": 8000,
+  "batch": 64,
+  "note": "e_off is deliberately NOT in this file; gates are written first",
+  "platform": {
+    "python": "3.12.13",
+    "machine": "arm64",
+    "jax": "0.8.1"
+  }
+}

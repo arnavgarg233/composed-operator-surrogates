@@ -1,0 +1,18 @@
+{
+  "schema": "family1e-broadS-pregate-v1",
+  "pair": "S1_grayscott_1sp",
+  "condition": "broadS",
+  "seed": 3,
+  "sampler": "PREDECLARED.md section 2, blocks ((0, 160, 0), (160, 320, 25), (320, 480, 50), (480, 640, 100))",
+  "e_on": 0.0002761133751891794,
+  "train_seconds": 2609.639972417004,
+  "elapsed_seconds": 2631.200160459004,
+  "steps": 8000,
+  "batch": 64,
+  "note": "e_off is deliberately NOT in this file; gates are written first",
+  "platform": {
+    "python": "3.12.13",
+    "machine": "arm64",
+    "jax": "0.8.1"
+  }
+}

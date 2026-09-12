@@ -1,0 +1,114 @@
+{
+  "schema": "family1e-broadS-gates-v1",
+  "written_before_any_off_support_number_was_read": true,
+  "generated": "2026-09-11T23:21:08Z",
+  "pairs": {
+    "S1_fkpp_r0.5": {
+      "G1_shift_exists": {
+        "training_support": [
+          0.4865763783454895,
+          0.5169978737831116
+        ],
+        "switch_support": [
+          0.5941062569618225,
+          0.6244125366210938
+        ],
+        "overlap": 0.0,
+        "gap": 0.07710838317871094,
+        "already_established_in": "results/family1_rerun/results/S1_fkpp_r0.5/GATES.json",
+        "rerun_overlap": 0.0,
+        "reproduces_rerun": true,
+        "pass": true
+      },
+      "G2_metric_resolves": {
+        "persistence_off": 0.10153809212755065,
+        "persistence_on": 0.12143668541229405,
+        "median_e_on_narrow": 0.00019224691546033533,
+        "dynamic_range": 528.1650001219402,
+        "required_dynamic_range": 100.0,
+        "e_on_limit": 0.012143668541229405,
+        "rerun_dynamic_range": 528.1650001219402,
+        "pass": true
+      },
+      "G4a_censored_below": {
+        "minimum_e_on_narrow": 0.00015722485542956667,
+        "minimum_e_on_broadS": 0.00019703522850916238,
+        "floor": 1.19e-05,
+        "pass": true
+      },
+      "P6_convergence": {
+        "worst_e_on_this_pair": 0.00033281902496820186,
+        "worst_e_on_both_pairs": 0.0003365382097519035,
+        "limit": 0.001573,
+        "pass": true
+      },
+      "per_seed_e_on_broadS": {
+        "0": 0.00033281902496820186,
+        "1": 0.0002366518227163216,
+        "2": 0.0002709858075614859,
+        "3": 0.0002729022905292734,
+        "4": 0.00019703522850916238,
+        "5": 0.0002540787589064786,
+        "6": 0.0002472150865263453,
+        "7": 0.000279893675704356,
+        "8": 0.00020295370989080217,
+        "9": 0.00024350712344085374
+      },
+      "blocking_failures": []
+    },
+    "S1_grayscott_1sp": {
+      "G1_shift_exists": {
+        "training_support": [
+          0.4865763783454895,
+          0.5169978737831116
+        ],
+        "switch_support": [
+          0.390663206577301,
+          0.42818015813827515
+        ],
+        "overlap": 0.0,
+        "gap": -0.12633466720581055,
+        "already_established_in": "results/family1_rerun/results/S1_grayscott_1sp/GATES.json",
+        "rerun_overlap": 0.0,
+        "reproduces_rerun": true,
+        "pass": true
+      },
+      "G2_metric_resolves": {
+        "persistence_off": 0.1671469437610274,
+        "persistence_on": 0.12143668541229405,
+        "median_e_on_narrow": 0.00019224691546033533,
+        "dynamic_range": 869.4388846801206,
+        "required_dynamic_range": 100.0,
+        "e_on_limit": 0.012143668541229405,
+        "rerun_dynamic_range": 869.4388846801206,
+        "pass": true
+      },
+      "G4a_censored_below": {
+        "minimum_e_on_narrow": 0.00015722485542956667,
+        "minimum_e_on_broadS": 0.00017910097652744844,
+        "floor": 1.19e-05,
+        "pass": true
+      },
+      "P6_convergence": {
+        "worst_e_on_this_pair": 0.0003365382097519035,
+        "worst_e_on_both_pairs": 0.0003365382097519035,
+        "limit": 0.001573,
+        "pass": true
+      },
+      "per_seed_e_on_broadS": {
+        "0": 0.0003365382097519035,
+        "1": 0.00022098524624054503,
+        "2": 0.00021308228445628748,
+        "3": 0.0002761133751891794,
+        "4": 0.00017910097652744844,
+        "5": 0.0002169233177089653,
+        "6": 0.00022383833712541915,
+        "7": 0.00026023345112434503,
+        "8": 0.0001991975850099961,
+        "9": 0.00023035747887774637
+      },
+      "blocking_failures": []
+    }
+  },
+  "elapsed_seconds": 4.975600500009023
+}

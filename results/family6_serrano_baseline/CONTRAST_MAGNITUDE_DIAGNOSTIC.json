@@ -1,0 +1,164 @@
+{
+  "schema": "family6-contrast-magnitude-diagnostic-v1",
+  "status": "POST HOC. Added after the smoke result was in hand. Changes no predeclared metric.",
+  "units": 48,
+  "seeds": [
+    0,
+    1
+  ],
+  "arms": {
+    "narrow_oracle": {
+      "trajectory": {
+        "seed0": {
+          "magnitude_ratio": 1.0141617840418875,
+          "correlation": 0.9930909314472177,
+          "S": 0.11922408609993053
+        },
+        "seed1": {
+          "magnitude_ratio": 1.0017581002212788,
+          "correlation": 0.9971353626852727,
+          "S": 0.07577887690403037
+        }
+      },
+      "endpoint": {
+        "seed0": {
+          "magnitude_ratio": 2.53167947949624,
+          "correlation": 0.722031619897317,
+          "S": 1.9373940527469935
+        },
+        "seed1": {
+          "magnitude_ratio": 1.0259454527968117,
+          "correlation": 0.7326679425855595,
+          "S": 0.7410866237513359
+        }
+      },
+      "horizon_only": {
+        "seed0": {
+          "magnitude_ratio": 1.0275365785882462,
+          "correlation": 0.9869769339232838,
+          "S": 0.16589640345330603
+        },
+        "seed1": {
+          "magnitude_ratio": 1.0034638522306738,
+          "correlation": 0.994466548598776,
+          "S": 0.10543830039735416
+        }
+      }
+    },
+    "serrano_narrow_lie_causal": {
+      "trajectory": {
+        "seed0": {
+          "magnitude_ratio": 1.3012225839745195,
+          "correlation": 0.8357493575814429,
+          "S": 0.7198529959588874
+        },
+        "seed1": {
+          "magnitude_ratio": 1.3006755959326968,
+          "correlation": 0.8364046673748167,
+          "S": 0.7183138085110283
+        }
+      },
+      "endpoint": {
+        "seed0": {
+          "magnitude_ratio": 8.59329374430564,
+          "correlation": 0.25026489901444543,
+          "S": 8.399017668375405
+        },
+        "seed1": {
+          "magnitude_ratio": 8.536740851433352,
+          "correlation": 0.2512758246690132,
+          "S": 8.341809825791517
+        }
+      },
+      "horizon_only": {
+        "seed0": {
+          "magnitude_ratio": 1.5306720318652238,
+          "correlation": 0.7641987597196633,
+          "S": 1.0017392537763763
+        },
+        "seed1": {
+          "magnitude_ratio": 1.5296181357937064,
+          "correlation": 0.7650716832966972,
+          "S": 0.9995982180072749
+        }
+      }
+    },
+    "broad_oracle": {
+      "trajectory": {
+        "seed0": {
+          "magnitude_ratio": 1.0005658671877231,
+          "correlation": 0.9998256320949851,
+          "S": 0.01868832132258256
+        },
+        "seed1": {
+          "magnitude_ratio": 0.999259156309921,
+          "correlation": 0.9998552519128199,
+          "S": 0.01702441048374604
+        }
+      },
+      "endpoint": {
+        "seed0": {
+          "magnitude_ratio": 1.0074885466563537,
+          "correlation": 0.9947490630319689,
+          "S": 0.10313387435772754
+        },
+        "seed1": {
+          "magnitude_ratio": 0.9804613445333918,
+          "correlation": 0.992609643737774,
+          "S": 0.12195768254738332
+        }
+      },
+      "horizon_only": {
+        "seed0": {
+          "magnitude_ratio": 1.001425918304795,
+          "correlation": 0.9996696516038887,
+          "S": 0.025761834850897832
+        },
+        "seed1": {
+          "magnitude_ratio": 0.9992864929304609,
+          "correlation": 0.9997235071915969,
+          "S": 0.02351808134176427
+        }
+      }
+    },
+    "serrano_broad_lie_causal": {
+      "trajectory": {
+        "seed0": {
+          "magnitude_ratio": 1.3008949951392441,
+          "correlation": 0.8360472147260261,
+          "S": 0.7191025752310647
+        },
+        "seed1": {
+          "magnitude_ratio": 1.299410887248756,
+          "correlation": 0.836292377667898,
+          "S": 0.7177003643380495
+        }
+      },
+      "endpoint": {
+        "seed0": {
+          "magnitude_ratio": 8.569942508172405,
+          "correlation": 0.25058528105409755,
+          "S": 8.37549471310947
+        },
+        "seed1": {
+          "magnitude_ratio": 8.542085479514935,
+          "correlation": 0.24816002260411002,
+          "S": 8.350306346953658
+        }
+      },
+      "horizon_only": {
+        "seed0": {
+          "magnitude_ratio": 1.5301549258504155,
+          "correlation": 0.7646256460212163,
+          "S": 1.0006911110439871
+        },
+        "seed1": {
+          "magnitude_ratio": 1.5279662696732874,
+          "correlation": 0.764805902892063,
+          "S": 0.9987420469406051
+        }
+      }
+    }
+  },
+  "elapsed_seconds": 57.705247833015164
+}

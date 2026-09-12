@@ -1,0 +1,72 @@
+{
+  "schema": "family6-selftest-v1",
+  "gate_U1": {
+    "statement": "Lie, native-grain Strang and 2-tau-grain Strang are exact on a commuting pair",
+    "pair": {
+      "D1": 0.004,
+      "D2": 0.006,
+      "dt": 0.1,
+      "dtype": "float64"
+    },
+    "max_relative_l2": {
+      "lie_12": 1.4907415281636154e-16,
+      "lie_21": 1.5949456005569427e-16,
+      "strang_native_12": 2.670638237329805e-16,
+      "strang_native_21": 2.4776718593410775e-16,
+      "strang_2tau_12": 2.4419916549102076e-16,
+      "strang_2tau_21": 2.470874016332656e-16,
+      "strang_native_123": 2.5775609500138153e-16
+    },
+    "floor": 1e-10,
+    "pass": true
+  },
+  "gate_U2": {
+    "statement": "the search recovers the true composition from a context the combined operator generated",
+    "selected_unique": {
+      "exhaustive": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "beam": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "uniform": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    "worst_selected_loss": {
+      "exhaustive": 1.0608661570034494e-16,
+      "beam": 1.0608661570034494e-16,
+      "uniform": 1.0608661570034494e-16
+    },
+    "all_units_length2_both_ops": {
+      "exhaustive": true,
+      "beam": true,
+      "uniform": true
+    },
+    "floor": 1e-10,
+    "pass": true
+  },
+  "num_candidates": 62,
+  "elapsed_seconds": 1.3314997499983292
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "family1-seed-v1",
+  "pair": "S1_grayscott_1sp",
+  "condition": "narrow",
+  "seed": 2,
+  "offsets": [
+    0.4865,
+    0.5171
+  ],
+  "e_on": 0.00018413146448172422,
+  "train_seconds": 1314.5590767090034,
+  "elapsed_seconds": 1324.1360559579916,
+  "steps": 8000,
+  "batch": 64,
+  "platform": {
+    "python": "3.12.13",
+    "machine": "arm64",
+    "jax": "0.8.1"
+  },
+  "e_on_reloaded": 0.00018413146448172422,
+  "reload_exact": true,
+  "e_off": 0.018842070593001362,
+  "R": 102.32944513875582,
+  "e_off_constant_mode_corrected": 0.0184145035322089,
+  "eval_seconds": 7.932570167002268
+}

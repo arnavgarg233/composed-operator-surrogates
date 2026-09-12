@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+title: "Broadening training dictionaries in state space for composed neural PDE surrogates"
+version: 0.2.0
+date-released: 2026-09-12
+authors:
+  - family-names: Garg
+    given-names: Arnav
+    orcid: "https://orcid.org/0009-0001-1915-8655"

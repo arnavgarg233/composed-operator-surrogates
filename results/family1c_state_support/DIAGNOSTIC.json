@@ -1,0 +1,71 @@
+{
+  "schema": "family1c-posthoc-diagnostic-v1",
+  "status": "POST-HOC; gates nothing; written after SUPPORT.json was read",
+  "cells": {
+    "P1_narrow": {
+      "pca_k_99": 10,
+      "train_residual_p99": 0.2495279408889745,
+      "switch_residual_mean": 3.313084290417267,
+      "switch_residual_over_train_p99_median": 13.25638848807276,
+      "switch_fraction_of_deviation_outside_basis_median": 0.8133490278667928,
+      "coverage_inside_train_residual_p99": 0.0
+    },
+    "P2_narrow": {
+      "pca_k_99": 10,
+      "train_residual_p99": 0.2495279408889745,
+      "switch_residual_mean": 5.246843867874923,
+      "switch_residual_over_train_p99_median": 21.03242465138282,
+      "switch_fraction_of_deviation_outside_basis_median": 0.9865842187491576,
+      "coverage_inside_train_residual_p99": 0.0
+    },
+    "CH_narrow": {
+      "pca_k_99": 10,
+      "train_residual_p99": 0.2495279408889745,
+      "switch_residual_mean": 0.23047037924339295,
+      "switch_residual_over_train_p99_median": 0.8560865709251223,
+      "switch_fraction_of_deviation_outside_basis_median": 0.08999539052267647,
+      "coverage_inside_train_residual_p99": 0.6328125
+    },
+    "P1_broad": {
+      "pca_k_99": 11,
+      "train_residual_p99": 0.04689247508210611,
+      "switch_residual_mean": 0.27970882751468995,
+      "switch_residual_over_train_p99_median": 6.046614512791228,
+      "switch_fraction_of_deviation_outside_basis_median": 0.09782602194475422,
+      "coverage_inside_train_residual_p99": 0.0
+    },
+    "P2_broad": {
+      "pca_k_99": 10,
+      "train_residual_p99": 0.890434477323204,
+      "switch_residual_mean": 0.012136509287596825,
+      "switch_residual_over_train_p99_median": 0.01097459908220976,
+      "switch_fraction_of_deviation_outside_basis_median": 0.003882878229888335,
+      "coverage_inside_train_residual_p99": 1.0
+    },
+    "CH_broad": {
+      "pca_k_99": 11,
+      "train_residual_p99": 0.001330230932117724,
+      "switch_residual_mean": 0.17634575586893095,
+      "switch_residual_over_train_p99_median": 111.16286056960314,
+      "switch_fraction_of_deviation_outside_basis_median": 0.059505716782685486,
+      "coverage_inside_train_residual_p99": 0.0
+    },
+    "CH_broadS": {
+      "pca_k_99": 10,
+      "train_residual_p99": 0.525362478205698,
+      "switch_residual_mean": 0.28735827315764223,
+      "switch_residual_over_train_p99_median": 0.48952992454639443,
+      "switch_fraction_of_deviation_outside_basis_median": 0.10389134888964666,
+      "coverage_inside_train_residual_p99": 0.87109375
+    },
+    "P1_broadS": {
+      "pca_k_99": 11,
+      "train_residual_p99": 0.1522012088628563,
+      "switch_residual_mean": 0.27963860802184437,
+      "switch_residual_over_train_p99_median": 1.8695599748070406,
+      "switch_fraction_of_deviation_outside_basis_median": 0.09483658897674796,
+      "coverage_inside_train_residual_p99": 0.0859375
+    }
+  },
+  "elapsed_seconds": 27.562099958013278
+}

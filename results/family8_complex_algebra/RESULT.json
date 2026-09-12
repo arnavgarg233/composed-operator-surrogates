@@ -1,0 +1,653 @@
+{
+  "schema": "family8-result-v2",
+  "verdict": "FAIL",
+  "tested_words": [
+    "DoA",
+    "AoR",
+    "AoG",
+    "RoA",
+    "RoG",
+    "GoA",
+    "GoR",
+    "RoAoD",
+    "DoAoR",
+    "GoDoA"
+  ],
+  "grid": [
+    64,
+    64
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "n_train_units": 640,
+  "fno_parameters": 2365825,
+  "per_fit_seconds": {
+    "median": 180.97370775300078,
+    "min": 171.1582654910162,
+    "max": 198.21773104998283,
+    "n_fits": 24
+  },
+  "E1_P3_broadening_repairs": {
+    "aggregated_repair_ratio_R": 0.13474949107734893,
+    "aggregated_repair_ratio_endpoint_unnormalised": 0.13767991506429036,
+    "threshold": 0.25,
+    "pass": true,
+    "per_word": {
+      "DoA": {
+        "length": 2,
+        "members": [
+          "A",
+          "D"
+        ],
+        "narrow": {
+          "median_endpoint_rel_l2": 0.004968877198516892,
+          "median_trajectory_rel_l2": 0.032061426201835275,
+          "median_R": 0.5941645659409347,
+          "per_seed_R": [
+            0.5301791348608296,
+            0.5941645659409347,
+            0.6752759569607889
+          ],
+          "per_seed_endpoint_rel_l2": [
+            0.004532209442489237,
+            0.004968877198516892,
+            0.005647692581829441
+          ]
+        },
+        "broadS": {
+          "median_endpoint_rel_l2": 0.008390764536353604,
+          "median_trajectory_rel_l2": 0.03876722604036331,
+          "median_R": 0.7622845150039073,
+          "per_seed_R": [
+            0.6677134878504155,
+            0.7699832966823433,
+            0.7622845150039073
+          ],
+          "per_seed_endpoint_rel_l2": [
+            0.007602134670654129,
+            0.008780590727061704,
+            0.008390764536353604
+          ]
+        },
+        "P3_ratio_R": 1.2829518263121824,
+        "P3_ratio_endpoint_unnormalised": 1.6886640987742814,
+        "pass_p3": false
+      },
+      "AoR": {
+        "length": 2,
+        "members": [
+          "A",
+          "R"
+        ],
+        "narrow": {
+          "median_endpoint_rel_l2": 0.08557474146663624,
+          "median_trajectory_rel_l2": 0.03045617585303262,
+          "median_R": 11.089564618108861,
+          "per_seed_R": [
+            15.212624091998576,
+            10.876216902598815,
+            11.089564618108861
+          ],
+          "per_seed_endpoint_rel_l2": [
+            0.12026032193757044,
+            0.08432528512441578,
+            0.08557474146663624
+          ]
+        },
+        "broadS": {
+          "median_endpoint_rel_l2": 0.062232313751517485,
+          "median_trajectory_rel_l2": 0.02224967099027708,
+          "median_R": 5.940260931246384,
+          "per_seed_R": [
+            5.9033798686302354,
+            5.940260931246384,
+            5.9524789062766095
+          ],
+          "per_seed_endpoint_rel_l2": [
+            0.062232313751517485,
+            0.06303935839727358,
+            0.06061115347270478
+          ]
+        },
+        "P3_ratio_R": 0.5356622316394777,
+        "P3_ratio_endpoint_unnormalised": 0.7272275987626622,
+        "pass_p3": false
+      },
+      "AoG": {
+        "length": 2,
+        "members": [
+          "A",
+          "G"
+        ],
+        "narrow": {
+          "median_endpoint_rel_l2": 0.7007241372069639,
+          "median_trajectory_rel_l2": 0.24645935324952006,
+          "median_R": 89.78999591562147,
+          "per_seed_R": [
+            478.19996952656356,
+            84.48077748441138,
+            89.78999591562147
+          ],
+          "per_seed_endpoint_rel_l2": [
+            3.804407878264275,
+            0.6680157090607879,
+            0.7007241372069639
+          ]
+        },
+        "broadS": {
+          "median_endpoint_rel_l2": 0.09936414303169225,
+          "median_trajectory_rel_l2": 0.03397769184084609,
+          "median_R": 9.42263549628699,
+          "per_seed_R": [
+            9.391425174540649,
+            9.42263549628699,
+            9.49428923627681
+          ],
+          "per_seed_endpoint_rel_l2": [
+            0.09936414303169225,
+            0.10049347840742537,
+            0.09712036187902373
+          ]
+        },
+        "P3_ratio_R": 0.10494081662662888,
+        "P3_ratio_endpoint_unnormalised": 0.14180208409510564,
+        "pass_p3": true
+      },
+      "RoA": {
+        "length": 2,
+        "members": [
+          "A",
+          "R"
+        ],
+        "narrow": {
+          "median_endpoint_rel_l2": 13.281914678039417,
+          "median_trajectory_rel_l2": 2.2374796248041093,
+          "median_R": 1721.1930594234066,
+          "per_seed_R": [
+            1366.0840801314007,
+            18873.452906225983,
+            1721.1930594234066
+          ],
+          "per_seed_endpoint_rel_l2": [
+            10.799301309022802,
+            146.3293084215208,
+            13.281914678039417
+          ]
+        },
+        "broadS": {
+          "median_endpoint_rel_l2": 0.05773382336641783,
+          "median_trajectory_rel_l2": 0.06176671595312655,
+          "median_R": 5.507916194543545,
+          "per_seed_R": [
+            5.476651438049002,
+            5.507916194543545,
+            5.613976031499463
+          ],
+          "per_seed_endpoint_rel_l2": [
+            0.05773382336641783,
+            0.05845122075085766,
+            0.05716434584564454
+          ]
+        },
+        "P3_ratio_R": 0.0032000571721969855,
+        "P3_ratio_endpoint_unnormalised": 0.004346799747319269,
+        "pass_p3": true
+      },
+      "RoG": {
+        "length": 2,
+        "members": [
+          "G",
+          "R"
+        ],
+        "narrow": {
+          "median_endpoint_rel_l2": 0.07739586071588754,
+          "median_trajectory_rel_l2": 0.02968236879678443,
+          "median_R": 112.90009987476576,
+          "per_seed_R": [
+            112.90009987476576,
+            43.85025675075085,
+            297.15332229121105
+          ],
+          "per_seed_endpoint_rel_l2": [
+            0.07739586071588754,
+            0.0314339067915728,
+            0.2418910880577722
+          ]
+        },
+        "broadS": {
+          "median_endpoint_rel_l2": 0.0033486844439424204,
+          "median_trajectory_rel_l2": 0.0021230122983979527,
+          "median_R": 12.205618651961235,
+          "per_seed_R": [
+            12.205618651961235,
+            11.79519492242361,
+            12.951557514602923
+          ],
+          "per_seed_endpoint_rel_l2": [
+            0.0032291249257614353,
+            0.0033486844439424204,
+            0.004279449470144284
+          ]
+        },
+        "P3_ratio_R": 0.10810990127998378,
+        "P3_ratio_endpoint_unnormalised": 0.04326697077812864,
+        "pass_p3": true
+      },
+      "GoA": {
+        "length": 2,
+        "members": [
+          "A",
+          "G"
+        ],
+        "narrow": {
+          "median_endpoint_rel_l2": 6355.121627668322,
+          "median_trajectory_rel_l2": 461.0982937812805,
+          "median_R": 798815.2337848486,
+          "per_seed_R": [
+            798815.2337848486,
+            30241.51389040684,
+            1936255.3721218097
+          ],
+          "per_seed_endpoint_rel_l2": [
+            6355.121627668322,
+            239.12902965765772,
+            15110.60181267203
+          ]
+        },
+        "broadS": {
+          "median_endpoint_rel_l2": 0.10110880141531264,
+          "median_trajectory_rel_l2": 0.07516518316697329,
+          "median_R": 9.480330428412778,
+          "per_seed_R": [
+            9.562694374502735,
+            9.480330428412778,
+            9.46484884851685
+          ],
+          "per_seed_endpoint_rel_l2": [
+            0.10117622340987495,
+            0.10110880141531264,
+            0.0968192059902626
+          ]
+        },
+        "P3_ratio_R": 1.186798902606581e-05,
+        "P3_ratio_endpoint_unnormalised": 1.5909813743786553e-05,
+        "pass_p3": true
+      },
+      "GoR": {
+        "length": 2,
+        "members": [
+          "G",
+          "R"
+        ],
+        "narrow": {
+          "median_endpoint_rel_l2": 0.019278191725693873,
+          "median_trajectory_rel_l2": 0.007688335419516079,
+          "median_R": 28.09507028417187,
+          "per_seed_R": [
+            28.1217852105227,
+            25.99425135346125,
+            28.09507028417187
+          ],
+          "per_seed_endpoint_rel_l2": [
+            0.019278191725693873,
+            0.018633890305498037,
+            0.022870170414712277
+          ]
+        },
+        "broadS": {
+          "median_endpoint_rel_l2": 0.0025747518344848633,
+          "median_trajectory_rel_l2": 0.0016156136989593506,
+          "median_R": 9.069143501876923,
+          "per_seed_R": [
+            8.725503092436844,
+            9.069143501876923,
+            9.47805060217941
+          ],
+          "per_seed_endpoint_rel_l2": [
+            0.00230842371280123,
+            0.0025747518344848633,
+            0.0031317344328483203
+          ]
+        },
+        "P3_ratio_R": 0.32280195102363823,
+        "P3_ratio_endpoint_unnormalised": 0.1335577460334751,
+        "pass_p3": false
+      },
+      "RoAoD": {
+        "length": 3,
+        "members": [
+          "A",
+          "D",
+          "R"
+        ],
+        "narrow": {
+          "median_endpoint_rel_l2": 0.018176363042833234,
+          "median_trajectory_rel_l2": 0.011786506191128865,
+          "median_R": 10.20028099770542,
+          "per_seed_R": [
+            11.55026055444207,
+            10.20028099770542,
+            4.495051863055993
+          ],
+          "per_seed_endpoint_rel_l2": [
+            0.022193155555342726,
+            0.018176363042833234,
+            0.009081663652023814
+          ]
+        },
+        "broadS": {
+          "median_endpoint_rel_l2": 0.0030594966438118308,
+          "median_trajectory_rel_l2": 0.0029644102542079054,
+          "median_R": 1.6462139748834894,
+          "per_seed_R": [
+            1.5992405231388171,
+            1.6533760776207722,
+            1.6462139748834894
+          ],
+          "per_seed_endpoint_rel_l2": [
+            0.0030594966438118308,
+            0.0029988807361358877,
+            0.003182711813200756
+          ]
+        },
+        "P3_ratio_R": 0.1613890808747141,
+        "P3_ratio_endpoint_unnormalised": 0.16832281774973465,
+        "pass_p3": true
+      },
+      "DoAoR": {
+        "length": 3,
+        "members": [
+          "A",
+          "D",
+          "R"
+        ],
+        "narrow": {
+          "median_endpoint_rel_l2": 0.08691564885617664,
+          "median_trajectory_rel_l2": 0.04016561503522098,
+          "median_R": 43.01968937515248,
+          "per_seed_R": [
+            47.13549890893459,
+            32.13177147028556,
+            43.01968937515248
+          ],
+          "per_seed_endpoint_rel_l2": [
+            0.09056812653999938,
+            0.05725712297383208,
+            0.08691564885617664
+          ]
+        },
+        "broadS": {
+          "median_endpoint_rel_l2": 0.007994433898139933,
+          "median_trajectory_rel_l2": 0.020664657757151872,
+          "median_R": 4.213020651802744,
+          "per_seed_R": [
+            4.178799370582451,
+            4.213020651802744,
+            5.209034574820577
+          ],
+          "per_seed_endpoint_rel_l2": [
+            0.007994433898139933,
+            0.007641544258832442,
+            0.010070899730896764
+          ]
+        },
+        "P3_ratio_R": 0.09793238196266757,
+        "P3_ratio_endpoint_unnormalised": 0.09197922357306097,
+        "pass_p3": true
+      },
+      "GoDoA": {
+        "length": 3,
+        "members": [
+          "A",
+          "D",
+          "G"
+        ],
+        "narrow": {
+          "median_endpoint_rel_l2": 0.01131651339419609,
+          "median_trajectory_rel_l2": 0.02403915033210069,
+          "median_R": 5.889594111339969,
+          "per_seed_R": [
+            5.889594111339969,
+            3.624132045978352,
+            9.101173771488448
+          ],
+          "per_seed_endpoint_rel_l2": [
+            0.01131651339419609,
+            0.00645801226433732,
+            0.018387729785855317
+          ]
+        },
+        "broadS": {
+          "median_endpoint_rel_l2": 0.010270310490358498,
+          "median_trajectory_rel_l2": 0.029532035696320236,
+          "median_R": 5.312177051499263,
+          "per_seed_R": [
+            4.876813654379614,
+            5.852957906631536,
+            5.312177051499263
+          ],
+          "per_seed_endpoint_rel_l2": [
+            0.009329800484786117,
+            0.010616049762174826,
+            0.010270310490358498
+          ]
+        },
+        "P3_ratio_R": 0.9019597872238881,
+        "P3_ratio_endpoint_unnormalised": 0.9075507740419272,
+        "pass_p3": false
+      }
+    }
+  },
+  "E2_ALG1_algebra_recovery": {
+    "aggregation": "median over the 5 seeds",
+    "broadS_top1_acc": 1.0,
+    "narrow_top1_acc": 0.7150000000000001,
+    "absolute_gain": 0.2849999999999999,
+    "threshold_acc": 0.8,
+    "threshold_gain": 0.3,
+    "pass": false,
+    "seed0_broadS_top1_acc": 1.0,
+    "seed0_narrow_top1_acc": 0.71
+  },
+  "E2_summary": {
+    "narrow": {
+      "median_top1_acc": 0.7150000000000001,
+      "mean_top1_acc": 0.7433333333333333,
+      "per_seed_top1_acc": [
+        0.71,
+        0.7150000000000001,
+        0.805
+      ],
+      "seed0_top1_acc": 0.71,
+      "median_order_acc_given_multiset": 1.0,
+      "median_multiset_acc": 0.715
+    },
+    "broadS": {
+      "median_top1_acc": 1.0,
+      "mean_top1_acc": 1.0,
+      "per_seed_top1_acc": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "seed0_top1_acc": 1.0,
+      "median_order_acc_given_multiset": 1.0,
+      "median_multiset_acc": 1.0
+    }
+  },
+  "E3_testtime_splitting_narrow": {
+    "RoAoD": {
+      "per_scheme_median_endpoint_rel_l2": {
+        "leg_sequential_lie": 0.018176363042833234,
+        "lie_fine": 0.03538476759681726,
+        "strang_fine": 0.040624911431248065
+      },
+      "best_scheme_per_seed": [
+        "leg_sequential_lie",
+        "leg_sequential_lie",
+        "leg_sequential_lie"
+      ],
+      "median_best_endpoint_rel_l2": 0.018176363042833234,
+      "median_narrow_sequential_endpoint_rel_l2": 0.018176363042833234,
+      "median_broadS_sequential_endpoint_rel_l2": 0.0030594966438118308,
+      "broadS_over_best_splitting": 0.16832281774973465
+    },
+    "DoAoR": {
+      "per_scheme_median_endpoint_rel_l2": {
+        "leg_sequential_lie": 0.08691564885617664,
+        "lie_fine": 0.028686071393159124,
+        "strang_fine": 0.03399975618944141
+      },
+      "best_scheme_per_seed": [
+        "lie_fine",
+        "lie_fine",
+        "strang_fine"
+      ],
+      "median_best_endpoint_rel_l2": 0.028686071393159124,
+      "median_narrow_sequential_endpoint_rel_l2": 0.08691564885617664,
+      "median_broadS_sequential_endpoint_rel_l2": 0.007994433898139933,
+      "broadS_over_best_splitting": 0.27868695537188115
+    },
+    "GoDoA": {
+      "per_scheme_median_endpoint_rel_l2": {
+        "leg_sequential_lie": 0.01131651339419609,
+        "lie_fine": 0.4658075920240981,
+        "strang_fine": 0.5971406134147244
+      },
+      "best_scheme_per_seed": [
+        "leg_sequential_lie",
+        "leg_sequential_lie",
+        "leg_sequential_lie"
+      ],
+      "median_best_endpoint_rel_l2": 0.01131651339419609,
+      "median_narrow_sequential_endpoint_rel_l2": 0.01131651339419609,
+      "median_broadS_sequential_endpoint_rel_l2": 0.010270310490358498,
+      "broadS_over_best_splitting": 0.9075507740419272
+    }
+  },
+  "e_on_median_by_member": {
+    "narrow": {
+      "D": 0.0019214419839912221,
+      "A": 0.014943645195518059,
+      "R": 0.0006351387879776178,
+      "G": 0.0008709750992360215
+    },
+    "broadS": {
+      "D": 0.0019130934962847115,
+      "A": 0.0208575553193558,
+      "R": 0.00023100920690981834,
+      "G": 0.0003367956434494246
+    }
+  },
+  "external": {
+    "schema": "family8-external-v2",
+    "dataset": "PDEBench 2D_diffusion-reaction (FitzHugh-Nagumo, Du=1e-3, Dv=5e-3, k=5e-3)",
+    "source_doi": "doi:10.18419/darus-2986",
+    "api_query": "https://darus.uni-stuttgart.de/api/datasets/:persistentId/?persistentId=doi:10.18419/darus-2986",
+    "network": "reachable",
+    "files_seen": [
+      {
+        "filename": "2D_diff-react_NA_NA.h5",
+        "size_bytes": 13243560688,
+        "id": 133017
+      }
+    ],
+    "download": null,
+    "reproduction_check": {
+      "status": "NOT ATTEMPTED",
+      "reason": "Exponax 0.2.0 ships no two-species FitzHugh-Nagumo stepper, and PDEBench's 2-D diffusion-reaction data is generated with no-flow Neumann boundaries on [-1,1]^2 while every stepper in this family is periodic and spectral. A matched reproduction therefore needs a new two-species solver with non-periodic boundaries, which is outside this run's declared scope and budget. Recorded as NOT ATTEMPTED rather than approximated."
+    },
+    "algebra_on_external": {
+      "status": "NOT ATTEMPTED",
+      "reason": "Depends on the matched dictionary from the reproduction check above."
+    },
+    "status": "NOT ATTEMPTED",
+    "reason": "Every 2-D diffusion-reaction file exceeds the 3 GiB download cap set for this run's GPU budget (2D_diff-react_NA_NA.h5=12.3 GiB).",
+    "elapsed_seconds": 7.566239583073184
+  },
+  "gates": {
+    "blocking_failures": [],
+    "G2_per_member": {
+      "D": {
+        "persistence_on": 0.18492828786437876,
+        "median_narrow_e_on": 0.0019214419839912221,
+        "median_broadS_e_on": 0.0019130934962847115,
+        "e_on_limit": 0.018492828786437876,
+        "pass": true
+      },
+      "A": {
+        "persistence_on": 0.38715140097413425,
+        "median_narrow_e_on": 0.014943645195518059,
+        "median_broadS_e_on": 0.0208575553193558,
+        "e_on_limit": 0.03871514009741343,
+        "pass": true
+      },
+      "R": {
+        "persistence_on": 0.04048279463902257,
+        "median_narrow_e_on": 0.0006351387879776178,
+        "median_broadS_e_on": 0.00023100920690981834,
+        "e_on_limit": 0.004048279463902258,
+        "pass": true
+      },
+      "G": {
+        "persistence_on": 0.12872796255269014,
+        "median_narrow_e_on": 0.0008709750992360215,
+        "median_broadS_e_on": 0.0003367956434494246,
+        "e_on_limit": 0.012872796255269015,
+        "pass": true
+      }
+    },
+    "imported_1d_reference_diagnostics": {
+      "note": "G4a and P6 carry absolute e_on constants taken from the 1-D families (family 1 / 1b, 1-D FNO at 256 points). They are reported against the 2-D fits for the record and are NOT blocking here, because no 2-D calibration of those two constants exists. See REVIEW_NOTES.md item 6.",
+      "G4a_censored_below": {
+        "min_all_e_on": 0.00022606631313023214,
+        "floor_1d": 1.19e-05,
+        "meets_1d_reference": true
+      },
+      "P6_convergence": {
+        "worst_broad_e_on": 0.02099343164742372,
+        "limit_1d": 0.001573,
+        "meets_1d_reference": false
+      }
+    }
+  },
+  "elapsed_seconds": 3.1404742549639195,
+  "run": {
+    "gpu": "1x NVIDIA RTX A6000 (48 GB), RunPod secure cloud, $0.53/h",
+    "pod_id": "zdz3rp747vtm8o",
+    "pod_name": "pde-family8-algebra",
+    "started_utc": "2026-09-12T06:10:19Z",
+    "stopped_utc": "2026-09-12T08:01:50Z",
+    "wall_hours": 1.858,
+    "cost_usd_wall_clock": 0.985,
+    "cost_usd_billing_api_at_query_time": 0.4755,
+    "cost_note": "RunPod's billing API lagged at query time (it had recorded 0.88 h of the 1.86 h the pod was up). The wall-clock figure at the quoted rate is the one to trust.",
+    "budget_usd": 2.5,
+    "watchdog": "local detached, stop at 3.5 h or $2.40, disarmed after the pod was stopped",
+    "seeds_run": [
+      0,
+      1,
+      2
+    ],
+    "seeds_predeclared": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "seed_reduction": "Predeclared reduction (PREDECLARED.md section 8) applied 2026-09-12 07:05Z on measured wall time, before gates/words/algebra/evaluate ran and therefore before any off-support number existed. See REVIEW_NOTES.md.",
+    "fits_run": 26,
+    "fits_used": 24,
+    "surplus_fits": [
+      "narrow D seed3",
+      "narrow D seed4 (completed before the reduction; excluded from every aggregation)"
+    ],
+    "prescreen_grid": 64,
+    "env": "Python 3.12.3, JAX 0.8.1 (cuda12), equinox 0.13.8, exponax 0.2.0, numpy 2.5.2",
+    "predeclared_sha256": "0e7ac1a158e31d436e87d7d67c73427136f0f6d06f52656922fc1529d128d80d"
+  }
+}

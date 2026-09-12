@@ -1,0 +1,97 @@
+{
+  "schema": "family1c-banked-eval-v1",
+  "status": "R read from models family 1 already fitted; NO model was fitted here and nothing was written into family1_second_pairs/",
+  "pair": "P2",
+  "condition": "broad",
+  "checkpoint_tree": "results/family1_second_pairs/ckpt/P2_diffusion_allen_cahn",
+  "narrow_reuse_checksum": null,
+  "offsets": [
+    0.48,
+    0.9
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "per_seed": {
+    "0": {
+      "e_on": 0.0003897963914778738,
+      "e_off": 0.00011385922709898328,
+      "R": 0.29209923331331383,
+      "checkpoint": "results/family1_second_pairs/ckpt/P2_diffusion_allen_cahn/seed0_broad.npz"
+    },
+    "1": {
+      "e_on": 0.00032642590231178213,
+      "e_off": 3.0016810127496444e-05,
+      "R": 0.09195596891948304,
+      "checkpoint": "results/family1_second_pairs/ckpt/P2_diffusion_allen_cahn/seed1_broad.npz"
+    },
+    "2": {
+      "e_on": 0.00030581906924075477,
+      "e_off": 7.015560685461227e-05,
+      "R": 0.22940232938640776,
+      "checkpoint": "results/family1_second_pairs/ckpt/P2_diffusion_allen_cahn/seed2_broad.npz"
+    },
+    "3": {
+      "e_on": 0.00040416638482768325,
+      "e_off": 3.3409906974675286e-05,
+      "R": 0.0826637450042255,
+      "checkpoint": "results/family1_second_pairs/ckpt/P2_diffusion_allen_cahn/seed3_broad.npz"
+    },
+    "4": {
+      "e_on": 0.00029720991761628666,
+      "e_off": 4.831901870187532e-05,
+      "R": 0.16257539145869845,
+      "checkpoint": "results/family1_second_pairs/ckpt/P2_diffusion_allen_cahn/seed4_broad.npz"
+    },
+    "5": {
+      "e_on": 0.0003404666291917414,
+      "e_off": 3.475257443565164e-05,
+      "R": 0.1020733647763169,
+      "checkpoint": "results/family1_second_pairs/ckpt/P2_diffusion_allen_cahn/seed5_broad.npz"
+    },
+    "6": {
+      "e_on": 0.00037182584179384047,
+      "e_off": 2.1572716252521035e-05,
+      "R": 0.05801833500448866,
+      "checkpoint": "results/family1_second_pairs/ckpt/P2_diffusion_allen_cahn/seed6_broad.npz"
+    },
+    "7": {
+      "e_on": 0.0003577636894581388,
+      "e_off": 3.5203806727374595e-05,
+      "R": 0.09839960779891757,
+      "checkpoint": "results/family1_second_pairs/ckpt/P2_diffusion_allen_cahn/seed7_broad.npz"
+    },
+    "8": {
+      "e_on": 0.00028943294627774134,
+      "e_off": 3.382652530477946e-05,
+      "R": 0.11687171671299423,
+      "checkpoint": "results/family1_second_pairs/ckpt/P2_diffusion_allen_cahn/seed8_broad.npz"
+    },
+    "9": {
+      "e_on": 0.0003142002445283094,
+      "e_off": 2.1561915942811322e-05,
+      "R": 0.0686247586318113,
+      "checkpoint": "results/family1_second_pairs/ckpt/P2_diffusion_allen_cahn/seed9_broad.npz"
+    }
+  },
+  "median_R": 0.10023648628761724,
+  "R_range": [
+    0.05801833500448866,
+    0.29209923331331383
+  ],
+  "median_e_on": 0.0003334462657517618,
+  "median_e_off": 3.428954987021555e-05,
+  "persistence_on": 0.12143668541229405,
+  "persistence_off": 0.005920252665176344,
+  "dynamic_range": 17.754742737421296,
+  "elapsed_seconds": 49.23002554199775
+}

@@ -1,0 +1,181 @@
+{
+  "schema": "family1b-stage2-grid-v1",
+  "rule": "PREDECLARED \u00a76.2, applied mechanically",
+  "top_three_stage1_by_proxy_dynamic_range": [
+    "S1_grayscott_1sp",
+    "S1_fkpp_r0.5",
+    "S1_fkpp_r1.0"
+  ],
+  "candidates": [
+    {
+      "id": "S2_grayscott_1sp_nu0.005",
+      "A": [
+        "diffusion",
+        {
+          "diffusivity": 0.005
+        }
+      ],
+      "B": [
+        "poly",
+        {
+          "linear": [
+            -1.04,
+            0.0,
+            0.0
+          ],
+          "poly": [
+            0.04,
+            0.0,
+            2.0,
+            -1.0
+          ],
+          "_name": "grayscott_1sp(F=0.04)"
+        }
+      ],
+      "dt": 0.01,
+      "steps_per_leg": 100,
+      "k": 10,
+      "stage": 2,
+      "predicted_can_shift_the_mean": true,
+      "shift_reason": "the constant +F term is a nonzero mean source",
+      "skipped_from_ranking": false,
+      "extrapolated_proxy": true,
+      "note": "stage-2 diffusivity variant of S1_grayscott_1sp"
+    },
+    {
+      "id": "S2_grayscott_1sp_nu0.02",
+      "A": [
+        "diffusion",
+        {
+          "diffusivity": 0.02
+        }
+      ],
+      "B": [
+        "poly",
+        {
+          "linear": [
+            -1.04,
+            0.0,
+            0.0
+          ],
+          "poly": [
+            0.04,
+            0.0,
+            2.0,
+            -1.0
+          ],
+          "_name": "grayscott_1sp(F=0.04)"
+        }
+      ],
+      "dt": 0.01,
+      "steps_per_leg": 100,
+      "k": 10,
+      "stage": 2,
+      "predicted_can_shift_the_mean": true,
+      "shift_reason": "the constant +F term is a nonzero mean source",
+      "skipped_from_ranking": false,
+      "extrapolated_proxy": true,
+      "note": "stage-2 diffusivity variant of S1_grayscott_1sp"
+    },
+    {
+      "id": "S2_fkpp_r0.5_nu0.005",
+      "A": [
+        "diffusion",
+        {
+          "diffusivity": 0.005
+        }
+      ],
+      "B": [
+        "fisher_kpp",
+        {
+          "diffusivity": 0.0,
+          "reactivity": 0.5
+        }
+      ],
+      "dt": 0.01,
+      "steps_per_leg": 100,
+      "k": 10,
+      "stage": 2,
+      "predicted_can_shift_the_mean": true,
+      "shift_reason": "r*u(1-u) is not a divergence; d<u>/dt = r<u(1-u)> > 0 on u in (0,1)",
+      "skipped_from_ranking": false,
+      "extrapolated_proxy": true,
+      "note": "stage-2 diffusivity variant of S1_fkpp_r0.5"
+    },
+    {
+      "id": "S2_fkpp_r0.5_nu0.02",
+      "A": [
+        "diffusion",
+        {
+          "diffusivity": 0.02
+        }
+      ],
+      "B": [
+        "fisher_kpp",
+        {
+          "diffusivity": 0.0,
+          "reactivity": 0.5
+        }
+      ],
+      "dt": 0.01,
+      "steps_per_leg": 100,
+      "k": 10,
+      "stage": 2,
+      "predicted_can_shift_the_mean": true,
+      "shift_reason": "r*u(1-u) is not a divergence; d<u>/dt = r<u(1-u)> > 0 on u in (0,1)",
+      "skipped_from_ranking": false,
+      "extrapolated_proxy": true,
+      "note": "stage-2 diffusivity variant of S1_fkpp_r0.5"
+    },
+    {
+      "id": "S2_fkpp_r1.0_nu0.005",
+      "A": [
+        "diffusion",
+        {
+          "diffusivity": 0.005
+        }
+      ],
+      "B": [
+        "fisher_kpp",
+        {
+          "diffusivity": 0.0,
+          "reactivity": 1.0
+        }
+      ],
+      "dt": 0.01,
+      "steps_per_leg": 100,
+      "k": 10,
+      "stage": 2,
+      "predicted_can_shift_the_mean": true,
+      "shift_reason": "same; this is family-1 P1, carried as the positive control",
+      "skipped_from_ranking": false,
+      "extrapolated_proxy": true,
+      "note": "stage-2 diffusivity variant of S1_fkpp_r1.0"
+    },
+    {
+      "id": "S2_fkpp_r1.0_nu0.02",
+      "A": [
+        "diffusion",
+        {
+          "diffusivity": 0.02
+        }
+      ],
+      "B": [
+        "fisher_kpp",
+        {
+          "diffusivity": 0.0,
+          "reactivity": 1.0
+        }
+      ],
+      "dt": 0.01,
+      "steps_per_leg": 100,
+      "k": 10,
+      "stage": 2,
+      "predicted_can_shift_the_mean": true,
+      "shift_reason": "same; this is family-1 P1, carried as the positive control",
+      "skipped_from_ranking": false,
+      "extrapolated_proxy": true,
+      "note": "stage-2 diffusivity variant of S1_fkpp_r1.0"
+    }
+  ]
+}

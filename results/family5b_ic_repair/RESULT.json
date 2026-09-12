@@ -1,0 +1,300 @@
+{
+  "schema": "family5b-result-v1",
+  "status": "COMPLETE_RUN_GATES_FAILED",
+  "pair": "P1_diffusion_fisher_kpp",
+  "fits_completed": 40,
+  "fits_planned": 40,
+  "ic_families": [
+    "IC_GRF",
+    "IC_BUMPS"
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "conditions": [
+    "narrow",
+    "broadS"
+  ],
+  "model": {
+    "arch": "FNO-1D (equinox, family 1e)",
+    "params": 549569,
+    "steps": 8000,
+    "batch": 64,
+    "optimizer": "Adam + cosine decay"
+  },
+  "runtime": {
+    "platform": "CUDA (JAX_PLATFORMS=cuda)",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition, MIG 1g.24gb slice",
+    "gpu_count": 1,
+    "jax": "0.8.1",
+    "python": "3.12.3",
+    "machine": "x86_64",
+    "concurrency": "2, then 6-8, then 7 under CUDA MPS",
+    "departure": "DEPARTURE FROM PREDECLARED RUNTIME: TASK.md and PREDECLARED.md specify the local CPU runtime (JAX_PLATFORMS=cpu, OMP/MKL threads 1). All 40 fits were instead run under the CUDA runtime on a RunPod MIG 1g.24gb slice, jax 0.8.1 / jaxlib CUDA 12. The runner code, seeds, steps, batch, optimizer and cohorts are unchanged; only the backend and the fit scheduling differ. Every fit is an independent deterministic process, but CUDA and CPU backends are not bit-identical, so these e_on values are not directly comparable to CPU-run numbers from other families.",
+    "mps": "CUDA MPS was enabled at 08:35Z for the last 26 fits; per-fit wall time fell from about 1884 s (time-sliced, concurrency 6-7) to about 800 s at concurrency 7."
+  },
+  "gates_generated_utc": "2026-09-12T09:27:38Z",
+  "ic_family_results": {
+    "IC_GRF": {
+      "gates": {
+        "G1_shift_exists": {
+          "training_support": [
+            0.486596896109339,
+            0.5170641813066801
+          ],
+          "switch_support": [
+            0.6924020445679536,
+            0.7238783392995276
+          ],
+          "overlap": 0.0,
+          "gap": 0.17533786326127354,
+          "pass": true
+        },
+        "G2_metric_resolves": {
+          "persistence_off": 0.08331508417614264,
+          "persistence_on": 0.12729123886729243,
+          "median_e_on_narrow": 0.021829555854038778,
+          "dynamic_range": 3.816618383499001,
+          "required_dynamic_range": 100.0,
+          "e_on_limit": 0.012729123886729244,
+          "pass": false
+        },
+        "G4a_censored_below": {
+          "min_e_on_narrow": 0.01673022814428094,
+          "min_e_on_broadS": 0.018943613509453262,
+          "floor": 1.19e-05,
+          "pass": true
+        },
+        "P6_convergence": {
+          "worst_e_on_this_family": 0.055428083486128,
+          "worst_e_on_all_families": 0.055428083486128,
+          "limit": 0.001573,
+          "pass": false
+        }
+      },
+      "blocking_failures": [
+        "G2_metric_resolves",
+        "P6_convergence"
+      ],
+      "family5_reference_band_ratio": 0.24103506053797596,
+      "e_on_per_seed": {
+        "narrow": {
+          "0": 0.022534643872431426,
+          "1": 0.01673022814428094,
+          "2": 0.021809771342001787,
+          "3": 0.020391863409819775,
+          "4": 0.025107857588476314,
+          "5": 0.024838848787930724,
+          "6": 0.020080846416274556,
+          "7": 0.017785612634245055,
+          "8": 0.04394926610766497,
+          "9": 0.02184934036607577
+        },
+        "broadS": {
+          "0": 0.02163465389496699,
+          "1": 0.02359165572987012,
+          "2": 0.025648846125063733,
+          "3": 0.025927178560352503,
+          "4": 0.029182287849155747,
+          "5": 0.03937147044928242,
+          "6": 0.024002252459756672,
+          "7": 0.022057306266610316,
+          "8": 0.055428083486128,
+          "9": 0.018943613509453262
+        }
+      },
+      "e_on_summary": {
+        "narrow": {
+          "median": 0.021829555854038778,
+          "min": 0.01673022814428094,
+          "max": 0.04394926610766497
+        },
+        "broadS": {
+          "median": 0.024825549292410203,
+          "min": 0.018943613509453262,
+          "max": 0.055428083486128
+        }
+      },
+      "per_fit_seconds": {
+        "narrow": {
+          "train": {
+            "median": 1884.3506356409926,
+            "min": 630.7872752170078,
+            "max": 1895.2444619770395
+          },
+          "elapsed": {
+            "median": 1893.9273428385204,
+            "min": 638.3565229009837,
+            "max": 1903.8122367869946
+          }
+        },
+        "broadS": {
+          "train": {
+            "median": 826.4401109759638,
+            "min": 800.0463346510078,
+            "max": 1909.4907886409783
+          },
+          "elapsed": {
+            "median": 834.9384469600045,
+            "min": 808.4290779689909,
+            "max": 1920.0390658359975
+          }
+        }
+      },
+      "e_off": null,
+      "R_per_seed": null,
+      "R_summary": null,
+      "P3_ratio": null,
+      "verdict": "FAIL (pre-gate)",
+      "P3_status": "NOT EVALUATED - blocking gate failure, evaluate refused to read off-support error"
+    },
+    "IC_BUMPS": {
+      "gates": {
+        "G1_shift_exists": {
+          "training_support": [
+            0.16277252825058475,
+            0.845394395519151
+          ],
+          "switch_support": [
+            0.28800788563516516,
+            0.9211239032438551
+          ],
+          "overlap": 0.5573865098839859,
+          "gap": -0.7583513749932703,
+          "pass": false
+        },
+        "G2_metric_resolves": {
+          "persistence_off": 0.0447635116966118,
+          "persistence_on": 0.06794281606125493,
+          "median_e_on_narrow": 0.00027351432729465783,
+          "dynamic_range": 163.6605736137103,
+          "required_dynamic_range": 100.0,
+          "e_on_limit": 0.006794281606125494,
+          "pass": true
+        },
+        "G4a_censored_below": {
+          "min_e_on_narrow": 0.00021977216194058304,
+          "min_e_on_broadS": 0.00022870521510414153,
+          "floor": 1.19e-05,
+          "pass": true
+        },
+        "P6_convergence": {
+          "worst_e_on_this_family": 0.0004295137111448371,
+          "worst_e_on_all_families": 0.055428083486128,
+          "limit": 0.001573,
+          "pass": true
+        }
+      },
+      "blocking_failures": [
+        "G1_shift_exists"
+      ],
+      "family5_reference_band_ratio": 0.17852685331098045,
+      "e_on_per_seed": {
+        "narrow": {
+          "0": 0.0002944313294759458,
+          "1": 0.00028927399175424616,
+          "2": 0.0002752605147273208,
+          "3": 0.0002442088416758964,
+          "4": 0.00027176813986199485,
+          "5": 0.00022279160342584002,
+          "6": 0.0002479200859923493,
+          "7": 0.00021977216194058304,
+          "8": 0.0004345911528700574,
+          "9": 0.000287159618984587
+        },
+        "broadS": {
+          "0": 0.00029316273799875707,
+          "1": 0.00032177110437785845,
+          "2": 0.00030396387088057835,
+          "3": 0.00024279165371862149,
+          "4": 0.0003042253847718204,
+          "5": 0.00022870521510414153,
+          "6": 0.0002808172735145661,
+          "7": 0.00023968995104742076,
+          "8": 0.0004295137111448371,
+          "9": 0.0002558956173523199
+        }
+      },
+      "e_on_summary": {
+        "narrow": {
+          "median": 0.00027351432729465783,
+          "min": 0.00021977216194058304,
+          "max": 0.0004345911528700574
+        },
+        "broadS": {
+          "median": 0.0002869900057566616,
+          "min": 0.00022870521510414153,
+          "max": 0.0004295137111448371
+        }
+      },
+      "per_fit_seconds": {
+        "narrow": {
+          "train": {
+            "median": 817.3314481274865,
+            "min": 814.93989766296,
+            "max": 826.1261637579883
+          },
+          "elapsed": {
+            "median": 825.1081872770155,
+            "min": 822.9271712650079,
+            "max": 833.735155604023
+          }
+        },
+        "broadS": {
+          "train": {
+            "median": 728.3838193539996,
+            "min": 614.6073629930033,
+            "max": 819.9411330900039
+          },
+          "elapsed": {
+            "median": 737.1773897335224,
+            "min": 622.571260947967,
+            "max": 829.5340156559832
+          }
+        }
+      },
+      "e_off": null,
+      "R_per_seed": null,
+      "R_summary": null,
+      "P3_ratio": null,
+      "verdict": "FAIL (pre-gate)",
+      "P3_status": "NOT EVALUATED - blocking gate failure, evaluate refused to read off-support error"
+    }
+  },
+  "cross_family": {
+    "P3_status": "NOT EVALUATED for either IC family. IC_GRF is blocked by G2 and P6; IC_BUMPS is blocked by G1. Under the predeclared ordering device `evaluate` refuses to read any off-support error, so no R, no median R and no P3 ratio exist for family 5b.",
+    "checkpoints": "LOST. The 40 checkpoints were written to pde_volume/family5b/ckpt on the pod's container disk (not the /workspace volume) and were wiped when the pod was stopped. This costs nothing scientifically, because `evaluate` refuses to read e_off for both IC families; it does mean e_off could not be computed later even if a threshold were revised, without refitting."
+  },
+  "pod": {
+    "id": "ijm84mivkot2t4",
+    "gpu_usd_per_hour": 0.59,
+    "family5b_window_utc": [
+      "2026-09-12T07:08:48Z",
+      "2026-09-12T09:27:38Z"
+    ],
+    "family5b_gpu_hours": 2.33,
+    "family5b_attributed_usd": 1.38
+  },
+  "cost_usd": {
+    "orphan_pod_before_run": 0.1322,
+    "main_pod_billed_total": 4.37,
+    "pull_back_restart": 0.02,
+    "total_this_pod_line": 4.52,
+    "authorized": 2.5,
+    "note": "one pod carried both family 7 and family 5b. About $2.7 of the $4.37 is idle time after family 5b finished at 09:27Z: the operator session died at about 13:55Z and the local 4.0 h watchdog did not survive it; the pod was stopped at 14:00:25Z."
+  },
+  "verdict": "FAIL (pre-gate) for both IC families. IC_GRF: the metric does not resolve (dynamic range 3.82 vs 100 required) and P6 convergence fails by a factor of 35. IC_BUMPS: the predeclared support shift does not exist (supports overlap 0.557, gap -0.758), so the composed-operator switch this family was meant to test is not present.",
+  "negative_class": {
+    "IC_GRF": "FLAWED (design-limited): the power-law GRF IC family cannot be fitted to the 1-D convergence standard within 8000 steps; median on-support error 2.18e-2 sits only 3.8x below off-support persistence, so the ratio R could not have separated anything even if it had been read.",
+    "IC_BUMPS": "FLAWED (design-limited): the 4-bump IC family spans nearly the whole [0,1] range, so the narrow spatial-mean window used to create a support shift in the fitted-substitute IC family does not create one here. G1 fails by construction of the IC family, not by any property of BROAD-S."
+  }
+}

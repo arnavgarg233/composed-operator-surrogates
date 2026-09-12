@@ -1,0 +1,625 @@
+{
+  "schema": "family1d-result-v1",
+  "predeclared_sha256": "c50bc3eeb6186dd7146085d308f71f08995cd30827491c14bf4f289946f9cdb5",
+  "verdict": "FAIL (PARTIAL)",
+  "gates": {
+    "PRED_S3_A_spearman_heldout": {
+      "definition": "Spearman(log10 R, D3) over the held-out cells",
+      "threshold": 0.8,
+      "min_cells": 6,
+      "n": 6,
+      "rho": 0.6,
+      "p": 0.208,
+      "cells": [
+        "FK05_broad",
+        "P1_broadS",
+        "F6_P1_broad",
+        "CH_broadS",
+        "FK05_narrow",
+        "F6_P1_narrow"
+      ],
+      "pass": false
+    },
+    "PRED_S3_B_C3_monotone_under_intervention": {
+      "definition": "C3(broad-S) > C3(narrow) for both CH and P1",
+      "CH": {
+        "C3_narrow": 0.6328125,
+        "C3_broadS": 0.87109375,
+        "pass": true
+      },
+      "P1": {
+        "C3_narrow": 0.0,
+        "C3_broadS": 0.0859375,
+        "pass": true
+      },
+      "pass": true
+    }
+  },
+  "reported_not_gated": {
+    "six_selection_cells_spearman_D3": {
+      "n": 6,
+      "rho": 0.8285714285714287,
+      "p": 0.04156268221574335,
+      "cells": [
+        "P1_narrow",
+        "P1_broad",
+        "P2_narrow",
+        "P2_broad",
+        "CH_narrow",
+        "CH_broad"
+      ]
+    },
+    "six_selection_cells_spearman_Dbar": {
+      "n": 6,
+      "rho": -0.2571428571428572,
+      "p": 0.6227871720116619,
+      "cells": [
+        "P1_narrow",
+        "P1_broad",
+        "P2_narrow",
+        "P2_broad",
+        "CH_narrow",
+        "CH_broad"
+      ]
+    },
+    "six_selection_cells_spearman_D3f": {
+      "n": 6,
+      "rho": 0.8285714285714287,
+      "p": 0.04156268221574335,
+      "cells": [
+        "P1_narrow",
+        "P1_broad",
+        "P2_narrow",
+        "P2_broad",
+        "CH_narrow",
+        "CH_broad"
+      ]
+    },
+    "heldout_spearman_Dbar_mahalanobis": {
+      "n": 6,
+      "rho": 0.14285714285714288,
+      "p": 0.7871720116618076,
+      "cells": [
+        "FK05_broad",
+        "P1_broadS",
+        "F6_P1_broad",
+        "CH_broadS",
+        "FK05_narrow",
+        "F6_P1_narrow"
+      ]
+    },
+    "heldout_spearman_D3f": {
+      "n": 6,
+      "rho": 0.6,
+      "p": 0.208,
+      "cells": [
+        "FK05_broad",
+        "P1_broadS",
+        "F6_P1_broad",
+        "CH_broadS",
+        "FK05_narrow",
+        "F6_P1_narrow"
+      ]
+    },
+    "heldout_dedup_spearman_D3": {
+      "n": 4,
+      "rho": 0.19999999999999998,
+      "p": 0.8,
+      "cells": [
+        "FK05_broad",
+        "P1_broadS",
+        "CH_broadS",
+        "FK05_narrow"
+      ]
+    },
+    "heldout_dedup_spearman_Dbar": {
+      "n": 4,
+      "rho": 0.7999999999999999,
+      "p": 0.2000000000000001,
+      "cells": [
+        "FK05_broad",
+        "P1_broadS",
+        "CH_broadS",
+        "FK05_narrow"
+      ]
+    },
+    "blind_subset": {
+      "cells": [
+        "FK05_broad",
+        "FK05_narrow"
+      ],
+      "n": 2,
+      "note": "cells whose R and D3 were not visible when PREDECLARED.md was written"
+    }
+  },
+  "cells": {
+    "P1_narrow": {
+      "R": 110.23398312231919,
+      "log10R": 2.0423155002086086,
+      "seeds": 5,
+      "R_source": "family1c_state_support/RESULT.json prediction_table -- package BASELINE_RESULT.json (5 seeds)",
+      "blind_at_predeclaration": false,
+      "kind": "selection",
+      "stat_cell": "P1_narrow",
+      "D3": 3.313084290417267,
+      "C3": 0.0,
+      "D3f": 0.8133490278667928,
+      "Dbar": 7.708170729293295,
+      "coverage_S": 0.8203125,
+      "pca_k_99": 10,
+      "train_residual_p99": 0.2495279408889745,
+      "R_range": [
+        71.32916335506943,
+        137.30487308661085
+      ]
+    },
+    "P1_broad": {
+      "R": 17.649529763761315,
+      "log10R": 1.2467331389745973,
+      "seeds": 5,
+      "R_source": "family1c_state_support/RESULT.json prediction_table -- package BASELINE_RESULT.json (5 seeds)",
+      "blind_at_predeclaration": false,
+      "kind": "selection",
+      "stat_cell": "P1_broad",
+      "D3": 0.27970882751468995,
+      "C3": 0.0,
+      "D3f": 0.09782602194475422,
+      "Dbar": 7.896163417733511,
+      "coverage_S": 0.78515625,
+      "pca_k_99": 11,
+      "train_residual_p99": 0.04689247508210611,
+      "R_range": [
+        13.995408048209248,
+        18.065251536367626
+      ]
+    },
+    "P2_narrow": {
+      "R": 177.17927616407243,
+      "log10R": 2.248412923115788,
+      "seeds": 10,
+      "R_source": "family1c_state_support/RESULT.json prediction_table -- computed here from 10 banked checkpoints",
+      "blind_at_predeclaration": false,
+      "kind": "selection",
+      "stat_cell": "P2_narrow",
+      "D3": 5.246843867874923,
+      "C3": 0.0,
+      "D3f": 0.9865842187491576,
+      "Dbar": 1.907241011052259,
+      "coverage_S": 1.0,
+      "pca_k_99": 10,
+      "train_residual_p99": 0.2495279408889745,
+      "R_range": [
+        51.95511950930596,
+        372.587291072877
+      ]
+    },
+    "P2_broad": {
+      "R": 0.10023648628761724,
+      "log10R": -0.9989741656037373,
+      "seeds": 10,
+      "R_source": "family1c_state_support/RESULT.json prediction_table -- computed here from 10 banked checkpoints",
+      "blind_at_predeclaration": false,
+      "kind": "selection",
+      "stat_cell": "P2_broad",
+      "D3": 0.012136509287596825,
+      "C3": 1.0,
+      "D3f": 0.003882878229888335,
+      "Dbar": 1.942944914606267,
+      "coverage_S": 1.0,
+      "pca_k_99": 10,
+      "train_residual_p99": 0.890434477323204,
+      "R_range": [
+        0.05801833500448866,
+        0.29209923331331383
+      ]
+    },
+    "CH_narrow": {
+      "R": 46.278063082334874,
+      "log10R": 1.665375173740014,
+      "seeds": 10,
+      "R_source": "family1c_state_support/RESULT.json prediction_table -- family 1 P3_negative_control (10 seeds)",
+      "blind_at_predeclaration": false,
+      "kind": "selection",
+      "stat_cell": "CH_narrow",
+      "D3": 0.23047037924339295,
+      "C3": 0.6328125,
+      "D3f": 0.08999539052267647,
+      "Dbar": 5.944187805932338,
+      "coverage_S": 0.91015625,
+      "pca_k_99": 10,
+      "train_residual_p99": 0.2495279408889745,
+      "R_range": [
+        42.47685597972417,
+        64.51827873211109
+      ]
+    },
+    "CH_broad": {
+      "R": 35.79872545766392,
+      "log10R": 1.5538675647288742,
+      "seeds": 10,
+      "R_source": "family1c_state_support/RESULT.json prediction_table -- family 1 P3_negative_control (10 seeds)",
+      "blind_at_predeclaration": false,
+      "kind": "selection",
+      "stat_cell": "CH_broad",
+      "D3": 0.17634575586893095,
+      "C3": 0.0,
+      "D3f": 0.059505716782685486,
+      "Dbar": 6.0743877679244385,
+      "coverage_S": 0.91015625,
+      "pca_k_99": 11,
+      "train_residual_p99": 0.001330230932117724,
+      "R_range": [
+        27.673823159675933,
+        50.41593832977157
+      ]
+    },
+    "CH_broadS": {
+      "R": 0.787165035191004,
+      "log10R": -0.10393420492332554,
+      "seeds": 10,
+      "R_source": "family1c_state_support/results/broadS/CH_seed*.json, 10-seed median",
+      "blind_at_predeclaration": false,
+      "kind": "heldout",
+      "stat_cell": "CH_broadS",
+      "D3": 0.28735827315764223,
+      "C3": 0.87109375,
+      "D3f": 0.10389134888964666,
+      "Dbar": 6.620380104577228,
+      "coverage_S": 0.828125,
+      "pca_k_99": 10,
+      "train_residual_p99": 0.525362478205698,
+      "R_range": [
+        0.6762832641681784,
+        0.9146809246930143
+      ]
+    },
+    "P1_broadS": {
+      "R": 2.5690821143457976,
+      "log10R": 0.409777985635493,
+      "seeds": 10,
+      "R_source": "family1c_state_support/results/broadS/P1_seed*.json, 10-seed median",
+      "blind_at_predeclaration": false,
+      "kind": "heldout",
+      "stat_cell": "P1_broadS",
+      "D3": 0.27963860802184437,
+      "C3": 0.0859375,
+      "D3f": 0.09483658897674796,
+      "Dbar": 8.22453101981058,
+      "coverage_S": 0.7421875,
+      "pca_k_99": 11,
+      "train_residual_p99": 0.1522012088628563,
+      "R_range": [
+        1.9517713696897472,
+        2.9490263919768016
+      ]
+    },
+    "F6_P1_narrow": {
+      "R": 90.68072674097496,
+      "log10R": 1.957514992027158,
+      "seeds": 2,
+      "R_source": "family6_serrano_baseline/results/RESULT_SMOKE.json R.narrow_oracle.R_frame0_bridge.median (frame-0 on-support bridge: the package/family-1 e_on convention)",
+      "blind_at_predeclaration": false,
+      "kind": "heldout",
+      "stat_cell": "P1_narrow",
+      "D3": 3.313084290417267,
+      "C3": 0.0,
+      "D3f": 0.8133490278667928,
+      "Dbar": 7.708170729293295,
+      "coverage_S": 0.8203125,
+      "pca_k_99": 10,
+      "train_residual_p99": 0.2495279408889745,
+      "R_per_seed": [
+        79.18809291307502,
+        102.17336056887488
+      ],
+      "R_headline_convention": 354.93920074986903,
+      "duplicate_of": "P1_narrow",
+      "duplicate_note": "training cloud identical to the selection cell P1_narrow; D3/C3/Dbar are therefore identical and carry no independent information about the predictor"
+    },
+    "F6_P1_broad": {
+      "R": 18.384592384168258,
+      "log10R": 1.2644540053080133,
+      "seeds": 2,
+      "R_source": "family6_serrano_baseline/results/RESULT_SMOKE.json R.broad_oracle.R_frame0_bridge.median (frame-0 on-support bridge: the package/family-1 e_on convention)",
+      "blind_at_predeclaration": false,
+      "kind": "heldout",
+      "stat_cell": "P1_broad",
+      "D3": 0.27970882751468995,
+      "C3": 0.0,
+      "D3f": 0.09782602194475422,
+      "Dbar": 7.896163417733511,
+      "coverage_S": 0.78515625,
+      "pca_k_99": 11,
+      "train_residual_p99": 0.04689247508210611,
+      "R_per_seed": [
+        18.307438742315153,
+        18.461746026021366
+      ],
+      "R_headline_convention": 108.71206018171108,
+      "duplicate_of": "P1_broad",
+      "duplicate_note": "training cloud identical to the selection cell P1_broad; D3/C3/Dbar are therefore identical and carry no independent information about the predictor"
+    },
+    "FK05_narrow": {
+      "R": 58.67609512572204,
+      "log10R": 1.7684612039820866,
+      "seeds": 10,
+      "R_source": "family1d, 10-seed median (R read from the ten narrow models family 1 already fitted (t...)",
+      "blind_at_predeclaration": true,
+      "kind": "heldout",
+      "stat_cell": "FK05_narrow",
+      "D3": 1.7274714259249773,
+      "C3": 0.0,
+      "D3f": 0.5395499840798603,
+      "Dbar": 8.654688738148941,
+      "coverage_S": 0.5625,
+      "pca_k_99": 10,
+      "train_residual_p99": 0.2495279408889745,
+      "R_range": [
+        46.39371153749371,
+        78.9873505073015
+      ],
+      "median_e_on": 0.00019224691546033533,
+      "median_e_off": 0.011371668804187926,
+      "persistence_off": 0.10153809212755065,
+      "censored_above": false
+    },
+    "FK05_broad": {
+      "R": 16.437058454653428,
+      "log10R": 1.215824099626495,
+      "seeds": 5,
+      "R_source": "family1d, 5-seed median (5 new fits, this family, seeds 0-4....)",
+      "blind_at_predeclaration": true,
+      "kind": "heldout",
+      "stat_cell": "FK05_broad",
+      "D3": 0.16033992378868983,
+      "C3": 0.0,
+      "D3f": 0.06030714220778767,
+      "Dbar": 8.710095274755048,
+      "coverage_S": 0.56640625,
+      "pca_k_99": 11,
+      "train_residual_p99": 0.029634121060226375,
+      "R_range": [
+        15.386136769634554,
+        19.151933914506035
+      ],
+      "median_e_on": 0.0002586020984007781,
+      "median_e_off": 0.004952730298724289,
+      "persistence_off": 0.10153809212755065,
+      "censored_above": false
+    }
+  },
+  "heldout_cells": [
+    "FK05_broad",
+    "P1_broadS",
+    "F6_P1_broad",
+    "CH_broadS",
+    "FK05_narrow",
+    "F6_P1_narrow"
+  ],
+  "selection_cells": [
+    "P1_narrow",
+    "P1_broad",
+    "P2_narrow",
+    "P2_broad",
+    "CH_narrow",
+    "CH_broad"
+  ],
+  "rerun_status": {
+    "polled": true,
+    "result_files": [],
+    "checkpoints_present": 8,
+    "fits_required": 40,
+    "note": "family1_rerun is a live detached driver (PID 89748). No RESULT file existed inside this family's 4-hour window, so held-out group (a) contributes no cells."
+  },
+  "elapsed_seconds": 0.02666912498534657,
+  "fk05_gates": {
+    "schema": "family1d-fk05-gates-v1",
+    "written_before_any_off_support_number_was_read": true,
+    "narrow_reuse_checksum": {
+      "P1_seed0": "9ec049f0f8e46fb4ebee8247e35a1e74e2d58759b6ad741915be2c06ce8510cd",
+      "P2_seed0": "9ec049f0f8e46fb4ebee8247e35a1e74e2d58759b6ad741915be2c06ce8510cd",
+      "CH_seed0": "9ec049f0f8e46fb4ebee8247e35a1e74e2d58759b6ad741915be2c06ce8510cd",
+      "identical": true
+    },
+    "per_seed_e_on_narrow": {
+      "0": 0.0002453749646386804,
+      "1": 0.00021228456526461442,
+      "2": 0.00018413146448172422,
+      "3": 0.00018738517594027687,
+      "4": 0.00015722485542956667,
+      "5": 0.00018906178635591335,
+      "6": 0.00019607968733610393,
+      "7": 0.00021502148539080042,
+      "8": 0.00018196488346566782,
+      "9": 0.0001954320445647573
+    },
+    "per_seed_e_on_broad": {
+      "0": 0.0003198666736590228,
+      "1": 0.0002586020984007781,
+      "2": 0.00025582884159404195,
+      "3": 0.0002973703144900983,
+      "4": 0.00019473322246865512
+    },
+    "G1_shift_exists": {
+      "narrow_overlap": 0.0,
+      "pass": true
+    },
+    "G2_metric_resolves": {
+      "persistence_off": 0.10153809212755065,
+      "persistence_on": 0.12143668541229405,
+      "median_e_on_narrow": 0.00019224691546033533,
+      "dynamic_range": 528.1650001219402,
+      "required": 100.0,
+      "e_on_below_tenth_of_persistence_on": true,
+      "pass": true
+    },
+    "P6_convergence": {
+      "worst_e_on": 0.0003198666736590228,
+      "limit": 0.001573,
+      "pass": true
+    }
+  },
+  "fk05_geometry": {
+    "schema": "family1d-fk05-geometry-v1",
+    "status": "truth states only; no learner; written before any e_off is read",
+    "pair": "S1_fkpp_r0.5",
+    "second_operator": "exponax FisherKPP(diffusivity=0.0, reactivity=0.5)",
+    "offsets": {
+      "narrow": [
+        0.4865,
+        0.5171
+      ],
+      "broad": [
+        0.48,
+        0.7
+      ]
+    },
+    "narrow_training_support": [
+      0.4865763783454895,
+      0.5169978737831116
+    ],
+    "broad_training_support": [
+      0.48054927587509155,
+      0.6990498900413513
+    ],
+    "switch_support": [
+      0.5941062569618225,
+      0.6244125366210938
+    ],
+    "narrow_overlap": 0.0,
+    "broad_overlap": 0.03030627965927124,
+    "persistence_on": 0.12143668541229405,
+    "persistence_off": 0.10153809212755065,
+    "screen_reference": {
+      "source": "family1b_pair_screen/RESULT.json intervals/S1_fkpp_r0.5",
+      "switch_support": [
+        0.5941062569618225,
+        0.6244125366210938
+      ],
+      "persistence_off": 0.10153809212755065
+    },
+    "elapsed_seconds": 7.856645332998596
+  },
+  "posthoc_gating_nothing": {
+    "status": "POST-HOC; computed after the gate in RESULT.json was evaluated; gates nothing",
+    "congested_band": {
+      "definition": "held-out cells with D3 < 1.0 -- every cell whose switch states are already largely inside the training PCA-99 basis",
+      "cells": [
+        "FK05_broad",
+        "P1_broadS",
+        "F6_P1_broad",
+        "CH_broadS"
+      ],
+      "D3_min": 0.16033992378868983,
+      "D3_max": 0.28735827315764223,
+      "D3_ratio": 1.7921816748294608,
+      "R_min": 0.787165035191004,
+      "R_max": 18.384592384168258,
+      "R_ratio": 23.355448428558915,
+      "spearman_S3": {
+        "n": 4,
+        "rho": -0.39999999999999997,
+        "p": 0.6,
+        "cells": [
+          "FK05_broad",
+          "P1_broadS",
+          "F6_P1_broad",
+          "CH_broadS"
+        ]
+      },
+      "spearman_Dbar": {
+        "n": 4,
+        "rho": 0.39999999999999997,
+        "p": 0.6,
+        "cells": [
+          "FK05_broad",
+          "P1_broadS",
+          "F6_P1_broad",
+          "CH_broadS"
+        ]
+      }
+    },
+    "intervention_traces": [
+      {
+        "label": "P1 mean-broadening",
+        "from": "P1_narrow",
+        "to": "P1_broad",
+        "R_from": 110.23398312231919,
+        "R_to": 17.649529763761315,
+        "R_ratio": 0.16010969815158385,
+        "D3_from": 3.313084290417267,
+        "D3_to": 0.27970882751468995,
+        "C3_from": 0.0,
+        "C3_to": 0.0
+      },
+      {
+        "label": "FK05 mean-broadening (new pair)",
+        "from": "FK05_narrow",
+        "to": "FK05_broad",
+        "R_from": 58.67609512572204,
+        "R_to": 16.437058454653428,
+        "R_ratio": 0.28013211205405963,
+        "D3_from": 1.7274714259249773,
+        "D3_to": 0.16033992378868983,
+        "C3_from": 0.0,
+        "C3_to": 0.0
+      },
+      {
+        "label": "CH mean-broadening",
+        "from": "CH_narrow",
+        "to": "CH_broad",
+        "R_from": 46.278063082334874,
+        "R_to": 35.79872545766392,
+        "R_ratio": 0.7735571256293331,
+        "D3_from": 0.23047037924339295,
+        "D3_to": 0.17634575586893095,
+        "C3_from": 0.6328125,
+        "C3_to": 0.0
+      },
+      {
+        "label": "CH state-broadening (BROAD-S)",
+        "from": "CH_narrow",
+        "to": "CH_broadS",
+        "R_from": 46.278063082334874,
+        "R_to": 0.787165035191004,
+        "R_ratio": 0.017009463723460766,
+        "D3_from": 0.23047037924339295,
+        "D3_to": 0.28735827315764223,
+        "C3_from": 0.6328125,
+        "C3_to": 0.87109375
+      },
+      {
+        "label": "P1 state-broadening (BROAD-S)",
+        "from": "P1_narrow",
+        "to": "P1_broadS",
+        "R_from": 110.23398312231919,
+        "R_to": 2.5690821143457976,
+        "R_ratio": 0.02330571790638338,
+        "D3_from": 3.313084290417267,
+        "D3_to": 0.27963860802184437,
+        "C3_from": 0.0,
+        "C3_to": 0.0859375
+      }
+    ],
+    "FK05_P3_observation": {
+      "note": "NOT a gate of this family. Family 1's P3 threshold applied to the new pair, reported because claim (ii)'s second half is falsifiable on exactly this number. The broad arm here is 5 seeds, not the 10 family 1 declares; the live family-1 rerun will settle it at 10.",
+      "R_narrow_median_10_seeds": 58.67609512572204,
+      "R_narrow_median_seeds_0_4": 59.4192017061559,
+      "R_broad_median_5_seeds": 16.437058454653428,
+      "ratio_vs_10_seed_narrow": 0.28013211205405963,
+      "ratio_vs_seed_matched_narrow": 0.2766287325087124,
+      "package_P3_limit": 0.25,
+      "meets_P3": false,
+      "G3_log10R_IQR_narrow": 0.06303171168863586,
+      "G3_limit": 0.5
+    },
+    "cost": {
+      "new_fits": 5,
+      "median_minutes_per_fit": 33.82396197223328,
+      "process_hours": 2.6683508267016682,
+      "wall_clock": "11:46Z predeclaration -> 12:54Z last e_off",
+      "concurrency": 3,
+      "usd": 0.0
+    }
+  }
+}

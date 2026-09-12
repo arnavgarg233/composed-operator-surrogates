@@ -1,0 +1,401 @@
+{
+  "schema": "family6-serrano-smoke-v1",
+  "seed": 8,
+  "units": 48,
+  "num_points": 256,
+  "tau": 0.1,
+  "k": 10,
+  "context_frames": 7,
+  "max_length": 5,
+  "beam_width": 4,
+  "uniform_trials": 100,
+  "platform": {
+    "python": "3.12.13",
+    "machine": "arm64",
+    "jax": "0.8.1"
+  },
+  "jit_vs_uncompiled_max_relative_difference": 2.9241925025166334e-07,
+  "R": {
+    "estimand": "k=10 diffusion solution operator, tau=0.10",
+    "evaluation_state": "frame 10 (t=1.0) of a one-leg trajectory; see METHOD_SPEC 5.1 -- NOT comparable to the banked 110.234 / 17.650, which are at frame 0",
+    "G1_shift_exists": {
+      "training_support": [
+        0.4865763783454895,
+        0.5169978737831116
+      ],
+      "switch_support": [
+        0.694233775138855,
+        0.7207172513008118
+      ],
+      "overlap": 0.0,
+      "gap": 0.1772359013557434,
+      "pass": true
+    },
+    "persistence_on": 0.005724757234653955,
+    "persistence_off": 0.08231644444739432,
+    "persistence_on_frame0": 0.12423847816478044,
+    "arms": {
+      "narrow_oracle": {
+        "kind": "oracle-schedule (told the primitive)",
+        "context": "none",
+        "extra_test_time_forward_passes_per_unit": 0,
+        "e_on": 7.395284584921726e-05,
+        "e_off": 0.022716136895446336,
+        "e_on_frame0_bridge": 0.0002012562831334894,
+        "e_off_frame0_bridge": 0.022716136895446336,
+        "R": 307.1705575977746,
+        "R_frame0_bridge": 112.87169047228782
+      },
+      "serrano_narrow_lie_causal": {
+        "kind": "searched (Lie)",
+        "context": "causal",
+        "extra_test_time_forward_passes_per_unit": 1548,
+        "by_rule": {
+          "exhaustive": {
+            "e_on": 7.395284584921726e-05,
+            "e_off": 0.08053651365598015,
+            "R": 1089.025212365544,
+            "selected_on": {
+              "D": 48
+            },
+            "selected_off": {
+              "R": 48
+            },
+            "diffusion_only_fraction_on": 1.0
+          },
+          "beam": {
+            "e_on": 7.395284584921726e-05,
+            "e_off": 0.08053651365598015,
+            "R": 1089.025212365544,
+            "selected_on": {
+              "D": 48
+            },
+            "selected_off": {
+              "R": 48
+            },
+            "diffusion_only_fraction_on": 1.0
+          },
+          "uniform": {
+            "e_on": 7.395284584921726e-05,
+            "e_off": 0.08053651365598015,
+            "R": 1089.025212365544,
+            "selected_on": {
+              "D": 48
+            },
+            "selected_off": {
+              "R": 48
+            },
+            "diffusion_only_fraction_on": 1.0
+          }
+        }
+      },
+      "serrano_narrow_lie_regime": {
+        "kind": "searched (Lie)",
+        "context": "regime [ORACLE]",
+        "extra_test_time_forward_passes_per_unit": 1548,
+        "by_rule": {
+          "exhaustive": {
+            "e_on": 7.395284584921726e-05,
+            "e_off": 0.013617289745728543,
+            "R": 184.1347630284964,
+            "selected_on": {
+              "D": 48
+            },
+            "selected_off": {
+              "R-D": 48
+            },
+            "diffusion_only_fraction_on": 1.0
+          },
+          "beam": {
+            "e_on": 7.395284584921726e-05,
+            "e_off": 0.013617289745728543,
+            "R": 184.1347630284964,
+            "selected_on": {
+              "D": 48
+            },
+            "selected_off": {
+              "R-D": 48
+            },
+            "diffusion_only_fraction_on": 1.0
+          },
+          "uniform": {
+            "e_on": 7.395284584921726e-05,
+            "e_off": 0.013617289745728543,
+            "R": 184.1347630284964,
+            "selected_on": {
+              "D": 48
+            },
+            "selected_off": {
+              "R-D": 48
+            },
+            "diffusion_only_fraction_on": 1.0
+          }
+        }
+      },
+      "broad_oracle": {
+        "kind": "oracle-schedule (told the primitive)",
+        "context": "none",
+        "extra_test_time_forward_passes_per_unit": 0,
+        "e_on": 7.002552488971522e-05,
+        "e_off": 0.003014434533421515,
+        "e_on_frame0_bridge": 0.00026124567982414415,
+        "e_off_frame0_bridge": 0.003014434533421515,
+        "R": 43.04765352589668,
+        "R_frame0_bridge": 11.538696201409579
+      },
+      "serrano_broad_lie_causal": {
+        "kind": "searched (Lie)",
+        "context": "causal",
+        "extra_test_time_forward_passes_per_unit": 1548,
+        "by_rule": {
+          "exhaustive": {
+            "e_on": 7.002552488971522e-05,
+            "e_off": 0.08054970854645457,
+            "R": 1150.2906786248889,
+            "selected_on": {
+              "D": 48
+            },
+            "selected_off": {
+              "R": 48
+            },
+            "diffusion_only_fraction_on": 1.0
+          },
+          "beam": {
+            "e_on": 7.002552488971522e-05,
+            "e_off": 0.08054970854645457,
+            "R": 1150.2906786248889,
+            "selected_on": {
+              "D": 48
+            },
+            "selected_off": {
+              "R": 48
+            },
+            "diffusion_only_fraction_on": 1.0
+          },
+          "uniform": {
+            "e_on": 7.002552488971522e-05,
+            "e_off": 0.08054970854645457,
+            "R": 1150.2906786248889,
+            "selected_on": {
+              "D": 48
+            },
+            "selected_off": {
+              "R": 48
+            },
+            "diffusion_only_fraction_on": 1.0
+          }
+        }
+      }
+    }
+  },
+  "S": {
+    "definition": "run_dissociation.py:centred_ratio, centered over the 48 eval units; trajectory = all 21 tau-frames, endpoint = frame 20",
+    "frames": 21,
+    "applications_per_leg": 10,
+    "arms": {
+      "narrow_oracle": {
+        "kind": "oracle-schedule (told the order). METHOD_SPEC 5.2: this is also the oracle upper bound for the Serrano method on S.",
+        "context": "none",
+        "S": {
+          "trajectory": 0.07511235642608378,
+          "endpoint": 1.040509595919614,
+          "trajectory_even_subgrid": 0.07498529514078676,
+          "endpoint_even_subgrid": 1.040509595919614,
+          "trajectory_horizon_only": 0.10450621972096884
+        }
+      },
+      "serrano_narrow_lie_causal": {
+        "kind": "searched (Lie), time-homogeneous rollout",
+        "context": "causal, first 7 frames of the true composed trajectory (inside leg A)",
+        "by_rule": {
+          "exhaustive": {
+            "S": {
+              "trajectory": 0.7185833754607689,
+              "endpoint": 8.358535511373189,
+              "trajectory_even_subgrid": 0.7247734274103034,
+              "endpoint_even_subgrid": 8.358535511373189,
+              "trajectory_horizon_only": 0.9999728835670939
+            },
+            "selected_ab": {
+              "D": 48
+            },
+            "selected_ba": {
+              "R": 48
+            }
+          },
+          "beam": {
+            "S": {
+              "trajectory": 0.7185833754607689,
+              "endpoint": 8.358535511373189,
+              "trajectory_even_subgrid": 0.7247734274103034,
+              "endpoint_even_subgrid": 8.358535511373189,
+              "trajectory_horizon_only": 0.9999728835670939
+            },
+            "selected_ab": {
+              "D": 48
+            },
+            "selected_ba": {
+              "R": 48
+            }
+          },
+          "uniform": {
+            "S": {
+              "trajectory": 0.7185833754607689,
+              "endpoint": 8.358535511373189,
+              "trajectory_even_subgrid": 0.7247734274103034,
+              "endpoint_even_subgrid": 8.358535511373189,
+              "trajectory_horizon_only": 0.9999728835670939
+            },
+            "selected_ab": {
+              "D": 48
+            },
+            "selected_ba": {
+              "R": 48
+            }
+          }
+        }
+      },
+      "serrano_narrow_strang2tau_causal": {
+        "kind": "searched (Strang at grain 2 tau); even-subgrid only",
+        "context": "causal, frames 0,2,4,6 of the true composed trajectory",
+        "by_rule": {
+          "exhaustive": {
+            "S": {
+              "trajectory_even_subgrid": 0.7247734274103033,
+              "endpoint_even_subgrid": 8.358535511373189
+            },
+            "selected_ab": {
+              "D": 48
+            },
+            "selected_ba": {
+              "R": 48
+            }
+          },
+          "beam": {
+            "S": {
+              "trajectory_even_subgrid": 0.7247734274103033,
+              "endpoint_even_subgrid": 8.358535511373189
+            },
+            "selected_ab": {
+              "D": 48
+            },
+            "selected_ba": {
+              "R": 48
+            }
+          },
+          "uniform": {
+            "S": {
+              "trajectory_even_subgrid": 0.7247734274103033,
+              "endpoint_even_subgrid": 8.358535511373189
+            },
+            "selected_ab": {
+              "D": 48
+            },
+            "selected_ba": {
+              "R": 48
+            }
+          }
+        }
+      },
+      "broad_oracle": {
+        "kind": "oracle-schedule (told the order). METHOD_SPEC 5.2: this is also the oracle upper bound for the Serrano method on S.",
+        "context": "none",
+        "S": {
+          "trajectory": 0.00923636570032875,
+          "endpoint": 0.042397989392481635,
+          "trajectory_even_subgrid": 0.006748619310685129,
+          "endpoint_even_subgrid": 0.042397989392481635,
+          "trajectory_horizon_only": 0.012610617224475925
+        }
+      },
+      "serrano_broad_lie_causal": {
+        "kind": "searched (Lie), time-homogeneous rollout",
+        "context": "causal, first 7 frames of the true composed trajectory (inside leg A)",
+        "by_rule": {
+          "exhaustive": {
+            "S": {
+              "trajectory": 0.7196034770814125,
+              "endpoint": 8.378961671347227,
+              "trajectory_even_subgrid": 0.7258441198501596,
+              "endpoint_even_subgrid": 8.378961671347227,
+              "trajectory_horizon_only": 1.0013914062295612
+            },
+            "selected_ab": {
+              "D": 48
+            },
+            "selected_ba": {
+              "R": 48
+            }
+          },
+          "beam": {
+            "S": {
+              "trajectory": 0.7196034770814125,
+              "endpoint": 8.378961671347227,
+              "trajectory_even_subgrid": 0.7258441198501596,
+              "endpoint_even_subgrid": 8.378961671347227,
+              "trajectory_horizon_only": 1.0013914062295612
+            },
+            "selected_ab": {
+              "D": 48
+            },
+            "selected_ba": {
+              "R": 48
+            }
+          },
+          "uniform": {
+            "S": {
+              "trajectory": 0.7196034770814125,
+              "endpoint": 8.378961671347227,
+              "trajectory_even_subgrid": 0.7258441198501596,
+              "endpoint_even_subgrid": 8.378961671347227,
+              "trajectory_horizon_only": 1.0013914062295612
+            },
+            "selected_ab": {
+              "D": 48
+            },
+            "selected_ba": {
+              "R": 48
+            }
+          }
+        }
+      }
+    }
+  },
+  "gates": {
+    "G1_shift_exists": {
+      "training_support": [
+        0.4865763783454895,
+        0.5169978737831116
+      ],
+      "switch_support": [
+        0.694233775138855,
+        0.7207172513008118
+      ],
+      "overlap": 0.0,
+      "gap": 0.1772359013557434,
+      "pass": true
+    },
+    "G2_metric_resolves": {
+      "dynamic_range": 1143.455701365782,
+      "required": 100.0,
+      "pass": true
+    },
+    "G4_censored_below": {
+      "min_e_on": 7.002552488971522e-05,
+      "floor": 1.19e-05,
+      "pass": true
+    },
+    "P6_convergence": {
+      "worst_e_on": 7.395284584921726e-05,
+      "limit": 0.001573,
+      "pass": true
+    },
+    "S1_search_sanity": {
+      "statement": "on the on-support causal R context the search selects a diffusion-only composition for >= 90% of units",
+      "fraction": 1.0,
+      "required": 0.9,
+      "pass": true
+    }
+  },
+  "elapsed_seconds": 143.28098116599722
+}

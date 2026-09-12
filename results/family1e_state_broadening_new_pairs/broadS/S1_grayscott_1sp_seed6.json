@@ -1,0 +1,22 @@
+{
+  "schema": "family1e-broadS-seed-v1",
+  "pair": "S1_grayscott_1sp",
+  "condition": "broadS",
+  "seed": 6,
+  "sampler": "PREDECLARED.md section 2, blocks ((0, 160, 0), (160, 320, 25), (320, 480, 50), (480, 640, 100))",
+  "e_on": 0.00022383833712541915,
+  "train_seconds": 1815.971827833011,
+  "elapsed_seconds": 1834.3407759580004,
+  "steps": 8000,
+  "batch": 64,
+  "platform": {
+    "python": "3.12.13",
+    "machine": "arm64",
+    "jax": "0.8.1"
+  },
+  "e_on_reloaded": 0.00022383833712541915,
+  "reload_exact": true,
+  "e_off": 0.0008210184124160423,
+  "R": 3.6679079328400137,
+  "e_off_constant_mode_corrected": 0.0008151623576337134
+}

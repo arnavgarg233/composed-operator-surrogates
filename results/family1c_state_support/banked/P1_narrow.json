@@ -1,0 +1,102 @@
+{
+  "schema": "family1c-banked-eval-v1",
+  "status": "R read from models family 1 already fitted; NO model was fitted here and nothing was written into family1_second_pairs/",
+  "pair": "P1",
+  "condition": "narrow",
+  "checkpoint_tree": "results/family1_second_pairs/ckpt/P2_diffusion_allen_cahn",
+  "narrow_reuse_checksum": {
+    "P1_seed0": "9ec049f0f8e46fb4ebee8247e35a1e74e2d58759b6ad741915be2c06ce8510cd",
+    "P2_seed0": "9ec049f0f8e46fb4ebee8247e35a1e74e2d58759b6ad741915be2c06ce8510cd",
+    "CH_seed0": "9ec049f0f8e46fb4ebee8247e35a1e74e2d58759b6ad741915be2c06ce8510cd",
+    "identical": true
+  },
+  "offsets": [
+    0.4865,
+    0.5171
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "per_seed": {
+    "0": {
+      "e_on": 0.0002453749646386804,
+      "e_off": 0.01840134087842501,
+      "R": 74.9927398075079,
+      "checkpoint": "results/family1_second_pairs/ckpt/P2_diffusion_allen_cahn/seed0_narrow.npz"
+    },
+    "1": {
+      "e_on": 0.00021228456526461442,
+      "e_off": 0.025768039190744607,
+      "R": 121.38442170124115,
+      "checkpoint": "results/family1_second_pairs/ckpt/P2_diffusion_allen_cahn/seed1_narrow.npz"
+    },
+    "2": {
+      "e_on": 0.00018413146448172422,
+      "e_off": 0.017947765185266133,
+      "R": 97.4725598136299,
+      "checkpoint": "results/family1_second_pairs/ckpt/P2_diffusion_allen_cahn/seed2_narrow.npz"
+    },
+    "3": {
+      "e_on": 0.00018738517594027687,
+      "e_off": 0.020670589422744072,
+      "R": 110.31069730581127,
+      "checkpoint": "results/family1_second_pairs/ckpt/P2_diffusion_allen_cahn/seed3_narrow.npz"
+    },
+    "4": {
+      "e_on": 0.00015722485542956667,
+      "e_off": 0.020835536379517374,
+      "R": 132.5206267329102,
+      "checkpoint": "results/family1_second_pairs/ckpt/P2_diffusion_allen_cahn/seed4_narrow.npz"
+    },
+    "5": {
+      "e_on": 0.00018906178635591335,
+      "e_off": 0.021561897532588463,
+      "R": 114.0468306588285,
+      "checkpoint": "results/family1_second_pairs/ckpt/P2_diffusion_allen_cahn/seed5_narrow.npz"
+    },
+    "6": {
+      "e_on": 0.00019607968733610393,
+      "e_off": 0.022894695948237523,
+      "R": 116.7622014257565,
+      "checkpoint": "results/family1_second_pairs/ckpt/P2_diffusion_allen_cahn/seed6_narrow.npz"
+    },
+    "7": {
+      "e_on": 0.00021502148539080042,
+      "e_off": 0.019291283704305537,
+      "R": 89.71793525304567,
+      "checkpoint": "results/family1_second_pairs/ckpt/P2_diffusion_allen_cahn/seed7_narrow.npz"
+    },
+    "8": {
+      "e_on": 0.00018196488346566782,
+      "e_off": 0.022592715294734007,
+      "R": 124.159754697926,
+      "checkpoint": "results/family1_second_pairs/ckpt/P2_diffusion_allen_cahn/seed8_narrow.npz"
+    },
+    "9": {
+      "e_on": 0.0001954320445647573,
+      "e_off": 0.03866923818612829,
+      "R": 197.86539240403363,
+      "checkpoint": "results/family1_second_pairs/ckpt/P2_diffusion_allen_cahn/seed9_narrow.npz"
+    }
+  },
+  "median_R": 115.4045160422925,
+  "R_range": [
+    74.9927398075079,
+    197.86539240403363
+  ],
+  "median_e_on": 0.00019224691546033533,
+  "median_e_off": 0.021198716956052917,
+  "persistence_on": 0.12143668541229405,
+  "persistence_off": 0.08019073763412352,
+  "dynamic_range": 417.1236632957504,
+  "elapsed_seconds": 49.276021291007055
+}

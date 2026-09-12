@@ -1,0 +1,131 @@
+{
+  "schema": "pde-family5-ic-robustness-v1",
+  "generated": "2026-09-10",
+  "purpose": "Test whether the composition-scale band check's median contrast-to-cross-IC ratio and numerical-floor pass count depend on the fitted-substitute IC family, per CLAIM_INVENTORY.md section 7 row 5.",
+  "package_reference": {
+    "path": "recovery/composed-operator-surrogates",
+    "commit": "0f04368",
+    "vendored_from": [
+      "scripts/band_check/band_check.py",
+      "scripts/band_check/integrity_controls.py",
+      "scripts/second_pair/measure_geometric_repair.py"
+    ]
+  },
+  "environment": {
+    "python": "3.12.13",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "jax_version": "0.8.1",
+    "jax_devices": [
+      "TFRT_CPU_0"
+    ],
+    "exponax_version": "0.2.0"
+  },
+  "predeclared_gate": "PASS for a family if median_contrast_to_cross_ic in [0.3, 0.7] AND floor_passes >= 142/256; robust-to-IC-family only if BOTH alternative families individually PASS. See PREDECLARED.md, written before this script was run.",
+  "positive_control": {
+    "target_value": 0.4261565675911184,
+    "observed_value": 0.4261565675911184,
+    "exact_match": true,
+    "abs_diff": 0.0
+  },
+  "results": {
+    "original_cutoff5_positive_control": {
+      "family": "original_cutoff5_positive_control",
+      "units": 256,
+      "floor_passes": 256,
+      "floor_passes_required": 142,
+      "floor_gate_clears": true,
+      "median_contrast": 0.031231252093953152,
+      "median_floor": 8.062809690792053e-06,
+      "median_contrast_to_floor": 3842.0664152247127,
+      "median_contrast_to_cross_ic": 0.4261565675911184,
+      "bootstrap_draws": 4000,
+      "bootstrap_seed": 20260905,
+      "bootstrap_ci95": [
+        0.3872544094292736,
+        0.4686232568961348
+      ],
+      "band": [
+        0.3,
+        0.7
+      ],
+      "band_clears": true,
+      "commuting_null": {
+        "max_relative_order_difference": 4.859742014131267e-16,
+        "gate": 1e-12,
+        "passes": true
+      },
+      "saturation_fraction": 0.0,
+      "saturation_limit": 0.1,
+      "saturation_within_limit": true,
+      "verdict": "PASS",
+      "elapsed_seconds": 2.9727459589776117
+    },
+    "family1_spectral_grf_power_law": {
+      "family": "family1_spectral_grf_power_law",
+      "units": 256,
+      "floor_passes": 256,
+      "floor_passes_required": 142,
+      "floor_gate_clears": true,
+      "median_contrast": 0.02711740254593194,
+      "median_floor": 7.874098042699853e-06,
+      "median_contrast_to_floor": 3427.3964407557664,
+      "median_contrast_to_cross_ic": 0.24103506053797596,
+      "bootstrap_draws": 4000,
+      "bootstrap_seed": 20260905,
+      "bootstrap_ci95": [
+        0.22474976428459875,
+        0.2822339291022188
+      ],
+      "band": [
+        0.3,
+        0.7
+      ],
+      "band_clears": false,
+      "commuting_null": {
+        "max_relative_order_difference": 5.963617202454375e-16,
+        "gate": 1e-12,
+        "passes": true
+      },
+      "saturation_fraction": 0.000701904296875,
+      "saturation_limit": 0.1,
+      "saturation_within_limit": true,
+      "verdict": "FAIL",
+      "elapsed_seconds": 1.7911285420123022
+    },
+    "family2_bump_localized": {
+      "family": "family2_bump_localized",
+      "units": 256,
+      "floor_passes": 256,
+      "floor_passes_required": 142,
+      "floor_gate_clears": true,
+      "median_contrast": 0.02859016903491495,
+      "median_floor": 7.850507384951681e-06,
+      "median_contrast_to_floor": 3596.9381662387727,
+      "median_contrast_to_cross_ic": 0.17852685331098045,
+      "bootstrap_draws": 4000,
+      "bootstrap_seed": 20260905,
+      "bootstrap_ci95": [
+        0.16581197543979107,
+        0.2026958260284299
+      ],
+      "band": [
+        0.3,
+        0.7
+      ],
+      "band_clears": false,
+      "commuting_null": {
+        "max_relative_order_difference": 6.809595934893874e-16,
+        "gate": 1e-12,
+        "passes": true
+      },
+      "saturation_fraction": 0.016815185546875,
+      "saturation_limit": 0.1,
+      "saturation_within_limit": true,
+      "verdict": "FAIL",
+      "elapsed_seconds": 1.7081456659943797
+    }
+  },
+  "robust_to_ic_family": false,
+  "elapsed_seconds": 6.492966624995461,
+  "cost_usd": 0.0
+}

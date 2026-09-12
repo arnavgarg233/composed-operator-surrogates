@@ -1,0 +1,41 @@
+{
+  "schema": "family1d-fk05-geometry-v1",
+  "status": "truth states only; no learner; written before any e_off is read",
+  "pair": "S1_fkpp_r0.5",
+  "second_operator": "exponax FisherKPP(diffusivity=0.0, reactivity=0.5)",
+  "offsets": {
+    "narrow": [
+      0.4865,
+      0.5171
+    ],
+    "broad": [
+      0.48,
+      0.7
+    ]
+  },
+  "narrow_training_support": [
+    0.4865763783454895,
+    0.5169978737831116
+  ],
+  "broad_training_support": [
+    0.48054927587509155,
+    0.6990498900413513
+  ],
+  "switch_support": [
+    0.5941062569618225,
+    0.6244125366210938
+  ],
+  "narrow_overlap": 0.0,
+  "broad_overlap": 0.03030627965927124,
+  "persistence_on": 0.12143668541229405,
+  "persistence_off": 0.10153809212755065,
+  "screen_reference": {
+    "source": "family1b_pair_screen/RESULT.json intervals/S1_fkpp_r0.5",
+    "switch_support": [
+      0.5941062569618225,
+      0.6244125366210938
+    ],
+    "persistence_off": 0.10153809212755065
+  },
+  "elapsed_seconds": 7.856645332998596
+}

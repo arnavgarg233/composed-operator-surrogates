@@ -1,0 +1,21 @@
+{
+  "schema": "family1-pregate-v1",
+  "pair": "S1_grayscott_1sp",
+  "condition": "broad",
+  "seed": 1,
+  "offsets": [
+    0.3,
+    0.52
+  ],
+  "e_on": 0.0002318732997105577,
+  "train_seconds": 568.6370721250132,
+  "elapsed_seconds": 574.274935916008,
+  "steps": 8000,
+  "batch": 64,
+  "note": "e_off is deliberately NOT in this file; gates are written first",
+  "platform": {
+    "python": "3.12.13",
+    "machine": "arm64",
+    "jax": "0.8.1"
+  }
+}

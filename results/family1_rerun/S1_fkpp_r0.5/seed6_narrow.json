@@ -1,0 +1,26 @@
+{
+  "schema": "family1-seed-v1",
+  "pair": "S1_fkpp_r0.5",
+  "condition": "narrow",
+  "seed": 6,
+  "offsets": [
+    0.4865,
+    0.5171
+  ],
+  "e_on": 0.00019607968733610393,
+  "train_seconds": 1994.1248835409933,
+  "elapsed_seconds": 2008.7316834999947,
+  "steps": 8000,
+  "batch": 64,
+  "platform": {
+    "python": "3.12.13",
+    "machine": "arm64",
+    "jax": "0.8.1"
+  },
+  "e_on_reloaded": 0.00019607968733610393,
+  "reload_exact": true,
+  "e_off": 0.011359482280406195,
+  "R": 57.932988545288175,
+  "e_off_constant_mode_corrected": 0.011191964485544223,
+  "eval_seconds": 4.172125250013778
+}

@@ -1,0 +1,460 @@
+{
+  "schema": "family1c-result-v1",
+  "generated": "2026-09-11T11:34:04Z",
+  "predeclared_sha256": "14b5cd0418c9cd1e34f08b1de5870f4079a17cc1ef6ffb649348d9d98f174c8a",
+  "prediction_table": [
+    {
+      "cell": "P1 narrow",
+      "pair": "P1",
+      "condition": "narrow",
+      "label": "diffusion / Fisher-KPP",
+      "training_offsets": [
+        0.4865,
+        0.5171
+      ],
+      "R_median": 110.23398312231919,
+      "R_range": [
+        71.32916335506943,
+        137.30487308661085
+      ],
+      "R_seeds": 5,
+      "R_source": "package BASELINE_RESULT.json (5 seeds)",
+      "log10_R": 2.0423155002086086,
+      "pca_k_99": 10,
+      "variance_explained_at_k": 0.9903483884575697,
+      "train_MD_p99_radius": 9.029841963204769,
+      "switch_MD_mean": 7.708170729293295,
+      "switch_MD_median": 7.835336573967153,
+      "switch_MD_over_r99_median": 0.867715803432104,
+      "coverage_inside_pca99": 0.8203125,
+      "inside": true,
+      "S2_band_nn_mean": 0.000931792522106453
+    },
+    {
+      "cell": "P1 broad",
+      "pair": "P1",
+      "condition": "broad",
+      "label": "diffusion / Fisher-KPP",
+      "training_offsets": [
+        0.4865,
+        0.7258
+      ],
+      "R_median": 17.649529763761315,
+      "R_range": [
+        13.995408048209248,
+        18.065251536367626
+      ],
+      "R_seeds": 5,
+      "R_source": "package BASELINE_RESULT.json (5 seeds)",
+      "log10_R": 1.2467331389745973,
+      "pca_k_99": 11,
+      "variance_explained_at_k": 0.9999489777432818,
+      "train_MD_p99_radius": 9.094856220874405,
+      "switch_MD_mean": 7.896163417733511,
+      "switch_MD_median": 7.920813082806665,
+      "switch_MD_over_r99_median": 0.8709113030975586,
+      "coverage_inside_pca99": 0.78515625,
+      "inside": true,
+      "S2_band_nn_mean": 0.0007316148035636073
+    },
+    {
+      "cell": "P2 narrow",
+      "pair": "P2",
+      "condition": "narrow",
+      "label": "diffusion / Allen-Cahn",
+      "training_offsets": [
+        0.4865,
+        0.5171
+      ],
+      "R_median": 177.17927616407243,
+      "R_range": [
+        51.95511950930596,
+        372.587291072877
+      ],
+      "R_seeds": 10,
+      "R_source": "computed here from 10 banked checkpoints",
+      "log10_R": 2.248412923115788,
+      "pca_k_99": 10,
+      "variance_explained_at_k": 0.9903483884575697,
+      "train_MD_p99_radius": 9.029841963204769,
+      "switch_MD_mean": 1.907241011052259,
+      "switch_MD_median": 1.8827859537630192,
+      "switch_MD_over_r99_median": 0.2085070770269386,
+      "coverage_inside_pca99": 1.0,
+      "inside": true,
+      "S2_band_nn_mean": 1.0393760952393874e-05
+    },
+    {
+      "cell": "P2 broad",
+      "pair": "P2",
+      "condition": "broad",
+      "label": "diffusion / Allen-Cahn",
+      "training_offsets": [
+        0.48,
+        0.9
+      ],
+      "R_median": 0.10023648628761724,
+      "R_range": [
+        0.05801833500448866,
+        0.29209923331331383
+      ],
+      "R_seeds": 10,
+      "R_source": "computed here from 10 banked checkpoints",
+      "log10_R": -0.9989741656037373,
+      "pca_k_99": 10,
+      "variance_explained_at_k": 0.9930860631412438,
+      "train_MD_p99_radius": 8.339625657533544,
+      "switch_MD_mean": 1.942944914606267,
+      "switch_MD_median": 1.9165453287284562,
+      "switch_MD_over_r99_median": 0.2298119133197733,
+      "coverage_inside_pca99": 1.0,
+      "inside": true,
+      "S2_band_nn_mean": 5.0156622051175065e-06
+    },
+    {
+      "cell": "CH narrow",
+      "pair": "CH",
+      "condition": "narrow",
+      "label": "diffusion / Cahn-Hilliard",
+      "training_offsets": [
+        0.4865,
+        0.5171
+      ],
+      "R_median": 46.278063082334874,
+      "R_range": [
+        42.47685597972417,
+        64.51827873211109
+      ],
+      "R_seeds": 10,
+      "R_source": "family 1 P3_negative_control (10 seeds)",
+      "log10_R": 1.665375173740014,
+      "pca_k_99": 10,
+      "variance_explained_at_k": 0.9903483884575697,
+      "train_MD_p99_radius": 9.029841963204769,
+      "switch_MD_mean": 5.944187805932338,
+      "switch_MD_median": 5.82402087922733,
+      "switch_MD_over_r99_median": 0.6449748404190603,
+      "coverage_inside_pca99": 0.91015625,
+      "inside": true,
+      "S2_band_nn_mean": 0.0093943501622667
+    },
+    {
+      "cell": "CH broad",
+      "pair": "CH",
+      "condition": "broad",
+      "label": "diffusion / Cahn-Hilliard",
+      "training_offsets": [
+        0.48,
+        0.6
+      ],
+      "R_median": 35.79872545766392,
+      "R_range": [
+        27.673823159675933,
+        50.41593832977157
+      ],
+      "R_seeds": 10,
+      "R_source": "family 1 P3_negative_control (10 seeds)",
+      "log10_R": 1.5538675647288742,
+      "pca_k_99": 11,
+      "variance_explained_at_k": 0.9999965333607298,
+      "train_MD_p99_radius": 9.072014139144457,
+      "switch_MD_mean": 6.0743877679244385,
+      "switch_MD_median": 5.943950251377652,
+      "switch_MD_over_r99_median": 0.6551963169601277,
+      "coverage_inside_pca99": 0.91015625,
+      "inside": true,
+      "S2_band_nn_mean": 0.009223622391886021
+    }
+  ],
+  "PRED": {
+    "PRED_A_spearman": {
+      "statistic": "Spearman rho(log10 R, mean switch-state Mahalanobis distance)",
+      "cells": 6,
+      "rho": -0.2571428571428572,
+      "p_value": 0.6227871720116619,
+      "threshold": 0.8,
+      "pass": false
+    },
+    "PRED_B_cahn_hilliard_outside": {
+      "cell": "CH narrow",
+      "coverage": 0.91015625,
+      "threshold": "coverage < 0.5",
+      "pass": false,
+      "reported_not_gated_CH_broad_coverage": 0.91015625
+    },
+    "PRED_C_broad_cells_inside": {
+      "P1_broad_coverage": 0.78515625,
+      "P2_broad_coverage": 1.0,
+      "threshold": "coverage >= 0.5 for both",
+      "pass": true
+    },
+    "S2_robustness_reported_not_gated": {
+      "statistic": "Spearman rho(log10 R, mean nearest-training band-profile L2)",
+      "rho": 0.2571428571428572,
+      "p_value": 0.6227871720116619
+    },
+    "POSTHOC_four_cells_excluding_P2_not_a_gate": {
+      "note": "post-hoc, reported only; the predeclared gate PRED-A is the six-cell number above and is not replaced by this one",
+      "cells": [
+        "P1 narrow",
+        "P1 broad",
+        "CH narrow",
+        "CH broad"
+      ],
+      "rho_S": -0.39999999999999997,
+      "rho_S2": 0.39999999999999997
+    },
+    "POSTHOC_residual_statistic_not_a_gate": {
+      "note": "POST-HOC. Written after S and S2 were read. It is NOT a support statistic of this family, did not exist in PREDECLARED.md, and changes no verdict. Reported as a lead only.",
+      "rho_switch_residual_mean": 0.8285714285714287,
+      "rho_switch_residual_over_train_p99": 0.5428571428571429,
+      "per_cell_switch_residual_mean": {
+        "P1 narrow": 3.313084290417267,
+        "P1 broad": 0.27970882751468995,
+        "P2 narrow": 5.246843867874923,
+        "P2 broad": 0.012136509287596825,
+        "CH narrow": 0.23047037924339295,
+        "CH broad": 0.17634575586893095
+      },
+      "per_cell_coverage_inside_train_residual_p99": {
+        "P1 narrow": 0.0,
+        "P1 broad": 0.0,
+        "P2 narrow": 0.0,
+        "P2 broad": 1.0,
+        "CH narrow": 0.6328125,
+        "CH broad": 0.0
+      }
+    },
+    "metric_resolution_per_cell": {
+      "P2 narrow": {
+        "median_e_off": 0.029666228834392714,
+        "persistence_off": 0.005920252665176344,
+        "e_off_over_persistence_off": 5.010973435119269,
+        "censored_above_e_off_ge_persistence_off": true
+      },
+      "P2 broad": {
+        "median_e_off": 3.428954987021555e-05,
+        "persistence_off": 0.005920252665176344,
+        "e_off_over_persistence_off": 0.005791906496138402,
+        "censored_above_e_off_ge_persistence_off": false
+      },
+      "CH narrow": {
+        "median_e_off": 0.009615513120259815,
+        "persistence_off": 0.06627937785386034,
+        "e_off_over_persistence_off": 0.14507548850957983,
+        "censored_above_e_off_ge_persistence_off": false
+      },
+      "CH broad": {
+        "median_e_off": 0.007941973809724435,
+        "persistence_off": 0.06627937785386034,
+        "e_off_over_persistence_off": 0.11982571452670729,
+        "censored_above_e_off_ge_persistence_off": false
+      },
+      "P1 narrow": {
+        "median_e_off": 0.02066681966278632,
+        "persistence_off": 0.08019073763412352,
+        "e_off_over_persistence_off": 0.2577207826305364,
+        "censored_above_e_off_ge_persistence_off": false
+      },
+      "P1 broad": {
+        "median_e_off": 0.004877583860766783,
+        "persistence_off": 0.08019073763412352,
+        "e_off_over_persistence_off": 0.06082477858005421,
+        "censored_above_e_off_ge_persistence_off": false
+      }
+    },
+    "PRED_verdict": "FAIL"
+  },
+  "repair_table": {
+    "CH": {
+      "R_narrow_per_seed": [
+        44.70200003096334,
+        51.760889387173236,
+        44.930532688282,
+        64.51827873211109,
+        46.91879202419255,
+        42.47685597972417,
+        55.2004890233868,
+        47.95813172911121,
+        44.90630782593703,
+        45.6373341404772
+      ],
+      "R_broadS_per_seed": [
+        0.7845052394086296,
+        0.7567949051223578,
+        0.7898248309733785,
+        0.6762832641681784,
+        0.8198064775507973,
+        0.7462602518499897,
+        0.8008682586768829,
+        0.7668386156366181,
+        0.8811575606044603,
+        0.9146809246930143
+      ],
+      "R_narrow_source": "family 1 P3_negative_control banked narrow fits (10 seeds)",
+      "e_on_broadS_per_seed": [
+        0.00040657678847214523,
+        0.0003143328946470336,
+        0.00027804360769193297,
+        0.00032839140916779105,
+        0.0002147706688010836,
+        0.00025617825636903996,
+        0.00031471477104103615,
+        0.00033692699181018626,
+        0.00023468200458373227,
+        0.000304166966330169
+      ],
+      "e_off_broadS_per_seed": [
+        0.00031896162077833204,
+        0.0002378855331812379,
+        0.0002196057454485093,
+        0.00022208561411678158,
+        0.00017607038547104526,
+        0.000191175650116451,
+        0.0002520450706635285,
+        0.0002583686279703334,
+        0.0002067918226767663,
+        0.00027821572202394796
+      ],
+      "median_R_narrow": 46.278063082334874,
+      "median_R_broadS": 0.787165035191004,
+      "R_narrow_range": [
+        42.47685597972417,
+        64.51827873211109
+      ],
+      "R_broadS_range": [
+        0.6762832641681784,
+        0.9146809246930143
+      ],
+      "ratio": 0.017009463723460766,
+      "coverage_achieved": 0.828125,
+      "broadS_pca_k_99": 10,
+      "broadS_switch_MD_mean": 6.620380104577228,
+      "broadS_S2_band_nn_mean": 0.0011437746720526411
+    },
+    "P1": {
+      "R_narrow_per_seed": [
+        74.9927398075079,
+        121.38442170124115,
+        97.4725598136299,
+        110.31069730581127,
+        132.5206267329102,
+        114.0468306588285,
+        116.7622014257565,
+        89.71793525304567,
+        124.159754697926,
+        197.86539240403363
+      ],
+      "R_broadS_per_seed": [
+        2.8020152699942527,
+        2.529627869556962,
+        1.9576155217746265,
+        2.6085363591346336,
+        2.8571344600882265,
+        1.9517713696897472,
+        2.405040676655867,
+        2.6541878298228667,
+        2.0309881571303956,
+        2.9490263919768016
+      ],
+      "R_narrow_source": "this harness, the 10 banked narrow checkpoints evaluated on the Fisher-KPP switch cohort (10 seeds)",
+      "e_on_broadS_per_seed": [
+        0.0003540083790282912,
+        0.000275893226209853,
+        0.000295146382256989,
+        0.00032594113711103466,
+        0.0001919194104661238,
+        0.00028558014362149785,
+        0.00027172966133341784,
+        0.0002883726773981028,
+        0.000242477485396642,
+        0.0002496398532810391
+      ],
+      "e_off_broadS_per_seed": [
+        0.000991936883743185,
+        0.0006979071940424275,
+        0.0005777831391019089,
+        0.0008502293070918208,
+        0.0005483395612025793,
+        0.0005573871480723256,
+        0.0006535208885607928,
+        0.0007653952508034801,
+        0.0004924689012113383,
+        0.0007361945158150009
+      ],
+      "median_R_narrow": 115.4045160422925,
+      "median_R_broadS": 2.5690821143457976,
+      "R_narrow_range": [
+        74.9927398075079,
+        197.86539240403363
+      ],
+      "R_broadS_range": [
+        1.9517713696897472,
+        2.9490263919768016
+      ],
+      "ratio": 0.02226153882404655,
+      "coverage_achieved": 0.7421875,
+      "broadS_pca_k_99": 11,
+      "broadS_switch_MD_mean": 8.22453101981058,
+      "broadS_S2_band_nn_mean": 0.0007607877137563246
+    }
+  },
+  "REPAIR": {
+    "REPAIR_1_CH_ratio": {
+      "median_R_narrow": 46.278063082334874,
+      "median_R_broadS": 0.787165035191004,
+      "ratio": 0.017009463723460766,
+      "threshold": 0.25,
+      "pass": true
+    },
+    "REPAIR_2_G2": {
+      "persistence_off_CH": 0.06627937785386034,
+      "persistence_on": 0.12143668541229405,
+      "narrow_median_e_on": 0.00019224691546033533,
+      "dynamic_range": 344.76172319932596,
+      "required": 100.0,
+      "banked_family1_value": 344.76172319932596,
+      "pass": true
+    },
+    "REPAIR_3_P6": {
+      "worst_e_on": 0.00040657678847214523,
+      "limit": 0.001573,
+      "pass": true
+    },
+    "REPAIR_4_coverage": {
+      "coverage_achieved": 0.828125,
+      "threshold": 0.9,
+      "pass": false
+    },
+    "REPAIR_5_P1_positive_control": {
+      "median_R_narrow": 115.4045160422925,
+      "median_R_broadS": 2.5690821143457976,
+      "ratio": 0.02226153882404655,
+      "threshold": 0.25,
+      "package_mean_broadening_ratio": 0.16010969815158385,
+      "ratio_against_package_narrow_median": 0.02330571790638338,
+      "coverage_achieved": 0.7421875,
+      "pass": true
+    },
+    "REPAIR_verdict": "FAIL"
+  },
+  "family_verdict": "FAIL",
+  "binding_gates": [
+    "PRED_A_spearman",
+    "PRED_B_cahn_hilliard_outside",
+    "REPAIR_4_coverage"
+  ],
+  "caveats": {
+    "P2_G2": "P2's R is newly read here from checkpoints family 1 banked. Family 1 stopped P2 at G2 (dynamic range 30.8 < 100) and its verdict stays FAIL on G2; this R is a poorly-resolved ratio and is flagged wherever it appears.",
+    "P1_R_seeds": "P1 narrow/broad R in the prediction table are the package's 5-seed medians, as predeclared. The repair table's P1 R_narrow is a 10-seed median measured with this harness.",
+    "nc_gates_dynamic_range": 344.76172319932596,
+    "P1_harness_agreement": {
+      "package_median_R_narrow_5_seeds": 110.23398312231919,
+      "this_harness_median_R_narrow_10_seeds": 115.4045160422925,
+      "this_harness_R_range": [
+        74.9927398075079,
+        197.86539240403363
+      ]
+    }
+  }
+}

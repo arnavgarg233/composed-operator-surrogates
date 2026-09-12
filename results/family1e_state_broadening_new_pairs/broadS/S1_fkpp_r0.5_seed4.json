@@ -1,0 +1,22 @@
+{
+  "schema": "family1e-broadS-seed-v1",
+  "pair": "S1_fkpp_r0.5",
+  "condition": "broadS",
+  "seed": 4,
+  "sampler": "PREDECLARED.md section 2, blocks ((0, 160, 0), (160, 320, 25), (320, 480, 50), (480, 640, 100))",
+  "e_on": 0.00019703522850916238,
+  "train_seconds": 2656.897012875008,
+  "elapsed_seconds": 2694.4194727499853,
+  "steps": 8000,
+  "batch": 64,
+  "platform": {
+    "python": "3.12.13",
+    "machine": "arm64",
+    "jax": "0.8.1"
+  },
+  "e_on_reloaded": 0.00019703522850916238,
+  "reload_exact": true,
+  "e_off": 0.00043238861762684964,
+  "R": 2.1944736527495796,
+  "e_off_constant_mode_corrected": 0.0004241037460127339
+}

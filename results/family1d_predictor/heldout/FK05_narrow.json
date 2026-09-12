@@ -1,0 +1,113 @@
+{
+  "schema": "family1d-fk05-eval-v1",
+  "pair": "S1_fkpp_r0.5",
+  "condition": "narrow",
+  "note": "R read from the ten narrow models family 1 already fitted (the narrow corpus does not depend on the second operator; sha256-verified identical across pairs). NO model was fitted for this cell and nothing was written into family1_second_pairs/.",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "per_seed": {
+    "0": {
+      "e_on": 0.0002453749646386804,
+      "e_on_reloaded": 0.0002453749646386804,
+      "reload_exact": true,
+      "e_off": 0.011383855327969657,
+      "R": 46.39371153749371,
+      "checkpoint": "results/family1_second_pairs/ckpt/P2_diffusion_allen_cahn/seed0_narrow.npz"
+    },
+    "1": {
+      "e_on": 0.00021228456526461442,
+      "e_on_reloaded": 0.00021228456526461442,
+      "reload_exact": true,
+      "e_off": 0.012613779402561741,
+      "R": 59.4192017061559,
+      "checkpoint": "results/family1_second_pairs/ckpt/P2_diffusion_allen_cahn/seed1_narrow.npz"
+    },
+    "2": {
+      "e_on": 0.00018413146448172422,
+      "e_on_reloaded": 0.00018413146448172422,
+      "reload_exact": true,
+      "e_off": 0.010280048623762375,
+      "R": 55.829940052329896,
+      "checkpoint": "results/family1_second_pairs/ckpt/P2_diffusion_allen_cahn/seed2_narrow.npz"
+    },
+    "3": {
+      "e_on": 0.00018738517594027687,
+      "e_on_reloaded": 0.00018738517594027687,
+      "reload_exact": true,
+      "e_off": 0.013194563614719153,
+      "R": 70.41412720355481,
+      "checkpoint": "results/family1_second_pairs/ckpt/P2_diffusion_allen_cahn/seed3_narrow.npz"
+    },
+    "4": {
+      "e_on": 0.00015722485542956667,
+      "e_on_reloaded": 0.00015722485542956667,
+      "reload_exact": true,
+      "e_off": 0.010113215677442677,
+      "R": 64.32326269158618,
+      "checkpoint": "results/family1_second_pairs/ckpt/P2_diffusion_allen_cahn/seed4_narrow.npz"
+    },
+    "5": {
+      "e_on": 0.00018906178635591335,
+      "e_on_reloaded": 0.00018906178635591335,
+      "reload_exact": true,
+      "e_off": 0.010248207097372881,
+      "R": 54.205597518688336,
+      "checkpoint": "results/family1_second_pairs/ckpt/P2_diffusion_allen_cahn/seed5_narrow.npz"
+    },
+    "6": {
+      "e_on": 0.00019607968733610393,
+      "e_on_reloaded": 0.00019607968733610393,
+      "reload_exact": true,
+      "e_off": 0.011359482280406195,
+      "R": 57.932988545288175,
+      "checkpoint": "results/family1_second_pairs/ckpt/P2_diffusion_allen_cahn/seed6_narrow.npz"
+    },
+    "7": {
+      "e_on": 0.00021502148539080042,
+      "e_on_reloaded": 0.00021502148539080042,
+      "reload_exact": true,
+      "e_off": 0.011704411592004268,
+      "R": 54.433684014095434,
+      "checkpoint": "results/family1_second_pairs/ckpt/P2_diffusion_allen_cahn/seed7_narrow.npz"
+    },
+    "8": {
+      "e_on": 0.00018196488346566782,
+      "e_on_reloaded": 0.00018196488346566782,
+      "reload_exact": true,
+      "e_off": 0.01100222646731339,
+      "R": 60.46346007958856,
+      "checkpoint": "results/family1_second_pairs/ckpt/P2_diffusion_allen_cahn/seed8_narrow.npz"
+    },
+    "9": {
+      "e_on": 0.0001954320445647573,
+      "e_on_reloaded": 0.0001954320445647573,
+      "reload_exact": true,
+      "e_off": 0.01543665940439505,
+      "R": 78.9873505073015,
+      "checkpoint": "results/family1_second_pairs/ckpt/P2_diffusion_allen_cahn/seed9_narrow.npz"
+    }
+  },
+  "offsets": [
+    0.4865,
+    0.5171
+  ],
+  "median_R": 58.67609512572204,
+  "R_range": [
+    46.39371153749371,
+    78.9873505073015
+  ],
+  "median_e_on": 0.00019224691546033533,
+  "median_e_off": 0.011371668804187926,
+  "persistence_off": 0.10153809212755065,
+  "max_e_off_below_persistence_off": true
+}

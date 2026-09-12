@@ -1,0 +1,47 @@
+{
+  "schema": "family1d-fk05-gates-v1",
+  "written_before_any_off_support_number_was_read": true,
+  "narrow_reuse_checksum": {
+    "P1_seed0": "9ec049f0f8e46fb4ebee8247e35a1e74e2d58759b6ad741915be2c06ce8510cd",
+    "P2_seed0": "9ec049f0f8e46fb4ebee8247e35a1e74e2d58759b6ad741915be2c06ce8510cd",
+    "CH_seed0": "9ec049f0f8e46fb4ebee8247e35a1e74e2d58759b6ad741915be2c06ce8510cd",
+    "identical": true
+  },
+  "per_seed_e_on_narrow": {
+    "0": 0.0002453749646386804,
+    "1": 0.00021228456526461442,
+    "2": 0.00018413146448172422,
+    "3": 0.00018738517594027687,
+    "4": 0.00015722485542956667,
+    "5": 0.00018906178635591335,
+    "6": 0.00019607968733610393,
+    "7": 0.00021502148539080042,
+    "8": 0.00018196488346566782,
+    "9": 0.0001954320445647573
+  },
+  "per_seed_e_on_broad": {
+    "0": 0.0003198666736590228,
+    "1": 0.0002586020984007781,
+    "2": 0.00025582884159404195,
+    "3": 0.0002973703144900983,
+    "4": 0.00019473322246865512
+  },
+  "G1_shift_exists": {
+    "narrow_overlap": 0.0,
+    "pass": true
+  },
+  "G2_metric_resolves": {
+    "persistence_off": 0.10153809212755065,
+    "persistence_on": 0.12143668541229405,
+    "median_e_on_narrow": 0.00019224691546033533,
+    "dynamic_range": 528.1650001219402,
+    "required": 100.0,
+    "e_on_below_tenth_of_persistence_on": true,
+    "pass": true
+  },
+  "P6_convergence": {
+    "worst_e_on": 0.0003198666736590228,
+    "limit": 0.001573,
+    "pass": true
+  }
+}

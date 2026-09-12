@@ -1,0 +1,180 @@
+{
+  "schema": "family7-result-v1",
+  "status": "COMPLETE_RUN_GATES_FAILED",
+  "pair": "P1_2d_diffusion_fisher_kpp",
+  "grid": [
+    64,
+    64
+  ],
+  "fits_completed": 20,
+  "fits_planned": 20,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "conditions": [
+    "narrow",
+    "broadS"
+  ],
+  "model": {
+    "arch": "FNO-2D (equinox)",
+    "modes": [
+      12,
+      12
+    ],
+    "width": 32,
+    "layers": 4,
+    "params": 2365825,
+    "steps": 8000,
+    "batch": 64,
+    "optimizer": "Adam + cosine decay"
+  },
+  "runtime": {
+    "platform": "CUDA (JAX_PLATFORMS=cuda)",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition, MIG 1g.24gb slice",
+    "gpu_count": 1,
+    "jax": "0.8.1",
+    "python": "3.12.3",
+    "machine": "x86_64",
+    "concurrency": 4,
+    "departure": "predeclared local runtime was CPU; all 20 fits were run on a CUDA MIG slice on RunPod pod ijm84mivkot2t4"
+  },
+  "persistence_on": 0.18570695510974664,
+  "persistence_off": 0.11876984063806961,
+  "gates": {
+    "G1_shift_exists": {
+      "narrow_support": [
+        0.48643118143081665,
+        0.5174063444137573
+      ],
+      "switch_support": [
+        0.6939620971679688,
+        0.7217732071876526
+      ],
+      "overlap": 0.0,
+      "gap": 0.17655575275421143,
+      "pass": true
+    },
+    "G2_metric_resolves": {
+      "persistence_off": 0.11876984063806961,
+      "median_narrow_e_on": 0.0017781643802071575,
+      "dynamic_range": 66.7935101839307,
+      "required_dynamic_range": 100.0,
+      "e_on_limit": 0.018570695510974664,
+      "pass": false
+    },
+    "G4a_censored_below": {
+      "min_narrow_e_on": 0.0013915502368419238,
+      "min_broad_e_on": 0.0015871749298320519,
+      "min_all_e_on": 0.0013915502368419238,
+      "floor": 1.19e-05,
+      "pass": true
+    },
+    "P6_convergence": {
+      "worst_broad_e_on": 0.0019486618330017752,
+      "limit": 0.001573,
+      "pass": false
+    }
+  },
+  "blocking_failures": [
+    "G2_metric_resolves",
+    "P6_convergence"
+  ],
+  "e_on_per_seed": {
+    "narrow": {
+      "0": 0.0018054926483409808,
+      "1": 0.0016386578945002134,
+      "2": 0.0018737549924806648,
+      "3": 0.0015541676051930042,
+      "4": 0.0018992277072251065,
+      "5": 0.001783948953876329,
+      "6": 0.0019483193512860489,
+      "7": 0.0013915502368419238,
+      "8": 0.0017723798065379858,
+      "9": 0.0016356221296310474
+    },
+    "broadS": {
+      "0": 0.0017240500307689397,
+      "1": 0.0016860027895816204,
+      "2": 0.0017923095316695785,
+      "3": 0.0015871749298320519,
+      "4": 0.0019357554612147287,
+      "5": 0.0017433008345149868,
+      "6": 0.0019486618330017752,
+      "7": 0.0016221756684800547,
+      "8": 0.0018848156571986505,
+      "9": 0.0016940839166025208
+    }
+  },
+  "e_on_summary": {
+    "narrow": {
+      "median": 0.0017781643802071575,
+      "min": 0.0013915502368419238,
+      "max": 0.0019483193512860489
+    },
+    "broadS": {
+      "median": 0.0017336754326419631,
+      "min": 0.0015871749298320519,
+      "max": 0.0019486618330017752
+    }
+  },
+  "e_off": null,
+  "R_per_seed": null,
+  "R_summary": null,
+  "P3_ratio": null,
+  "P3_status": "NOT EVALUATED - predeclared ordering device: gates G2 and P6 failed, so `evaluate` refused to read any off-support error. No R and no P3 ratio exist for this family.",
+  "per_fit_seconds": {
+    "narrow": {
+      "train": {
+        "median": 695.8710857605038,
+        "min": 690.8154764749925,
+        "max": 770.0306507439818
+      },
+      "elapsed": {
+        "median": 717.8358394489915,
+        "min": 713.5641011209809,
+        "max": 792.5855401399895
+      }
+    },
+    "broadS": {
+      "train": {
+        "median": 690.7424045355292,
+        "min": 651.8201249690028,
+        "max": 696.2737289220095
+      },
+      "elapsed": {
+        "median": 714.1464059939899,
+        "min": 670.828746543033,
+        "max": 720.3197850729921
+      }
+    }
+  },
+  "pod": {
+    "id": "ijm84mivkot2t4",
+    "gpu_usd_per_hour": 0.59,
+    "family7_window_utc": [
+      "2026-09-12T06:06:17Z",
+      "2026-09-12T07:08:10Z"
+    ],
+    "family7_gpu_hours": 1.03,
+    "family7_attributed_usd": 0.61
+  },
+  "cost_usd": {
+    "orphan_pod_before_run": 0.1322,
+    "main_pod_billed_total": 4.37,
+    "pull_back_restart": 0.02,
+    "total_this_pod_line": 4.52,
+    "authorized": 2.5,
+    "note": "the $4.37 covers both family 7 and family 5b on one pod; about $2.7 of it is idle time after family 5b finished at 09:27Z, because the operator session died at ~13:55Z and the local 4.0 h watchdog did not survive it. The pod was finally stopped at 14:00:25Z."
+  },
+  "verdict": "FAIL (pre-gate). Both G2 (metric resolves) and P6 (convergence) fail at 64x64 in 2-D with the 1-D thresholds copied verbatim from family 1e. The repair question is not answerable from this run.",
+  "negative_class": "FLAWED (design-limited): the failing thresholds are absolute 1-D numbers (dynamic range >= 100 built on persistence_off, P6 limit 1.573e-3) transplanted to a 2-D problem whose attainable on-support error floor is about 1.4e-3, roughly an order of magnitude above the 1-D floor. The 2-D fits themselves converged normally (train loss 1.29 -> 1.8e-4)."
+}

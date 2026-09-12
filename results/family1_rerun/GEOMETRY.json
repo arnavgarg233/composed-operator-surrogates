@@ -1,0 +1,26 @@
+{
+  "schema": "family1-rerun-predeclared-geometry-v1",
+  "narrow_training_support": [
+    0.4865763783454895,
+    0.5169978737831116
+  ],
+  "pairs": {
+    "S1_fkpp_r0.5": {
+      "switch_support": [
+        0.5941062569618225,
+        0.6244125366210938
+      ],
+      "narrow_overlap": 0.0,
+      "narrow_gap": 0.07710838317871094
+    },
+    "S1_grayscott_1sp": {
+      "switch_support": [
+        0.390663206577301,
+        0.42818015813827515
+      ],
+      "narrow_overlap": 0.0,
+      "narrow_gap": -0.12681771814819337
+    }
+  },
+  "source": "family1b_pair_screen/RESULT.json and PREDECLARED.md"
+}

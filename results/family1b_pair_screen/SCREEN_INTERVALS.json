@@ -1,0 +1,382 @@
+{
+  "schema": "family1b-intervals-v1",
+  "generated": "2026-09-11T08:13:32Z",
+  "rule_upward": "family1_second_pairs/PREDECLARED.md \u00a74, verbatim",
+  "rule_downward": "family1b PREDECLARED.md \u00a77, MIRRORED_RULE (new)",
+  "sample_count_fixed_at": 640,
+  "candidates": {
+    "S1_fkpp_r0.5": {
+      "rule": "family1_second_pairs/PREDECLARED.md \u00a74 (verbatim)",
+      "shift_direction": "up",
+      "search": [
+        {
+          "offsets": [
+            0.48,
+            0.7
+          ],
+          "support": [
+            0.48054927587509155,
+            0.6990498900413513
+          ],
+          "fraction_inside": 1.0,
+          "units_off_support": 0,
+          "saturated_value_fraction": 0.00010672087716584158
+        }
+      ],
+      "broad_offsets": [
+        0.48,
+        0.7
+      ],
+      "narrow_offsets": [
+        0.4865,
+        0.5171
+      ],
+      "train_units_both_conditions": 640,
+      "mirrored_rule": false,
+      "note": null,
+      "wall_seconds": 34.16963616700377
+    },
+    "S1_fkpp_r1.0": {
+      "rule": "family1_second_pairs/PREDECLARED.md \u00a74 (verbatim)",
+      "shift_direction": "up",
+      "search": [
+        {
+          "offsets": [
+            0.48,
+            0.8
+          ],
+          "support": [
+            0.48079901933670044,
+            0.7968361973762512
+          ],
+          "fraction_inside": 1.0,
+          "units_off_support": 0,
+          "saturated_value_fraction": 0.00034596660349628714
+        }
+      ],
+      "broad_offsets": [
+        0.48,
+        0.8
+      ],
+      "narrow_offsets": [
+        0.4865,
+        0.5171
+      ],
+      "train_units_both_conditions": 640,
+      "mirrored_rule": false,
+      "note": null,
+      "wall_seconds": 7.123725625016959
+    },
+    "S1_fkpp_r2.0": {
+      "rule": "family1_second_pairs/PREDECLARED.md \u00a74 (verbatim)",
+      "shift_direction": "up",
+      "search": [
+        {
+          "offsets": [
+            0.48,
+            0.95
+          ],
+          "support": [
+            0.481173574924469,
+            0.9060796499252319
+          ],
+          "fraction_inside": 1.0,
+          "units_off_support": 0,
+          "saturated_value_fraction": 0.0011705455213490098
+        }
+      ],
+      "broad_offsets": [
+        0.48,
+        0.95
+      ],
+      "narrow_offsets": [
+        0.4865,
+        0.5171
+      ],
+      "train_units_both_conditions": 640,
+      "mirrored_rule": false,
+      "note": null,
+      "wall_seconds": 2.4488023330050055
+    },
+    "S1_grayscott_1sp": {
+      "rule": "family1b PREDECLARED.md \u00a77 MIRRORED_RULE (new; family 1's rule is upward-only)",
+      "shift_direction": "down",
+      "search": [
+        {
+          "offsets": [
+            0.3,
+            0.52
+          ],
+          "support": [
+            0.30108892917633057,
+            0.5192655920982361
+          ],
+          "fraction_inside": 1.0,
+          "units_off_support": 0,
+          "saturated_value_fraction": 0.0
+        }
+      ],
+      "broad_offsets": [
+        0.3,
+        0.52
+      ],
+      "narrow_offsets": [
+        0.4865,
+        0.5171
+      ],
+      "train_units_both_conditions": 640,
+      "mirrored_rule": true,
+      "note": null,
+      "wall_seconds": 1.6116483749938197
+    },
+    "S2_grayscott_1sp_nu0.005": {
+      "rule": "family1b PREDECLARED.md \u00a77 MIRRORED_RULE (new; family 1's rule is upward-only)",
+      "shift_direction": "down",
+      "search": [
+        {
+          "offsets": [
+            0.3,
+            0.52
+          ],
+          "support": [
+            0.30108895897865295,
+            0.5192655324935913
+          ],
+          "fraction_inside": 1.0,
+          "units_off_support": 0,
+          "saturated_value_fraction": 0.0
+        }
+      ],
+      "broad_offsets": [
+        0.3,
+        0.52
+      ],
+      "narrow_offsets": [
+        0.4865,
+        0.5171
+      ],
+      "train_units_both_conditions": 640,
+      "mirrored_rule": true,
+      "note": null,
+      "wall_seconds": 1.3227196249936242
+    },
+    "S2_grayscott_1sp_nu0.02": {
+      "rule": "family1b PREDECLARED.md \u00a77 MIRRORED_RULE (new; family 1's rule is upward-only)",
+      "shift_direction": "down",
+      "search": [
+        {
+          "offsets": [
+            0.3,
+            0.52
+          ],
+          "support": [
+            0.30108895897865295,
+            0.5192655920982361
+          ],
+          "fraction_inside": 1.0,
+          "units_off_support": 0,
+          "saturated_value_fraction": 0.0
+        }
+      ],
+      "broad_offsets": [
+        0.3,
+        0.52
+      ],
+      "narrow_offsets": [
+        0.4865,
+        0.5171
+      ],
+      "train_units_both_conditions": 640,
+      "mirrored_rule": true,
+      "note": null,
+      "wall_seconds": 1.6922951249871403
+    },
+    "S2_fkpp_r0.5_nu0.005": {
+      "rule": "family1_second_pairs/PREDECLARED.md \u00a74 (verbatim)",
+      "shift_direction": "up",
+      "search": [
+        {
+          "offsets": [
+            0.48,
+            0.7
+          ],
+          "support": [
+            0.48054927587509155,
+            0.6990499496459961
+          ],
+          "fraction_inside": 1.0,
+          "units_off_support": 0,
+          "saturated_value_fraction": 0.00010684173886138614
+        }
+      ],
+      "broad_offsets": [
+        0.48,
+        0.7
+      ],
+      "narrow_offsets": [
+        0.4865,
+        0.5171
+      ],
+      "train_units_both_conditions": 640,
+      "mirrored_rule": false,
+      "note": null,
+      "wall_seconds": 2.250546416005818
+    },
+    "S2_fkpp_r0.5_nu0.02": {
+      "rule": "family1_second_pairs/PREDECLARED.md \u00a74 (verbatim)",
+      "shift_direction": "up",
+      "search": [
+        {
+          "offsets": [
+            0.48,
+            0.7
+          ],
+          "support": [
+            0.48054927587509155,
+            0.6990498900413513
+          ],
+          "fraction_inside": 1.0,
+          "units_off_support": 0,
+          "saturated_value_fraction": 0.00010672087716584158
+        }
+      ],
+      "broad_offsets": [
+        0.48,
+        0.7
+      ],
+      "narrow_offsets": [
+        0.4865,
+        0.5171
+      ],
+      "train_units_both_conditions": 640,
+      "mirrored_rule": false,
+      "note": null,
+      "wall_seconds": 3.066591625014553
+    },
+    "S2_fkpp_r1.0_nu0.005": {
+      "rule": "family1_second_pairs/PREDECLARED.md \u00a74 (verbatim)",
+      "shift_direction": "up",
+      "search": [
+        {
+          "offsets": [
+            0.48,
+            0.8
+          ],
+          "support": [
+            0.48079901933670044,
+            0.7968361973762512
+          ],
+          "fraction_inside": 1.0,
+          "units_off_support": 0,
+          "saturated_value_fraction": 0.0003549707998143564
+        }
+      ],
+      "broad_offsets": [
+        0.48,
+        0.8
+      ],
+      "narrow_offsets": [
+        0.4865,
+        0.5171
+      ],
+      "train_units_both_conditions": 640,
+      "mirrored_rule": false,
+      "note": null,
+      "wall_seconds": 2.7322634590091184
+    },
+    "S2_fkpp_r1.0_nu0.02": {
+      "rule": "family1_second_pairs/PREDECLARED.md \u00a74 (verbatim)",
+      "shift_direction": "up",
+      "search": [
+        {
+          "offsets": [
+            0.48,
+            0.8
+          ],
+          "support": [
+            0.48079901933670044,
+            0.7968361377716064
+          ],
+          "fraction_inside": 1.0,
+          "units_off_support": 0,
+          "saturated_value_fraction": 0.0003449392790841584
+        }
+      ],
+      "broad_offsets": [
+        0.48,
+        0.8
+      ],
+      "narrow_offsets": [
+        0.4865,
+        0.5171
+      ],
+      "train_units_both_conditions": 640,
+      "mirrored_rule": false,
+      "note": null,
+      "wall_seconds": 1.8955840410199016
+    },
+    "S3_burgers_first_dt0.0025": {
+      "rule": "family1_second_pairs/PREDECLARED.md \u00a74 (verbatim)",
+      "shift_direction": "up",
+      "search": [
+        {
+          "offsets": [
+            0.48,
+            0.8
+          ],
+          "support": [
+            0.48079901933670044,
+            0.7968361973762512
+          ],
+          "fraction_inside": 1.0,
+          "units_off_support": 0,
+          "saturated_value_fraction": 0.00011410986693422694
+        }
+      ],
+      "broad_offsets": [
+        0.48,
+        0.8
+      ],
+      "narrow_offsets": [
+        0.4865,
+        0.5171
+      ],
+      "train_units_both_conditions": 640,
+      "mirrored_rule": false,
+      "note": null,
+      "wall_seconds": 4.134179917018628
+    },
+    "S3_hyperdiff_first": {
+      "rule": "family1_second_pairs/PREDECLARED.md \u00a74 (verbatim)",
+      "shift_direction": "up",
+      "search": [
+        {
+          "offsets": [
+            0.48,
+            0.8
+          ],
+          "support": [
+            0.48079901933670044,
+            0.7968361377716064
+          ],
+          "fraction_inside": 1.0,
+          "units_off_support": 0,
+          "saturated_value_fraction": 0.0004314762530940594
+        }
+      ],
+      "broad_offsets": [
+        0.48,
+        0.8
+      ],
+      "narrow_offsets": [
+        0.4865,
+        0.5171
+      ],
+      "train_units_both_conditions": 640,
+      "mirrored_rule": false,
+      "note": null,
+      "wall_seconds": 2.0687020829936955
+    }
+  },
+  "elapsed_seconds": 64.55751437498839
+}

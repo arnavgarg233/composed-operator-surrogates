@@ -1,0 +1,68 @@
+{
+  "schema": "family1d-fk05-eval-v1",
+  "pair": "S1_fkpp_r0.5",
+  "condition": "broad",
+  "note": "5 new fits, this family, seeds 0-4.",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "per_seed": {
+    "0": {
+      "e_on": 0.0003198666736590228,
+      "e_on_reloaded": 0.0003198666736590228,
+      "reload_exact": true,
+      "e_off": 0.005243334979927253,
+      "R": 16.392251558899932,
+      "checkpoint": "work/family1d/ckpt/FK05_broad_seed0.npz"
+    },
+    "1": {
+      "e_on": 0.0002586020984007781,
+      "e_on_reloaded": 0.0002586020984007781,
+      "reload_exact": true,
+      "e_off": 0.004952730298724289,
+      "R": 19.151933914506035,
+      "checkpoint": "work/family1d/ckpt/FK05_broad_seed1.npz"
+    },
+    "2": {
+      "e_on": 0.00025582884159404195,
+      "e_on_reloaded": 0.00025582884159404195,
+      "reload_exact": true,
+      "e_off": 0.0039362175463831025,
+      "R": 15.386136769634554,
+      "checkpoint": "work/family1d/ckpt/FK05_broad_seed2.npz"
+    },
+    "3": {
+      "e_on": 0.0002973703144900983,
+      "e_on_reloaded": 0.0002973703144900983,
+      "reload_exact": true,
+      "e_off": 0.005430456018353179,
+      "R": 18.261594226931486,
+      "checkpoint": "work/family1d/ckpt/FK05_broad_seed3.npz"
+    },
+    "4": {
+      "e_on": 0.00019473322246865512,
+      "e_on_reloaded": 0.00019473322246865512,
+      "reload_exact": true,
+      "e_off": 0.0032008413607803143,
+      "R": 16.437058454653428,
+      "checkpoint": "work/family1d/ckpt/FK05_broad_seed4.npz"
+    }
+  },
+  "offsets": [
+    0.48,
+    0.7
+  ],
+  "median_R": 16.437058454653428,
+  "R_range": [
+    15.386136769634554,
+    19.151933914506035
+  ],
+  "median_e_on": 0.0002586020984007781,
+  "median_e_off": 0.004952730298724289,
+  "persistence_off": 0.10153809212755065,
+  "max_e_off_below_persistence_off": true
+}
